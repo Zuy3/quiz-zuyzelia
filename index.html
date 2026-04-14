@@ -313,6 +313,48 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .stat-ob{text-align:center}
 .stat-ob-num{font-size:22px;font-weight:700;color:#1a7a54}
 .stat-ob-lbl{font-size:11px;color:var(--ts)}
+
+.encr{background:#e8f5ee;border-left:3px solid #1D9E75;border-radius:0 var(--rs) var(--rs) 0;padding:10px 14px;margin-bottom:14px;font-size:13px;color:#085041;line-height:1.5;font-weight:500;display:none;animation:fadeIn 0.3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+
+#progresswrap{position:relative}
+#progtxt{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:10px;font-weight:600;color:#0f4f35;line-height:1}
+.encr-fixed{background:var(--vc);border-radius:var(--rs);padding:8px 14px;margin-bottom:12px;font-size:13px;color:var(--ve);text-align:center;font-weight:500;border-left:3px solid var(--vm);}
+
+.email-wrap{padding:28px 20px;text-align:center}
+.email-icon{font-size:48px;margin-bottom:16px}
+.email-title{font-size:22px;font-weight:700;color:var(--td);margin-bottom:10px;line-height:1.3}
+.email-sub{font-size:14px;color:var(--ts);line-height:1.6;margin-bottom:24px}
+.email-form{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:20px;margin-bottom:16px}
+.email-inp{width:100%;padding:14px 16px;border:1.5px solid var(--bd);border-radius:var(--rs);font-size:16px;font-family:'DM Sans',sans-serif;background:#fff;color:var(--td);outline:none;transition:border-color 0.2s;margin-bottom:12px}
+.email-inp:focus{border-color:var(--v)}
+.email-btn{width:100%;padding:16px;background:var(--v);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif}
+.email-btn:disabled{opacity:0.5;cursor:not-allowed}
+.email-skip{display:block;text-align:center;font-size:13px;color:var(--ts);text-decoration:underline;cursor:pointer;margin-top:8px;padding:6px}
+.email-privacy{font-size:11px;color:var(--ts);text-align:center;margin-top:8px;line-height:1.4}
+.email-benefits{display:flex;flex-direction:column;gap:8px;margin-bottom:20px;text-align:left}
+.email-benefit{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--td);background:#fff;border:0.5px solid var(--bd);border-radius:var(--rs);padding:10px 12px}
+.email-benefit-icon{font-size:18px;flex-shrink:0}
+
+.email-step{padding:28px 20px}
+.email-icon{font-size:36px;text-align:center;margin-bottom:12px}
+.email-title{font-size:22px;font-weight:700;text-align:center;color:var(--td);margin-bottom:8px;line-height:1.35}
+.email-sub{font-size:14px;color:var(--ts);text-align:center;margin-bottom:20px;line-height:1.6}
+.email-wrap{background:#fff;border:1.5px solid rgba(26,122,84,.3);border-radius:var(--r);padding:20px;margin-bottom:16px}
+.email-lbl{font-size:12px;font-weight:600;color:#0f4f35;margin-bottom:8px;display:block;text-transform:uppercase;letter-spacing:.04em}
+.email-inp{width:100%;padding:14px 16px;border:1.5px solid rgba(26,122,84,.25);border-radius:var(--rs);font-size:16px;font-family:'DM Sans',sans-serif;background:#fafff8;color:var(--td);outline:none;transition:border-color .2s}
+.email-inp:focus{border-color:#1a7a54}
+.email-inp::placeholder{color:var(--ts);font-size:14px}
+.email-privacy{font-size:11px;color:var(--ts);text-align:center;margin-bottom:16px;line-height:1.5}
+.email-preview{background:#f0faf4;border-radius:var(--rs);padding:14px;margin-bottom:18px}
+.email-prev-title{font-size:12px;font-weight:600;color:#0f4f35;margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}
+.email-prev-item{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--td);margin-bottom:6px}
+.email-prev-item:last-child{margin-bottom:0}
+.email-checkmark{color:#1a7a54;font-size:14px;flex-shrink:0}
+.email-btn{display:block;width:100%;padding:17px;background:#1a7a54;color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:700;cursor:pointer;text-align:center;font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.email-btn:disabled{opacity:.4;cursor:not-allowed}
+.email-skip{display:block;text-align:center;font-size:13px;color:var(--ts);text-decoration:underline;cursor:pointer;padding:4px}
+.email-urgency{background:#fff8e6;border:1px solid rgba(201,134,10,.2);border-radius:var(--rs);padding:10px 14px;font-size:12px;color:#6b4800;text-align:center;margin-bottom:16px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -324,6 +366,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 </div>
 <div style="height:4px;background:#0f4f35;display:none" id="progresswrap">
   <div id="progressbar" style="height:100%;background:#f0a020;width:0;transition:width 0.5s ease;"></div>
+  <span id="progtxt" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:10px;font-weight:600;color:#0f4f35;pointer-events:none"></span>
 </div>
 
 <div class="wrap">
@@ -402,6 +445,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,3,'corpo')"><div class="oicon">&#128580;</div><div class="obody"><div class="omain">Corpo inteiro &#8212; sinto que mudou tudo</div></div></div>
     <div class="opt" onclick="pick(this,3,'energia')"><div class="oicon">&#9889;</div><div class="obody"><div class="omain">Falta de energia &#8212; me sinto esgotada</div></div></div>
     <div class="opt" onclick="pick(this,3,'incerto')"><div class="oicon">&#128532;</div><div class="obody"><div class="omain">Nao consigo identificar o que mudou</div></div></div>
+    <div class="opt opt-conditional" id="opt3-menopause" style="display:none" onclick="pick(this,3,'menopause')"><div class="oicon">&#127774;</div><div class="obody"><div class="omain">Inchaço hormonal &#8212; pior antes da menstruacao ou menopausa</div></div></div>
   </div>
   <div class="qstat">68% das mulheres que escolheram barriga relataram reducao visivel em 2 semanas</div>
   <button class="nextbtn" id="b3" onclick="ir(4)">Continuar &#8594;</button>
@@ -436,6 +480,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,5,'irregular')"><div class="oicon">&#128993;</div><div class="obody"><div class="omain">Vou, mas sempre com esforco ou sensacao de incompleto</div></div></div>
     <div class="opt" onclick="pick(this,5,'alternado')"><div class="oicon">&#128992;</div><div class="obody"><div class="omain">As vezes preso, as vezes solto demais</div></div></div>
     <div class="opt" onclick="pick(this,5,'gases')"><div class="oicon">&#128168;</div><div class="obody"><div class="omain">Vou regularmente, mas com muitos gases e barulhos</div></div></div>
+    <div class="opt" id="opt5men" onclick="pick(this,5,'menopausa')" style="display:none"><div class="oicon">&#127801;</div><div class="obody"><div class="omain">Mudou muito desde a menopausa ou perimenopausa</div><div class="ohint">Hormonal e intestinal ao mesmo tempo</div></div></div>
   </div>
   <div class="qstat">82% das mulheres com esse perfil intestinal responderam ao protocolo em menos de 5 dias</div>
   <button class="nextbtn" id="b5" onclick="ir(6)">Continuar &#8594;</button>
@@ -453,6 +498,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,6,'trava')"><div class="oicon">&#128274;</div><div class="obody"><div class="omain">Emagreco um pouco e trava &#8212; nao sai mais nada</div></div></div>
     <div class="opt" onclick="pick(this,6,'tudo')"><div class="oicon">&#128533;</div><div class="obody"><div class="omain">Faco tudo certo e o resultado nao aparece</div></div></div>
     <div class="opt" onclick="pick(this,6,'tempo')"><div class="oicon">&#9203;</div><div class="obody"><div class="omain">Nao consigo manter por falta de tempo ou praticidade</div></div></div>
+    <div class="opt opt-conditional" id="opt6-hormonal" style="display:none" onclick="pick(this,6,'hormonal')"><div class="oicon">&#127774;</div><div class="obody"><div class="omain">O metabolismo parece ter parado &#8212; relacionado a menopausa ou hormonios</div></div></div>
   </div>
   <div class="qstat" style="color:#1a7a54;font-weight:600">Independente do que voce escolheu &#8212; todas essas situacoes tem a mesma causa intestinal</div>
   <button class="nextbtn" id="b6" onclick="ir(7)">Continuar &#8594;</button>
@@ -489,7 +535,37 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,8,'conf')"><div class="oicon">&#10024;</div><div class="obody"><div class="omain">Me sentir bem comigo mesma novamente</div></div></div>
   </div>
   <div class="qstat">Quase la &#8212; sua resposta vai definir qual protocolo e ideal para voce</div>
-  <button class="nextbtn" id="b8" onclick="analisar()">Ver meu diagnostico &#8594;</button>
+  <button class="nextbtn" id="b8" onclick="irEmail()">Continuar &#8594;</button>
+</div>
+
+
+<!-- ====== EMAIL CAPTURE ====== -->
+<div class="step" id="s8b" style="display:none">
+  <div class="email-step">
+    <div class="email-icon">&#128138;</div>
+    <div class="email-title">Onde envio o teu<br>diagnostico completo?</div>
+    <div class="email-sub">O teu perfil intestinal esta quase pronto. Insere o teu email para receber o diagnostico personalizado e o protocolo de 7 dias.</div>
+
+    <div class="email-urgency">&#9201; <strong>Mais de 847 mulheres</strong> receberam o diagnostico esta semana — o teu esta pronto em segundos</div>
+
+    <div class="email-preview">
+      <div class="email-prev-title">O que vais receber:</div>
+      <div class="email-prev-item"><span class="email-checkmark">&#10003;</span>Teu perfil intestinal completo (Tipo e Score)</div>
+      <div class="email-prev-item"><span class="email-checkmark">&#10003;</span>Data prevista para desinchar baseada no teu perfil</div>
+      <div class="email-prev-item"><span class="email-checkmark">&#10003;</span>As 3 combinacoes de chas especificas para ti</div>
+      <div class="email-prev-item"><span class="email-checkmark">&#10003;</span>Protocolo Barriga Chapada em 7 Dias</div>
+    </div>
+
+    <div class="email-wrap">
+      <label class="email-lbl" for="emailInput">O teu melhor email:</label>
+      <input class="email-inp" id="emailInput" type="email" placeholder="seuemail@exemplo.com" oninput="toggleEmailBtn()" autocomplete="email">
+    </div>
+
+    <div class="email-privacy">&#128274; 100% privado &#183; Sem spam &#183; Cancela quando quiser</div>
+
+    <button class="email-btn" id="emailBtn" onclick="submitEmail()" disabled>Ver meu diagnostico agora &#8594;</button>
+    <span class="email-skip" onclick="skipEmail()">Prefiro ver sem salvar &#8594;</span>
+  </div>
 </div>
 
 <!-- ====== ANALISANDO ====== -->
@@ -748,6 +824,32 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   </div>
 
 
+
+  <!-- ═══════════════ S15 — CAPTURA EMAIL ═══════════════ -->
+  <div id="s15" class="step">
+    <div class="email-wrap">
+      <div class="email-icon">&#128140;</div>
+      <div class="email-title">Onde envio o teu<br>diagnostico completo?</div>
+      <div class="email-sub">O teu perfil esta pronto. Insere o teu email para receber o diagnostico e o protocolo personalizado — e aceder ao resultado agora.</div>
+    </div>
+
+    <div style="padding:0 20px">
+      <div class="email-benefits">
+        <div class="email-benefit"><div class="email-benefit-icon">&#127775;</div>Resultado completo do teu Score Intestinal</div>
+        <div class="email-benefit"><div class="email-benefit-icon">&#127807;</div>Protocolo de chas especifico para o teu perfil</div>
+        <div class="email-benefit"><div class="email-benefit-icon">&#128197;</div>Previsao de data personalizada para o teu caso</div>
+      </div>
+
+      <div class="email-form">
+        <input class="email-inp" id="emailInput" type="email" placeholder="Seu melhor email aqui..." oninput="toggleEmailBtn()">
+        <button class="email-btn" id="emailBtn" onclick="submitEmail()" disabled>Ver meu diagnostico completo &#8594;</button>
+      </div>
+
+      <a class="email-skip" onclick="ir(11)">Prefiro nao receber — ver so o resultado &#8594;</a>
+      <div class="email-privacy">&#128274; Seus dados estao seguros. Sem spam, prometido.</div>
+    </div>
+  </div>
+
   <!-- ═══════════════ S12 — OBRIGADO ═══════════════ -->
   <div id="s12" class="step step-page" style="display:none">
     <div class="page-topbar green">&#127881; Pedido confirmado! Bem-vinda ao protocolo Barriga Chapada!</div>
@@ -908,6 +1010,7 @@ var cIdx = 0;
 var cTotal = 7;
 var scoreVal = 28;
 var userName = '';
+var userEmail = '';
 var uTmr = null, dTmr = null;
 
 function irStep(n) {
@@ -960,6 +1063,81 @@ function checkStepParam() {
   else if (step === 'downsell') { irStep(14); }
 }
 
+
+function toggleEmailBtn() {
+  var inp = document.getElementById('emailInput');
+  var btn = document.getElementById('emailBtn');
+  if (!inp || !btn) { return; }
+  var val = inp.value.trim();
+  var valid = val.length > 4 && val.indexOf('@') > 0 && val.indexOf('.') > 0;
+  btn.disabled = !valid;
+}
+
+function submitEmail() {
+  var inp = document.getElementById('emailInput');
+  var email = inp ? inp.value.trim() : '';
+  if (email) {
+    try {
+      fetch('https://api.leadconnectorhq.com/hooks/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: userName || '', source: 'quiz-barriga' })
+      }).catch(function(){});
+    } catch(e) {}
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'email_quiz' }); }
+    if (typeof gtag !== 'undefined') { gtag('event', 'generate_lead', { email: email }); }
+  }
+  resultado();
+}
+
+
+function irEmail() {
+  applyConditionalLogic();
+  var all = document.querySelectorAll('.step');
+  for (var i = 0; i < all.length; i++) { all[i].classList.remove('active'); }
+  document.getElementById('s8b').classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function applyConditionalLogic() {
+  var q1 = RES.q1 || '';
+  var isOlder = (q1 === '41a50' || q1 === '51a60' || q1 === '60mais');
+  var m3 = document.getElementById('opt3-menopause');
+  var m6 = document.getElementById('opt6-hormonal');
+  if (m3) { m3.style.display = isOlder ? 'flex' : 'none'; }
+  if (m6) { m6.style.display = isOlder ? 'flex' : 'none'; }
+  var qt3 = document.getElementById('qtrans3');
+  if (qt3 && isOlder) { qt3.textContent = 'Sabemos que apos os 40 o corpo muda de forma...'; }
+  var qt6 = document.getElementById('qtrans6');
+  if (qt6 && isOlder) { qt6.textContent = 'Com a mudanca hormonal, os desafios sao diferentes...'; }
+}
+
+function toggleEmailBtn() {
+  var inp = document.getElementById('emailInput');
+  var btn = document.getElementById('emailBtn');
+  if (!inp || !btn) { return; }
+  var valid = inp.value.indexOf('@') > 0 && inp.value.indexOf('.') > 0;
+  btn.disabled = !valid;
+  btn.style.opacity = valid ? '1' : '0.4';
+}
+
+function submitEmail() {
+  var inp = document.getElementById('emailInput');
+  if (!inp) { analisar(); return; }
+  userEmail = inp.value.trim();
+  var valid = userEmail.indexOf('@') > 0 && userEmail.indexOf('.') > 0;
+  if (!valid) { inp.style.borderColor = '#e24b4a'; inp.focus(); return; }
+  inp.style.borderColor = '#1a7a54';
+  if (typeof fbq !== 'undefined') { fbq('track', 'Lead', {content_name: 'email_quiz'}); }
+  if (typeof gtag !== 'undefined') { gtag('event', 'lead_email', {email: userEmail}); }
+  analisar();
+}
+
+function skipEmail() {
+  userEmail = '';
+  analisar();
+}
+
 function toggleStart() {
   var inp = document.getElementById('nameInput');
   var btn = document.getElementById('startBtn');
@@ -995,10 +1173,13 @@ function updateTransitions() {
 function updateProgress(n) {
   var pct = Math.round((n / 8) * 100);
   var bar = document.getElementById('progressbar');
+  var txt = document.getElementById('progtxt');
   if (bar) { bar.style.width = pct + '%'; }
+  if (txt) { txt.textContent = 'Pergunta ' + n + ' de 8'; }
 }
 
 function ir(n) {
+  hideAllEncr();
   var all = document.querySelectorAll('.step');
   for (var i = 0; i < all.length; i++) {
     all[i].classList.remove('active');
@@ -1006,6 +1187,39 @@ function ir(n) {
   document.getElementById('s' + n).classList.add('active');
   window.scrollTo(0, 0);
   if (n >= 1 && n <= 8) { updateProgress(n); }
+  if (n === 5) { adaptQ5(); }
+  if (n === 6) { adaptQ6(); }
+}
+
+function adaptQ5() {
+  var q1 = RES.q1 || '';
+  var trans = document.getElementById('qtrans5');
+  var sub = document.querySelector('#s5 .qsub');
+  if (q1 === '51a60' || q1 === '60mais') {
+    if (trans) trans.textContent = userName ? 'Uma pergunta importante para o seu perfil, ' + userName + '...' : 'Uma pergunta importante para o seu perfil...';
+    if (sub) sub.textContent = 'Apos os 50 anos, o intestino e fortemente influenciado pelas mudancas hormonais — esta pergunta define qual protocolo e mais eficaz para a sua fase.';
+    var optMen = document.getElementById('opt5men');
+    if (optMen) optMen.style.display = 'flex';
+  } else if (q1 === '41a50') {
+    if (trans) trans.textContent = userName ? 'Pergunta decisiva para o seu diagnostico, ' + userName + '...' : 'Pergunta decisiva para o seu diagnostico...';
+    if (sub) sub.textContent = 'Entre os 40 e 50 anos, o intestino ja sente as primeiras mudancas hormonais. Esta pergunta calibra o protocolo para a sua transicao.';
+    var optMen2 = document.getElementById('opt5men');
+    if (optMen2) optMen2.style.display = 'flex';
+  } else {
+    var optMen3 = document.getElementById('opt5men');
+    if (optMen3) optMen3.style.display = 'none';
+  }
+}
+
+function adaptQ6() {
+  var q1 = RES.q1 || '';
+  var q2 = RES.q2 || '';
+  var trans6 = document.getElementById('qtrans6');
+  if ((q1 === '51a60' || q1 === '60mais') && trans6) {
+    trans6.textContent = userName ? 'Sei que voce ja tentou mudar isso antes, ' + userName + '...' : 'Sei que voce ja tentou mudar isso antes...';
+  } else if (q2 === 'semana' || q2 === 'todos') {
+    if (trans6) trans6.textContent = userName ? 'Com esse nivel de inchaco diario, ' + userName + ', e normal ter tentado de tudo...' : 'Com esse nivel de inchaco diario, e normal ter tentado de tudo...';
+  }
 }
 
 function pick(el, q, v) {
@@ -1036,13 +1250,24 @@ function showEncr(q) {
   var el = document.getElementById('encr' + nextQ);
   if (!el) { return; }
   var msg = encrMsgs[q] || '';
-  if (q === 1) { msg = 'Que bom te conhecer, ' + (userName || 'voce') + '! Sua faixa etaria esta registada.'; }
+  if (q === 1) { msg = 'Perfeito, ' + (userName || 'voce') + '! Sua faixa etaria esta registada.'; }
   if (!msg) { return; }
-  el.textContent = msg;
+  el.innerHTML = '&#128077; ' + msg;
   el.style.display = 'block';
-  setTimeout(function() {
-    el.style.display = 'none';
-  }, 3000);
+  el.style.background = '#e8f5ee';
+  el.style.borderLeft = '3px solid #1a7a54';
+  el.style.borderRadius = '0 8px 8px 0';
+  el.style.padding = '10px 14px';
+  el.style.marginBottom = '12px';
+  el.style.fontSize = '13px';
+  el.style.color = '#0f4f35';
+  el.style.fontWeight = '500';
+  el.style.lineHeight = '1.4';
+}
+
+function hideAllEncr() {
+  var els = document.querySelectorAll('.encr');
+  for (var i = 0; i < els.length; i++) { els[i].style.display = 'none'; }
 }
 
 function calcScore() {
@@ -1087,7 +1312,7 @@ function mostrarDesbloquear() {
 }
 
 function desbloquear() {
-  resultado();
+  ir(15);
 }
 
 function calcDatePred(profile, q1) {
