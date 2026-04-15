@@ -41,8 +41,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .dot{width:6px;height:6px;border-radius:50%;background:var(--v);opacity:0.5;}
 
 /* STEPS */
-.step{display:none}
-.step.active{display:block;animation:fu 0.35s ease}
+.step{display:none !important}
+.step.active{display:block !important;animation:fu 0.35s ease}
 @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
 /* HEADER */
@@ -430,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q1: FAIXA ETARIA ====== -->
-<div class="step" id="s1">
+<div class="step" id="s1" style="display:none">
   <div class="encr" id="encr1"></div>
   <div class="qtransition" id="qtrans1">Antes de tudo, me conta uma coisa...</div>
   <div class="qtext">Qual e a sua faixa etaria?</div>
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q2: FREQUENCIA ====== -->
-<div class="step" id="s2">
+<div class="step" id="s2" style="display:none">
   <div class="encr" id="encr2"></div>
   <div class="qtransition" id="qtrans2">Entendido. Agora me diz...</div>
   <div class="qtext">Com que frequencia sua barriga incha ao longo do dia?</div>
@@ -464,7 +464,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q3: PARTE DO CORPO ====== -->
-<div class="step" id="s3">
+<div class="step" id="s3" style="display:none">
   <div class="encr" id="encr3"></div>
   <div class="qtransition" id="qtrans3">Sabe aquela peca no guarda-roupa que voce adora mas evita usar?</div>
   <div class="qtext">Qual parte do corpo mais te incomoda quando voce se olha no espelho?</div>
@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q4: IMPACTO EMOCIONAL ====== -->
-<div class="step" id="s4">
+<div class="step" id="s4" style="display:none">
   <div class="encr" id="encr4"></div>
   <div class="qtransition" id="qtrans4">Isso afeta mais do que o corpo, ne?</div>
   <div class="qtext">Das situacoes abaixo, qual te acontece com mais frequencia?</div>
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q5: INTESTINO ====== -->
-<div class="step" id="s5">
+<div class="step" id="s5" style="display:none">
   <div class="encr" id="encr5"></div>
   <div class="qtransition" id="qtrans5">Isso e fundamental para o seu diagnostico...</div>
   <div class="qtext">Como e o seu intestino normalmente?</div>
@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q6: O QUE ACONTECE AO TENTAR ====== -->
-<div class="step" id="s6">
+<div class="step" id="s6" style="display:none">
   <div class="encr" id="encr6"></div>
   <div class="qtransition" id="qtrans6">Sei que voce ja tentou mudar isso antes...</div>
   <div class="qtext">O que mais acontece quando voce tenta emagrecer?</div>
@@ -533,7 +533,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q7: TENTATIVAS ====== -->
-<div class="step" id="s7">
+<div class="step" id="s7" style="display:none">
   <div class="encr" id="encr7"></div>
   <div class="qtransition" id="qtrans7">Voce ja considerou que pode ser o seu intestino te sabotando?</div>
   <div class="qtext">Ja tentou alguma coisa especifica para o inchaco antes?</div>
@@ -550,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== Q8: MOTIVACAO ====== -->
-<div class="step" id="s8">
+<div class="step" id="s8" style="display:none">
   <div class="encr" id="encr8"></div>
   <div class="qtransition" id="qtrans8">Quase la! Ultima pergunta...</div>
   <div class="qtext">Se voce pudesse mudar uma coisa no seu corpo agora, qual seria?</div>
@@ -569,7 +569,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- ====== EMAIL CAPTURE ====== -->
 <!-- ====== ANALISANDO ====== -->
-<div class="step" id="s9">
+<div class="step" id="s9" style="display:none">
   <div class="azwrap">
     <div style="font-size:38px;margin-bottom:16px">&#128300;</div>
     <h3>Analisando seu perfil...</h3>
@@ -584,7 +584,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== DESBLOQUEAR ====== -->
-<div class="step" id="s10">
+<div class="step" id="s10" style="display:none">
   <div class="unlock-hdr">
     <h2>Identificamos por que sua barriga resiste &#8212; mesmo quando voce faz tudo certo &#128269;</h2>
     <p>Seu diagnostico intestinal revelou o bloqueio especifico que esta impedindo o seu resultado</p>
@@ -608,7 +608,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- ====== RESULTADO ====== -->
-<div class="step" id="s11">
+<div class="step" id="s11" style="display:none">
 
   <div class="hdr" style="margin-bottom:18px">
     <div class="badge"><span class="bdot"></span>Diagnostico completo</div>
@@ -1017,10 +1017,10 @@ function irStep(n) {
   var all = document.querySelectorAll('.step');
   for (var i = 0; i < all.length; i++) {
     all[i].classList.remove('active');
-    all[i].style.display = '';
+    all[i].style.display = 'none';
   }
   var el = document.getElementById('s' + n);
-  if (el) { el.classList.add('active'); window.scrollTo(0, 0); }
+  if (el) { el.style.display = ''; el.classList.add('active'); window.scrollTo(0, 0); }
   var topbar = document.getElementById('topbar');
   var pwrap = document.getElementById('progresswrap');
   var isPage = (n === 12 || n === 13 || n === 14);
@@ -1113,8 +1113,10 @@ function ir(n) {
   var all = document.querySelectorAll('.step');
   for (var i = 0; i < all.length; i++) {
     all[i].classList.remove('active');
+    all[i].style.display = 'none';
   }
-  document.getElementById('s' + n).classList.add('active');
+  var target = document.getElementById('s' + n);
+  if (target) { target.style.display = ''; target.classList.add('active'); }
   window.scrollTo(0, 0);
   if (n >= 1 && n <= 8) { updateProgress(n); }
   if (n === 5) { adaptQ5(); }
