@@ -41,8 +41,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .dot{width:6px;height:6px;border-radius:50%;background:var(--v);opacity:0.5;}
 
 /* STEPS */
-.step{display:none !important}
-.step.active{display:block !important;animation:fu 0.35s ease}
+.step{display:none}
+.step.active{display:block;animation:fu 0.35s ease}
 @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
 /* HEADER */
@@ -84,7 +84,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .nextbtn.ok{opacity:1;pointer-events:auto}
 .nextbtn.ok:hover{background:var(--ve);transform:translateY(-1px)}
 
-.startbtn:hover{background:var(--ve);transform:translateY(-1px)}
 .bnote{text-align:center;font-size:12px;color:var(--ts)}
 .ctabtn{display:block;width:100%;padding:20px 16px;background:var(--gold);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:none;text-align:center;transition:all 0.2s;margin-bottom:8px;letter-spacing:0.01em;line-height:1.3;}
 .ctabtn:hover{background:#a06d08;transform:translateY(-1px)}
@@ -363,36 +362,58 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .badge{display:inline-flex;align-items:center;gap:6px;background:var(--vc);color:var(--ve);font-size:12px;font-weight:600;letter-spacing:0.03em;padding:6px 16px;border-radius:20px;margin-bottom:14px;}
 
 
-50%{opacity:.5;transform:scale(.8)}}
+/* keyframe removido - fragmento invalido do original */
 
 
 
 
 
-.startbtn{width:100%;padding:18px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.25s;margin-bottom:10px;letter-spacing:.01em;}
-.startbtn:not([disabled]):hover{background:#0f4f35;transform:translateY(-1px);}
-.startbtn[disabled]{opacity:.35;pointer-events:none;}
+.startbtn{width:100%;padding:18px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.2s;margin-bottom:10px;position:relative;overflow:hidden;}
+.startbtn:hover{background:var(--ve);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,122,84,0.35);}
+.startbtn.pulse{animation:ctaPulse 2s infinite}
+@keyframes ctaPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,122,84,0.4)}50%{box-shadow:0 0 0 10px rgba(26,122,84,0)}}
+.bnote{text-align:center;font-size:12px;color:var(--ts)}
+
+/* NAME INPUT */
+.name-wrap{margin-bottom:16px}
+.name-label{font-size:14px;font-weight:600;color:var(--td);margin-bottom:8px;display:block}
+.name-inp{width:100%;padding:14px 16px;border:1.5px solid var(--bd);border-radius:var(--r);font-size:16px;font-family:'DM Sans',sans-serif;color:var(--td);background:#fff;transition:border-color 0.2s;outline:none;}
+.name-inp:focus{border-color:var(--v)}
+.name-inp::placeholder{color:var(--ts)}
+.name-inp.error{border-color:#d85a30;animation:shake 0.3s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+/* STICKY CTA BAR */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#0f4f35;padding:12px 20px;display:none;align-items:center;justify-content:space-between;gap:12px;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,0.2);}
+.sticky-cta.visible{display:flex}
+.sticky-cta-text{color:#fff;font-size:13px;line-height:1.3}
+.sticky-cta-text strong{display:block;font-size:15px}
+.sticky-cta-btn{background:#f0a020;color:#fff;border:none;border-radius:10px;padding:12px 18px;font-size:14px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;text-decoration:none;flex-shrink:0;transition:background 0.2s;}
+.sticky-cta-btn:hover{background:#c9860a}
+
+/* SOCIAL PROOF TOAST */
+.sp-toast{position:fixed;bottom:80px;left:12px;right:12px;max-width:340px;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--td);box-shadow:0 4px 20px rgba(0,0,0,0.12);z-index:99;transform:translateY(20px);opacity:0;transition:all 0.4s ease;pointer-events:none;}
+.sp-toast.show{transform:translateY(0);opacity:1}
+.sp-toast-icon{font-size:20px;flex-shrink:0}
+.sp-toast-text{line-height:1.4}
+.sp-toast-text strong{color:var(--v)}
+
+/* DATEBOX MELHORADO */
+.datebox{background:linear-gradient(135deg,#0f4f35,#1a7a54);border-radius:var(--r);padding:18px 20px;text-align:center;color:#fff;}
+.datebox-lbl{font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;opacity:0.8;margin-bottom:6px}
+.datebox-date{font-family:'Lora',serif;font-size:22px;font-weight:600;margin-bottom:4px}
+.datebox-sub{font-size:12px;opacity:0.75}
+
+/* VIEWING NOW */
+.viewing-now{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--bd);border-radius:var(--rs);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--tm);}
+.vn-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
 </style>
-<script>
-// Executado IMEDIATAMENTE antes de qualquer CSS ou body
-document.addEventListener('DOMContentLoaded', function() {
-  var tb = document.getElementById('topbar');
-  var pw = document.getElementById('progresswrap');
-  if (tb) { tb.style.cssText = 'display:none!important'; }
-  if (pw) { pw.style.cssText = 'display:none!important'; }
-  var all = document.querySelectorAll('.step');
-  for (var i = 0; i < all.length; i++) {
-    all[i].classList.remove('active');
-  }
-  var s0 = document.getElementById('s0');
-  if (s0) { s0.classList.add('active'); }
-});
-</script>
 </head>
 <body>
 
 <!-- HEADER FIXO COM BARRA DE PROGRESSO -->
-<div class="qheader" id="topbar">
+<div class="qheader" id="topbar" style="display:none">
   <span style="font-size:16px">&#127807;</span>
   <span class="qheader-label">BARRIGA CHAPADA EM 7 DIAS</span>
   
@@ -405,7 +426,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="topo"><div class="dot"></div>Barriga Chapada em 7 Dias<div class="dot"></div></div>
 
 <!-- ====== INTRO ====== -->
-<div class="step active" id="s0">
+<div class="step active" id="s0" style="display:block">
   <div class="hdr">
     <div class="badge"><span class="bdot"></span>Avaliacao gratuita &#8212; resultado personalizado na hora</div>
     <h1>Descubra em 2 minutos por que sua barriga nao desinfla &#8212; <em>mesmo fazendo tudo certo</em></h1>
@@ -425,8 +446,18 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
 
-  <button class="startbtn" id="startBtn" onclick="startQuiz()">DESCOBRIR MEU PROTOCOLO &#8594;</button>
-  <p class="bnote">Leva menos de 2 minutos &#183; Sem cadastro &#183; Resultado imediato</p>
+  <!-- NAME INPUT -->
+  <div class="name-wrap">
+    <label class="name-label" for="nameInput">&#128075; Como posso te chamar?</label>
+    <input class="name-inp" id="nameInput" type="text" placeholder="Digite seu primeiro nome aqui..." maxlength="30" autocomplete="given-name">
+  </div>
+
+  <button class="startbtn pulse" id="startBtn" onclick="startQuiz()">DESCOBRIR MEU PROTOCOLO &#8594;</button>
+  <p class="bnote">&#128274; Leva menos de 2 minutos &#183; Gratuito &#183; Resultado imediato</p>
+  <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ts)"><span style="color:#22c55e">&#9679;</span> 47 mulheres fazendo o quiz agora</div>
+    <div style="font-size:12px;color:var(--ts)">&#183; &#128274; 100% gratuito e seguro</div>
+  </div>
 </div>
 
 <!-- ====== Q1: FAIXA ETARIA ====== -->
@@ -675,11 +706,11 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="ctrack" id="ctrack">
         <div class="cslide"><img src="img2.jpg" alt="Camila resultado" loading="lazy"><div class="ccaption">Camila perdeu 10kg &#8212; mensagem real no WhatsApp</div></div>
         <div class="cslide"><img src="img1.jpg" alt="Paula resultado" loading="lazy"><div class="ccaption">Paula &#8212; antes e depois. Resultado visivel em dias</div></div>
-        <div class="cslide"><img src="img2.jpg" alt="Marcia resultado" loading="lazy"><div class="ccaption">Marcia Regina: 12kg em 32 dias usando o protocolo</div></div>
-        <div class="cslide"><img src="img2.jpg" alt="Marcela resultado" loading="lazy"><div class="ccaption">Marcela: agora me sentindo bem melhor!</div></div>
+        <div class="cslide"><img src="img3.jpg" alt="Zania resultado" loading="lazy"><div class="ccaption">Zania: comparou o antes e depois e a motivacao voltou</div></div>
+        <div class="cslide"><img src="img1.jpg" alt="Marcia resultado" loading="lazy"><div class="ccaption">Marcia Regina: 12kg em 32 dias usando o protocolo</div></div>
         <div class="cslide"><img src="img2.jpg" alt="Joana resultado" loading="lazy"><div class="ccaption">Joana: 11kg em 37 dias &#8212; fez o detox de 7 dias primeiro</div></div>
-        <div class="cslide"><img src="img2.jpg" alt="Transformacao" loading="lazy"><div class="ccaption">Transformacao completa seguindo o protocolo</div></div>
-        <div class="cslide"><img src="img3.jpg" alt="Zania resultado" loading="lazy"><div class="ccaption">Zania: comparou o antes e depois e se motivou de novo</div></div>
+        <div class="cslide"><img src="img3.jpg" alt="Transformacao" loading="lazy"><div class="ccaption">Antes e depois: a motivacao volta quando voce ve o resultado</div></div>
+        <div class="cslide"><img src="img1.jpg" alt="Resultado real" loading="lazy"><div class="ccaption">Resultado real enviado diretamente no WhatsApp</div></div>
       </div>
     </div>
     <div class="cnav" id="cnav"></div>
@@ -799,10 +830,10 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="divider">Quem ja usou e comprovou</div>
 
   <div class="rsec">
+    <div class="viewing-now"><div class="vn-dot"></div><span><strong>47 mulheres</strong> visualizando este protocolo agora</span></div>
     <div class="wppcard"><img src="img2.jpg" alt="Camila 10kg" loading="lazy"><div class="wpplabel"><strong>Camila</strong> &#8212; Perdeu 10kg. Mensagem enviada direto no WhatsApp.</div></div>
-    <div class="wppcard"><img src="img2.jpg" alt="Marcia 12kg" loading="lazy"><div class="wpplabel"><strong>Marcia Regina</strong> &#8212; 12kg em 32 dias. Segue no programa ate hoje.</div></div>
-    <div class="wppcard"><img src="img2.jpg" alt="Joana 11kg" loading="lazy"><div class="wpplabel"><strong>Joana Macedo</strong> &#8212; 11kg em 37 dias. Fez o detox de 7 dias primeiro.</div></div>
     <div class="wppcard"><img src="img3.jpg" alt="Zania resultado" loading="lazy"><div class="wpplabel"><strong>Zania</strong> &#8212; Comparou o antes e depois e a motivacao voltou imediatamente.</div></div>
+    <div class="wppcard"><img src="img1.jpg" alt="Paula resultado" loading="lazy"><div class="wpplabel"><strong>Paula</strong> &#8212; Resultado visivel em dias seguindo o protocolo.</div></div>
   </div>
 
   <div class="garhero rsec">
@@ -826,7 +857,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   <!-- ═══════════════ S15 — CAPTURA EMAIL ═══════════════ -->
-  <div id="s15" class="step">
+  <div id="s15" class="step" style="display:none">
     <div class="email-wrap">
       <div class="email-icon">&#128140;</div>
       <div class="email-title">Onde envio o teu<br>diagnostico completo?</div>
@@ -851,7 +882,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
   <!-- ═══════════════ S12 — OBRIGADO ═══════════════ -->
-  <div id="s12" class="step step-page">
+  <div id="s12" class="step step-page" style="display:none">
     <div class="page-topbar green">&#127881; Pedido confirmado! Bem-vinda ao protocolo Barriga Chapada!</div>
     <div class="phero">
       <div class="phero-badge teal">Compra aprovada</div>
@@ -888,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
   <!-- ═══════════════ S13 — UPSELL ═══════════════ -->
-  <div id="s13" class="step step-page">
+  <div id="s13" class="step step-page" style="display:none">
     <div class="page-topbar">&#9888; ATENCAO: Esta oferta expira quando voce sair desta pagina!</div>
     <div class="ptimer"><span>Oferta exclusiva expira em: </span><span class="ptimer-num" id="ut1">14</span> min : <span class="ptimer-num" id="ut2">59</span> seg</div>
 
@@ -947,7 +978,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
   <!-- ═══════════════ S14 — DOWNSELL ═══════════════ -->
-  <div id="s14" class="step step-page">
+  <div id="s14" class="step step-page" style="display:none">
     <div class="page-topbar pink">&#10084; Espera! Temos uma ultima oferta especial so para voce!</div>
     <div class="ptimer purple"><span>Oferta especial disponivel por: </span><span class="ptimer-num" id="dt1">09</span> min : <span class="ptimer-num" id="dt2">59</span> seg</div>
 
@@ -1003,6 +1034,21 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 </div>
 
+<!-- STICKY CTA BAR - aparece na pagina de resultado -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-text">
+    <strong>R$ 29,90 &#8212; oferta expira hoje</strong>
+    Protocolo personalizado para o seu perfil
+  </div>
+  <a class="sticky-cta-btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev('StickyCTA')">QUERO &#8594;</a>
+</div>
+
+<!-- SOCIAL PROOF TOAST -->
+<div class="sp-toast" id="spToast">
+  <div class="sp-toast-icon">&#127942;</div>
+  <div class="sp-toast-text"><strong id="spName">Ana</strong> <span id="spMsg">acabou de adquirir o protocolo</span></div>
+</div>
+
 <script>
 var RES = {};
 var tmr = null;
@@ -1032,6 +1078,8 @@ function irStep(n) {
   if (param && window.history && window.history.replaceState) {
     window.history.replaceState(null, '', '?step=' + param);
   }
+  // Esconder sticky CTA nas paginas de compra (tem os proprios CTAs)
+  if (n === 12 || n === 13 || n === 14) { toggleStickyCta(false); }
 }
 
 function startUTimer() {
@@ -1059,22 +1107,12 @@ function startDTimer() {
 }
 
 function checkStepParam() {
-  var topbar = document.getElementById('topbar');
-  var pw = document.getElementById('progresswrap');
-  var all = document.querySelectorAll('.step');
-  for (var i = 0; i < all.length; i++) {
-    all[i].classList.remove('active');
-    all[i].style.display = '';
-  }
-  var s0 = document.getElementById('s0');
-  if (s0) { s0.classList.add('active'); }
-  if (topbar) { topbar.classList.remove('visible'); topbar.style.cssText='display:none'; }
-  if (pw) { pw.style.display = 'none'; }
   var params = window.location.search ? new URLSearchParams(window.location.search) : null;
   var step = params ? params.get('step') : null;
   if (step === 'obrigado') { irStep(12); }
   else if (step === 'upsell') { irStep(13); }
   else if (step === 'downsell') { irStep(14); }
+  // sem parametro: s0 ja esta visivel pelo HTML/CSS inicial
 }
 
 
@@ -1087,9 +1125,16 @@ function toggleStart() {}
 
 function startQuiz() {
   var inp = document.getElementById('nameInput');
-  userName = inp ? inp.value.trim() : '';
-  if (!userName) { return; }
-  userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+  var rawName = inp ? inp.value.trim() : '';
+  
+  // Name is now optional but encouraged
+  if (!rawName) {
+    if (inp) { inp.classList.add('error'); inp.focus(); inp.placeholder = 'Por favor, diga seu nome para personalizar &#128522;'; }
+    setTimeout(function(){ if(inp){ inp.classList.remove('error'); inp.placeholder='Digite seu primeiro nome aqui...'; }}, 1500);
+    return;
+  }
+  
+  userName = rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
   var _tb = document.getElementById('topbar'); if(_tb){ _tb.style.cssText=''; _tb.classList.add('visible'); }
   document.getElementById('progresswrap').style.display = 'block';
   updateTransitions();
@@ -1101,6 +1146,12 @@ function updateTransitions() {
   var t1 = document.getElementById('qtrans1');
   if (t1) { t1.textContent = 'Antes de tudo, ' + userName + ', me conta uma coisa...'; }
 }
+
+// Allow Enter key on name input
+document.addEventListener('DOMContentLoaded', function(){
+  var ni = document.getElementById('nameInput');
+  if(ni){ ni.addEventListener('keypress', function(e){ if(e.key==='Enter'){ startQuiz(); } }); }
+});
 
 function updateProgress(n) {
   var pct = Math.round((n / 8) * 100);
@@ -1388,6 +1439,9 @@ function resultado() {
   initCarousel();
   startTimer(14 * 60 + 58);
   ev('ResultadoExibido');
+  // Ativar sticky CTA e toasts na pagina de resultado
+  setTimeout(function(){ toggleStickyCta(true); }, 3000);
+  startSpToasts();
 }
 
 function getDeadline() {
@@ -1438,16 +1492,55 @@ function startTimer(total) {
 }
 
 function notnow() {
-  var msg = 'Tem certeza? Sua analise personalizada so fica reservada enquanto voce estiver nesta pagina.';
-  if (window.confirm(msg)) {
-    window.location.href = 'https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado';
-  }
+  var overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.65);z-index:200;display:flex;align-items:flex-end;';
+  var box = document.createElement('div');
+  box.style.cssText = 'background:#fff;border-radius:20px 20px 0 0;padding:28px 24px 40px;width:100%;max-width:520px;margin:0 auto;';
+  box.innerHTML = '<div style="font-size:24px;text-align:center;margin-bottom:12px">&#128532;</div>'
+    + '<h3 style="font-family:Lora,serif;font-size:20px;text-align:center;margin-bottom:8px;color:#1c1c1a">Tem certeza?</h3>'
+    + '<p style="font-size:14px;color:#7a7a74;text-align:center;line-height:1.6;margin-bottom:20px">Sua analise personalizada fica reservada <strong>apenas enquanto voce estiver nesta pagina</strong>. Se sair, perde o acesso ao protocolo personalizado pelo preco atual.</p>'
+    + '<a style="display:block;width:100%;padding:17px;background:#1a7a54;color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:700;text-align:center;text-decoration:none;margin-bottom:12px;cursor:pointer;" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev(\'CheckoutNotnow\')">&#127807; QUERO MEU PROTOCOLO POR R$ 29,90</a>'
+    + '<button style="display:block;width:100%;padding:14px;background:none;border:none;font-size:14px;color:#7a7a74;cursor:pointer;text-decoration:underline;" onclick="this.closest(\'div\').parentNode.remove()">Nao, prefiro perder meu protocolo</button>';
+  overlay.appendChild(box);
+  overlay.onclick = function(e){ if(e.target===overlay){ overlay.remove(); } };
+  document.body.appendChild(overlay);
 }
 
 function ev(name) {
   try { if (typeof fbq !== 'undefined') { fbq('track', name); } } catch(e) {}
   try { if (typeof gtag !== 'undefined') { gtag('event', name); } } catch(e) {}
 }
+
+// STICKY CTA - mostra na pagina de resultado
+function toggleStickyCta(show) {
+  var bar = document.getElementById('stickyCta');
+  if (bar) { bar.classList.toggle('visible', show); }
+}
+
+// SOCIAL PROOF TOASTS
+var spNames = ['Ana','Fernanda','Claudia','Patricia','Marcia','Juliana','Renata','Beatriz','Carla','Luciana','Simone','Vanessa'];
+var spMsgs = ['acabou de adquirir o protocolo','desbloqueou o diagnostico agora','esta iniciando o protocolo de 7 dias','acabou de comprar o eBook'];
+var spInterval = null;
+
+function showSpToast() {
+  var toast = document.getElementById('spToast');
+  var nameEl = document.getElementById('spName');
+  var msgEl = document.getElementById('spMsg');
+  if (!toast || !nameEl || !msgEl) { return; }
+  var n = spNames[Math.floor(Math.random() * spNames.length)];
+  var m = spMsgs[Math.floor(Math.random() * spMsgs.length)];
+  nameEl.textContent = n;
+  msgEl.textContent = m;
+  toast.classList.add('show');
+  setTimeout(function(){ toast.classList.remove('show'); }, 4000);
+}
+
+function startSpToasts() {
+  if (spInterval) { return; }
+  setTimeout(showSpToast, 8000);
+  spInterval = setInterval(showSpToast, 22000);
+}
+
 window.addEventListener("load", checkStepParam);
 
 </script>
