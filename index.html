@@ -404,6 +404,73 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .datebox-date{font-family:'Lora',serif;font-size:22px;font-weight:600;margin-bottom:4px}
 .datebox-sub{font-size:12px;opacity:0.75}
 
+
+/* LOADING SOCIAL PROOF */
+.az-sp-wrap{margin-top:24px}
+.az-sp-card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;display:none;animation:fu 0.5s ease}
+.az-sp-card.active{display:block}
+.az-sp-badge{display:inline-block;font-size:11px;font-weight:600;background:#e8f5ee;color:#0f4f35;padding:3px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:0.03em}
+.az-sp-text{font-family:'Lora',serif;font-size:14px;font-style:italic;color:var(--td);line-height:1.6;margin-bottom:6px}
+.az-sp-name{font-size:12px;color:var(--ts)}
+.az-pct{font-family:'Lora',serif;font-size:13px;font-weight:600;color:var(--v);text-align:right;margin-bottom:4px}
+
+/* IMC SEMAFORO */
+.imc-wrap{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:16px;margin-bottom:16px}
+.imc-title{font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px}
+.imc-num-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.imc-num{font-family:'Lora',serif;font-size:32px;font-weight:600;color:var(--td)}
+.imc-zone{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px}
+.imc-bar-track{height:14px;border-radius:14px;background:linear-gradient(90deg,#3b9e5f 0%,#f0c030 38%,#e87c30 65%,#d43c3c 100%);position:relative;margin-bottom:6px}
+.imc-marker{position:absolute;top:-5px;width:4px;height:24px;background:#1c1c1a;border-radius:2px;transform:translateX(-50%);transition:left 1.2s cubic-bezier(.4,0,.2,1)}
+.imc-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--ts);margin-bottom:10px}
+.imc-alert{border-left:3px solid #e87c30;border-radius:0 var(--rs) var(--rs) 0;padding:10px 14px;font-size:13px;line-height:1.5}
+
+/* SLIDER PESO */
+.peso-display{font-family:'Lora',serif;font-size:52px;font-weight:600;color:var(--v);text-align:center;margin-bottom:2px;line-height:1}
+.peso-unit-lbl{text-align:center;font-size:16px;color:var(--ts);margin-bottom:16px}
+.peso-slider{width:100%;-webkit-appearance:none;appearance:none;height:8px;border-radius:8px;background:var(--cd);outline:none;margin:8px 0 16px}
+.peso-slider::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:var(--v);cursor:pointer;border:3px solid #fff;box-shadow:0 2px 10px rgba(26,122,84,0.45)}
+.peso-slider::-moz-range-thumb{width:30px;height:30px;border-radius:50%;background:var(--v);cursor:pointer;border:3px solid #fff}
+.peso-hint{background:var(--vc);border-radius:var(--rs);padding:10px 14px;font-size:13px;color:var(--ve);text-align:center;line-height:1.5}
+
+/* DOIS PACOTES */
+.pkg-header{text-align:center;margin-bottom:16px}
+.pkg-header h3{font-family:'Lora',serif;font-size:19px;font-weight:600;color:var(--td);margin-bottom:4px}
+.pkg-header p{font-size:13px;color:var(--ts)}
+.pkg-box{border-radius:var(--r);overflow:hidden;margin-bottom:14px}
+.pkg-box.popular{border:2.5px solid var(--v);box-shadow:0 4px 24px rgba(26,122,84,0.16)}
+.pkg-box.complete{border:2px solid var(--gold)}
+.pkg-badge-bar{text-align:center;padding:9px 14px;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase}
+.pkg-badge-bar.pop{background:var(--v);color:#fff}
+.pkg-badge-bar.comp{background:var(--gold);color:#fff}
+.pkg-body{background:#fff;padding:18px}
+.pkg-name{font-family:'Lora',serif;font-size:17px;font-weight:600;color:var(--td);margin-bottom:12px;text-align:center}
+.pkg-items{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.pkg-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);line-height:1.4}
+.pkg-chk{color:var(--v);font-weight:700;flex-shrink:0}
+.pkg-prices{text-align:center;background:var(--cr);border-radius:var(--rs);padding:12px;margin-bottom:10px}
+.pkg-olds{font-size:12px;color:var(--ts);text-decoration:line-through;margin-bottom:2px}
+.pkg-new{font-family:'Lora',serif;font-size:38px;font-weight:600;line-height:1;margin-bottom:2px}
+.pkg-new.g{color:var(--v)}.pkg-new.au{color:var(--gold)}
+.pkg-parcel{font-size:12px;color:var(--ts);margin-bottom:6px}
+.pkg-disc{font-size:12px;font-weight:600;padding:3px 12px;border-radius:20px;display:inline-block}
+.pkg-disc.g{background:var(--vc);color:var(--ve)}.pkg-disc.au{background:var(--goldbg);color:#6b4800}
+.pkg-micro{font-size:11px;color:var(--ts);margin-top:4px}
+.pkg-social{text-align:center;font-size:12px;color:var(--ts);margin-bottom:10px;font-style:italic}
+.pkg-social strong{color:var(--v)}
+.pkg-cta{display:block;width:100%;padding:17px 12px;border:none;border-radius:var(--r);font-size:15px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:none;text-align:center;color:#fff;line-height:1.3;transition:all 0.2s}
+.pkg-cta.g{background:var(--v)}.pkg-cta.g:hover{background:var(--ve);transform:translateY(-1px)}
+.pkg-cta.au{background:var(--gold)}.pkg-cta.au:hover{background:#a06d08;transform:translateY(-1px)}
+
+/* COUPON + TRUST */
+.coupon-box{background:#fff8e6;border:1.5px dashed var(--gold);border-radius:var(--rs);padding:10px 16px;text-align:center;margin-bottom:12px}
+.coupon-label{font-size:11px;color:#6b4800;margin-bottom:3px}
+.coupon-code{font-family:monospace;font-size:17px;font-weight:700;color:var(--gold);letter-spacing:0.08em}
+.coupon-exp{font-size:11px;color:#d4572a;margin-top:3px;font-weight:600}
+.trust-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:8px 0;padding:8px}
+.trust-item{font-size:11px;color:var(--ts);display:flex;align-items:center;gap:4px}
+.gar-risk-btn{display:block;text-align:center;font-size:13px;color:var(--v);font-weight:600;text-decoration:underline;cursor:pointer;margin-top:8px;padding:4px}
+
 /* VIEWING NOW */
 .viewing-now{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--bd);border-radius:var(--rs);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--tm);}
 .vn-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink 1.5s infinite}
@@ -594,11 +661,49 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,8,'conf')"><div class="oicon">&#10024;</div><div class="obody"><div class="omain">Me sentir bem comigo mesma novamente</div></div></div>
   </div>
   <div class="qstat">Quase la &#8212; sua resposta vai definir qual protocolo e ideal para voce</div>
-  <button class="nextbtn" id="b8" onclick="analisar()">Ver meu diagnostico &#8594;</button>
+  <button class="nextbtn" id="b8" onclick="ir(88)">Ver meu diagnostico &#8594;</button>
 </div>
 
+<!-- ====== PESO SLIDER ====== -->
+<div class="step" id="s88" style="display:none">
+  <div class="qtransition">Ultima pergunta — e a mais importante para calibrar o seu protocolo...</div>
+  <div class="qtext">Qual e o seu <em style="color:var(--v);font-style:normal">peso atual?</em></div>
+  <div class="qsub">Isso permite calcular o seu indice de inflamacao corporal e ajustar as dosagens do protocolo especificamente para o seu perfil.</div>
+
+  <div style="background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:28px 20px;margin-bottom:16px;text-align:center;box-shadow:0 2px 12px rgba(26,122,84,0.06);">
+    <div id="weightDisplay" style="font-family:'Lora',serif;font-size:56px;font-weight:600;color:var(--td);line-height:1;margin-bottom:6px;">70<span id="weightUnit" style="font-size:22px;color:var(--ts);font-family:'DM Sans',sans-serif;font-weight:400"> kg</span></div>
+    <div style="font-size:13px;color:var(--ts);margin-bottom:18px;">&#8592; Arraste para selecionar o seu peso &#8594;</div>
+    <input type="range" id="weightSlider" min="45" max="130" value="70" step="1"
+      style="width:100%;height:6px;-webkit-appearance:none;appearance:none;background:var(--cd);border-radius:6px;outline:none;cursor:pointer;accent-color:var(--v);margin-bottom:6px;"
+      oninput="updateWeight(this.value)">
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--ts);padding:0 2px;"><span>45kg</span><span>130kg</span></div>
+  </div>
+
+  <div style="background:var(--vc);border:1px solid var(--vm);border-radius:var(--rs);padding:12px 16px;font-size:13px;color:var(--ve);margin-bottom:18px;display:flex;align-items:center;gap:10px;line-height:1.5;">
+    <span style="font-size:18px;flex-shrink:0;">&#9989;</span>
+    <span>Baseado nisso, ajustaremos a dosagem ideal e o ritmo do protocolo para os melhores resultados no seu caso</span>
+  </div>
+
+  <button class="nextbtn ok" onclick="confirmarPeso()">&#128300; Ver meu diagnostico personalizado &#8594;</button>
+  <p class="bnote" style="margin-top:10px;">&#128274; Seus dados sao usados apenas para personalizar o protocolo</p>
+</div>
 
 <!-- ====== EMAIL CAPTURE ====== -->
+
+<!-- ====== PESO ATUAL ====== -->
+<div class="step" id="speso" style="display:none">
+  <div class="encr" id="encrpeso" style="display:none"></div>
+  <div class="qtransition" id="qtranspeso">Estamos quase la! Uma ultima informacao...</div>
+  <div class="qtext">Qual e o seu peso atual?</div>
+  <div class="qsub">Baseado nisso, ajustaremos a dosagem e o protocolo ideal para os melhores resultados no seu caso.</div>
+  <div class="peso-display" id="pesoDisplay">70<span class="peso-unit-lbl" style="font-size:24px;display:inline">kg</span></div>
+  <div class="peso-unit-lbl">Arraste para selecionar</div>
+  <input type="range" class="peso-slider" id="pesoSlider" min="45" max="130" value="70" oninput="updatePeso(this.value)">
+  <div class="peso-hint" id="pesoHint">Baseado no seu peso, calcularemos a taxa de desinflamacao esperada para o seu perfil</div>
+  <button class="nextbtn ok" onclick="analisar()">Analisar meu perfil &#8594;</button>
+  <p class="bnote">&#128274; Seus dados sao privados e usados apenas para personalizar o protocolo</p>
+</div>
+
 <!-- ====== ANALISANDO ====== -->
 <div class="step" id="s9" style="display:none">
   <div class="azwrap">
@@ -610,6 +715,56 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="azrow"><span>Inflamacao intestinal</span><div class="aztrack"><div class="azfill" id="ba2"></div></div></div>
       <div class="azrow"><span>Equilibrio intestinal</span><div class="aztrack"><div class="azfill" id="ba3"></div></div></div>
       <div class="azrow"><span>Protocolo personalizado</span><div class="aztrack"><div class="azfill" id="ba4"></div></div></div>
+    </div>
+  </div>
+
+  <!-- SOCIAL PROOF DURANTE LOADING -->
+  <div style="margin-top:8px;">
+    <div style="font-size:12px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;text-align:center;margin-bottom:12px;">&#127942; Enquanto preparamos o seu diagnostico...</div>
+    <div id="loadingTestimonials" style="overflow:hidden;position:relative;">
+      <!-- Card visivel -->
+      <div class="loading-tcard" id="ltcard0" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:16px;margin-bottom:10px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">&#127807;</div>
+          <div>
+            <div style="font-size:13px;font-weight:600;color:var(--td);">Ana Paula, 43 anos</div>
+            <div style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <div style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:3px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</div>
+        </div>
+        <div style="font-family:'Lora',serif;font-size:14px;font-style:italic;color:var(--tm);line-height:1.6;">"Em 5 dias ja sentia minha barriga menos inchada. Na segunda semana minhas roupas comecaram a ficar largas. Nao acreditava que era possivel ser tao rapido."</div>
+      </div>
+
+      <div class="loading-tcard" id="ltcard1" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:16px;margin-bottom:10px;display:none;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#faeeda;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">&#128293;</div>
+          <div>
+            <div style="font-size:13px;font-weight:600;color:var(--td);">Marcia R., 51 anos</div>
+            <div style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <div style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:3px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</div>
+        </div>
+        <div style="font-family:'Lora',serif;font-size:14px;font-style:italic;color:var(--tm);line-height:1.6;">"Ja tentei tudo e nada funcionava. Com esse protocolo, perdi 12kg em 32 dias. O chas sao simples de preparar e nao precisei mudar minha alimentacao completamente."</div>
+      </div>
+
+      <div class="loading-tcard" id="ltcard2" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:16px;margin-bottom:10px;display:none;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#faece7;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">&#9889;</div>
+          <div>
+            <div style="font-size:13px;font-weight:600;color:var(--td);">Fernanda, 38 anos</div>
+            <div style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <div style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:3px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</div>
+        </div>
+        <div style="font-family:'Lora',serif;font-size:14px;font-style:italic;color:var(--tm);line-height:1.6;">"Acordava todo dia inchada e sem energia. Na terceira semana meu marido perguntou o que eu tinha feito de diferente. A barriga chapou e a energia voltou do nada."</div>
+      </div>
+    </div>
+
+    <!-- Indicadores -->
+    <div style="display:flex;justify-content:center;gap:6px;margin-top:4px;">
+      <div class="lt-dot" id="ltd0" style="width:7px;height:7px;border-radius:50%;background:var(--v);cursor:pointer;" onclick="goLt(0)"></div>
+      <div class="lt-dot" id="ltd1" style="width:7px;height:7px;border-radius:50%;background:var(--bd);cursor:pointer;" onclick="goLt(1)"></div>
+      <div class="lt-dot" id="ltd2" style="width:7px;height:7px;border-radius:50%;background:var(--bd);cursor:pointer;" onclick="goLt(2)"></div>
     </div>
   </div>
 </div>
@@ -649,6 +804,59 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="datebox-lbl">&#128197; Previsao baseada no seu perfil</div>
     <div class="datebox-date" id="datePred">Calculando...</div>
     <div class="datebox-sub" id="dateSub">Calculado com base em 12.400 perfis similares ao seu este mes</div>
+  </div>
+
+  <!-- IMC SEMAFORO -->
+  <div id="imcSection" class="rsec" style="display:none">
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:18px 20px;box-shadow:0 2px 12px rgba(26,122,84,0.06);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+        <div>
+          <div style="font-size:12px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;">&#9888;&#65039; Indice de Massa Corporal</div>
+          <div style="font-family:'Lora',serif;font-size:28px;font-weight:600;" id="imcValue">25.7</div>
+        </div>
+        <div id="imcZonaBadge" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;background:#fff3e0;color:#e65100;">Sobrepeso</div>
+      </div>
+
+      <!-- BARRA SEMAFORO -->
+      <div style="position:relative;height:14px;border-radius:14px;overflow:hidden;background:linear-gradient(to right,#4caf50 0%,#8bc34a 22%,#ffc107 44%,#ff9800 66%,#f44336 100%);margin-bottom:6px;">
+        <div id="imcMarker2" style="position:absolute;top:-3px;width:6px;height:20px;background:#1c1c1a;border-radius:3px;transform:translateX(-50%);transition:left 0.8s ease;left:50%;"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--ts);margin-bottom:14px;">
+        <span>Abaixo</span><span>Normal</span><span>Sobrepeso</span><span>Obesidade</span>
+      </div>
+
+      <!-- ALERTA -->
+      <div id="imcAlerta" style="background:#fff8e6;border-left:3px solid #f0a020;border-radius:0 var(--rs) var(--rs) 0;padding:12px 14px;">
+        <div style="font-size:13px;font-weight:600;color:#5a3c00;margin-bottom:6px;">&#8505;&#65039; Seu metabolismo pode estar a te sabotar sem que percebes</div>
+        <div style="font-size:12px;color:#7a6030;line-height:1.6;">Mesmo com peso na zona de sobrepeso, o corpo pode estar retendo toxinas e trabalhando mais devagar, dificultando a queima de gordura e causando o inchaco persistente.</div>
+      </div>
+
+      <!-- SINAIS -->
+      <div style="margin-top:12px;">
+        <div style="font-size:12px;font-weight:600;color:var(--ts);margin-bottom:8px;">&#8505;&#65039; Alguns sinais de alerta no seu perfil:</div>
+        <div id="imcSinais">
+          <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--td);margin-bottom:6px;"><span style="color:#d85a30;font-weight:700;flex-shrink:0;">&#10007;</span><span>Metabolismo lento e dificuldade para emagrecer mesmo comendo pouco</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--td);margin-bottom:6px;"><span style="color:#d85a30;font-weight:700;flex-shrink:0;">&#10007;</span><span>Cansaco constante e sensacao de inchaco ao longo do dia</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--td);"><span style="color:#d85a30;font-weight:700;flex-shrink:0;">&#10007;</span><span>Acumulo de gordura em areas especificas, principalmente na barriga</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMC SEMAFORO -->
+  <div class="imc-wrap rsec" id="imcBlock" style="display:none">
+    <div class="imc-title">&#9888; Seu IMC calculado</div>
+    <div class="imc-num-row">
+      <div class="imc-num" id="imcNum">25.0</div>
+      <div class="imc-zone" id="imcZone" style="background:#faeeda;color:#854f0b">Calculando...</div>
+    </div>
+    <div class="imc-bar-track" style="position:relative">
+      <div class="imc-marker" id="imcMarker" style="left:40%"></div>
+    </div>
+    <div class="imc-labels">
+      <span>Abaixo</span><span>Normal</span><span>Sobrepeso</span><span>Obesidade</span>
+    </div>
+    <div class="imc-alert" id="imcAlert" style="background:#faeeda"></div>
   </div>
 
   <!-- PERFIL + SCORE -->
@@ -805,27 +1013,86 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </div>
   </div>
 
-  <!-- OFERTA PERSONALIZADA -->
-  <div class="ofertabox rsec">
-    <div class="otag" id="ofertaTag">Protocolo para seu perfil</div>
-    <div class="otitle" id="ofertaTitulo">Barriga Chapada em 7 Dias</div>
-    <div class="osub" id="ofertaSub">O protocolo completo baseado no seu diagnostico</div>
-    <div class="olist">
-      <div class="orow"><span class="ochk">&#10003;</span><span id="oitem1">eBook com 30 receitas detox + protocolo 7 dias passo a passo</span></div>
-      <div class="orow"><span class="ochk">&#10003;</span><span>Bonus: 10 Receitas Detox Rapidas &#8212; R$ 27 gratis</span></div>
-      <div class="orow"><span class="ochk">&#10003;</span><span>Bonus: Guia de Alimentos Anti-Inchaco &#8212; R$ 23 gratis</span></div>
-      <div class="orow"><span class="ochk">&#10003;</span><span>Bonus: Cardapio Semanal Completo &#8212; R$ 19 gratis</span></div>
-      <div class="orow"><span class="ochk">&#10003;</span><span>Acesso imediato e vitalicio &#8212; comeca amanha cedo, pelo celular</span></div>
+  <!-- OFERTA PERSONALIZADA - DOIS PACOTES -->
+  <div class="rsec">
+    <!-- CUPAO + TIMER -->
+    <div style="background:#fff3e0;border:1.5px solid rgba(240,160,32,0.4);border-radius:var(--r);padding:14px 16px;margin-bottom:14px;text-align:center;">
+      <div style="font-size:11px;font-weight:600;color:#7a4800;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;">&#9888;&#65039; Seu desconto exclusivo expira em:</div>
+      <div style="font-family:'Lora',serif;font-size:32px;font-weight:600;color:#d4572a;" id="offerTimerDisplay">09:59</div>
+      <div style="font-size:12px;color:var(--ts);margin-top:4px;">Apos esse tempo o preco volta ao normal</div>
     </div>
-    <div class="savebadge">Voce economiza R$ 67,10 hoje</div>
-    <div class="oldprice">De R$ 97,00</div>
-    <div class="newprice">R$ 29,90</div>
-    <div class="parcel">ou 3x de R$ 9,97 sem juros</div>
-    <a class="ctabtn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev('InicioCheckout')">QUERO DESINCHAR MINHA BARRIGA DE VEZ &#8594;</a>
-    <div class="secnote">&#128274; Pagamento 100% seguro via Hotmart &#183; Acesso imediato</div>
+
+    <!-- CUPAO PERSONALIZADO -->
+    <div id="couponBox" style="background:var(--vc);border:1.5px dashed var(--vm);border-radius:var(--rs);padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+      <span style="font-size:20px;flex-shrink:0;">&#127881;</span>
+      <div>
+        <div style="font-size:12px;color:var(--ts);margin-bottom:2px;">Cupom aplicado automaticamente:</div>
+        <div style="font-family:monospace;font-size:16px;font-weight:700;color:var(--ve);" id="couponCode">DETOX_ZUY</div>
+        <div style="font-size:11px;color:var(--ts);">Desconto exclusivo para seguidoras</div>
+      </div>
+    </div>
+
+    <!-- ESCOLHER PACOTE -->
+    <div style="font-size:16px;font-weight:700;color:var(--td);text-align:center;margin-bottom:14px;">&#11088; Escolha o seu pacote:</div>
+
+    <!-- PACOTE 1: MAIS POPULAR -->
+    <div style="border:2px solid var(--v);border-radius:var(--r);background:#fff;padding:20px;margin-bottom:12px;position:relative;box-shadow:0 4px 24px rgba(26,122,84,0.14);">
+      <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--v);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 16px;border-radius:20px;white-space:nowrap;">&#11088; Recomendado para o seu perfil</div>
+      <div style="text-align:center;margin-bottom:14px;">
+        <div style="font-size:17px;font-weight:700;color:var(--td);margin-bottom:2px;">Mais Popular</div>
+        <div style="font-size:12px;color:var(--ts);">Barriga Chapada em 7 Dias</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--v);font-weight:700;flex-shrink:0;">&#10003;</span><span>eBook completo com protocolo de 7 dias passo a passo</span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--v);font-weight:700;flex-shrink:0;">&#10003;</span><span>30 receitas detox especificas para o seu perfil</span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--v);font-weight:700;flex-shrink:0;">&#10003;</span><span>&#127381; Bonus: 10 Receitas Detox Rapidas &#8212; <strong>R$27 GRATIS</strong></span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--v);font-weight:700;flex-shrink:0;">&#10003;</span><span>&#127381; Bonus: Guia Anti-Inchaco &#8212; <strong>R$23 GRATIS</strong></span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--v);font-weight:700;flex-shrink:0;">&#10003;</span><span>Acesso imediato e vitalicio &#8212; pelo celular</span></div>
+      </div>
+      <div style="text-align:center;margin-bottom:14px;">
+        <div style="font-size:12px;color:var(--ts);text-decoration:line-through;margin-bottom:2px;">R$197,00 &nbsp; R$97,00</div>
+        <div style="font-family:'Lora',serif;font-size:44px;font-weight:600;color:var(--v);line-height:1;">R$29,90</div>
+        <div style="font-size:13px;color:var(--ts);margin-bottom:4px;">ou 3x de R$ 9,97 sem juros</div>
+        <div style="display:inline-block;background:var(--goldbg);color:#6b4800;font-size:12px;font-weight:600;padding:4px 14px;border-radius:20px;border:1px solid rgba(201,134,10,0.2);">&#128293; 85% de desconto &#8212; apenas hoje</div>
+      </div>
+      <div style="font-size:12px;color:var(--ts);text-align:center;margin-bottom:12px;">&#129689; Menos de R$1 por dia para transformar o seu corpo<br>&#127829; Menos que um lanche fora &#8212; resultado para a vida toda</div>
+      <a class="ctabtn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev('InicioCheckoutP1')">&#11088; QUERO O MAIS POPULAR &#8212; R$29,90 &#8594;</a>
+      <div style="text-align:center;font-size:12px;color:var(--ts);margin-top:8px;">87% das mulheres com o seu perfil escolhem este pacote</div>
+    </div>
+
+    <!-- PACOTE 2: TRANSFORMACAO TOTAL -->
+    <div style="border:2px solid var(--gold);border-radius:var(--r);background:#fffdf5;padding:20px;margin-bottom:16px;position:relative;">
+      <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 16px;border-radius:20px;white-space:nowrap;">&#127942; Resultado mais completo</div>
+      <div style="text-align:center;margin-bottom:14px;">
+        <div style="font-size:17px;font-weight:700;color:var(--td);margin-bottom:2px;">Transformacao Total</div>
+        <div style="font-size:12px;color:var(--ts);">Pacote completo + bonus extras</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">&#10003;</span><span>Tudo do pacote Mais Popular</span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">&#10003;</span><span>&#127381; Cardapio Semanal Completo &#8212; <strong>R$37 GRATIS</strong></span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">&#10003;</span><span>&#127381; Saude Natural Descomplicada &#8212; <strong>R$47 GRATIS</strong></span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">&#10003;</span><span>Suporte exclusivo durante o processo</span></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--tm);"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">&#10003;</span><span>Acesso vitalicio a todas as atualizacoes</span></div>
+      </div>
+      <div style="text-align:center;margin-bottom:14px;">
+        <div style="font-size:12px;color:var(--ts);text-decoration:line-through;margin-bottom:2px;">R$297,00 &nbsp; R$147,00</div>
+        <div style="font-family:'Lora',serif;font-size:44px;font-weight:600;color:var(--gold);line-height:1;">R$37,90</div>
+        <div style="font-size:13px;color:var(--ts);margin-bottom:4px;">ou 4x de R$ 9,97 sem juros</div>
+        <div style="display:inline-block;background:var(--goldbg);color:#6b4800;font-size:12px;font-weight:600;padding:4px 14px;border-radius:20px;border:1px solid rgba(201,134,10,0.2);">&#128293; 87% de desconto &#8212; apenas hoje</div>
+      </div>
+      <div style="font-size:12px;color:var(--ts);text-align:center;margin-bottom:12px;">&#129689; Menos de R$1,30 por dia &#8212; acesso vitalicio<br>&#127828; Menos que uma pizza &#8212; resultado permanente</div>
+      <a class="ctabtn" style="background:var(--gold);" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev('InicioCheckoutP2')">&#127942; QUERO A TRANSFORMACAO TOTAL &#8212; R$37,90 &#8594;</a>
+    </div>
+
+    <!-- TRUST BADGES -->
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:14px;">
+      <div style="font-size:12px;color:var(--ts);display:flex;align-items:center;gap:4px;"><span>&#128274;</span> Compra Segura</div>
+      <div style="font-size:12px;color:var(--ts);display:flex;align-items:center;gap:4px;"><span>&#11088;</span> Satisfacao Garantida</div>
+      <div style="font-size:12px;color:var(--ts);display:flex;align-items:center;gap:4px;"><span>&#128241;</span> Acesso Imediato</div>
+    </div>
   </div>
 
-  <span class="notnow" onclick="notnow()">Nao posso agora</span>
+  <span class="notnow" onclick="notnow()">Nao posso agora &#8212; prefiro testar sem risco</span>
 
   <div class="divider">Quem ja usou e comprovou</div>
 
@@ -843,9 +1110,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="gardesc">Nao sentiu resultado? 100% do dinheiro de volta. Sem perguntas.</div>
     </div>
   </div>
-  <div style="text-align:center;margin-bottom:8px;font-size:13px;color:var(--ts)">+12.400 mulheres ja transformaram a barriga este mes</div>
-  <a class="ctabtn verde" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev('InicioCheckout2')">QUERO DESINCHAR MINHA BARRIGA DE VEZ &#8594;</a>
-  <div style="text-align:center;font-size:12px;color:var(--ts);margin-top:6px">R$ 29,90 pagamento unico &#183; ou 3x de R$ 9,97 &#183; acesso imediato</div>
+  <div style="text-align:center;margin-bottom:12px;font-size:13px;color:var(--ts)">+12.400 mulheres ja transformaram a barriga este mes</div>
+  <a class="ctabtn verde" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado" target="_blank" onclick="ev('InicioCheckoutBot')">QUERO TESTAR SEM RISCO &#8212; R$ 29,90 &#8594;</a>
+  <div class="trust-row">
+    <span class="trust-item">&#128274; Compra Segura</span>
+    <span class="trust-item">&#127970; Hotmart</span>
+    <span class="trust-item">&#128260; Garantia 7 dias</span>
+    <span class="trust-item">&#128241; Acesso Imediato</span>
+  </div>
   <div class="urgline" id="urgline2" style="margin-top:8px"></div>
 
   <div class="footer">
@@ -1056,8 +1328,97 @@ var cIdx = 0;
 var cTotal = 7;
 var scoreVal = 28;
 var userName = '';
+var userWeight = 70;
+var offerTmr = null;
+var ltIdx = 0;
 
 var uTmr = null, dTmr = null;
+
+/* ===== WEIGHT SLIDER ===== */
+function updateWeight(val) {
+  userWeight = parseInt(val);
+  var el = document.getElementById('weightDisplay');
+  if (el) { el.innerHTML = val + '<span style="font-size:22px;color:#7a7a74;font-weight:400"> kg</span>'; }
+}
+
+function confirmarPeso() {
+  var sl = document.getElementById('weightSlider');
+  if (sl) { userWeight = parseInt(sl.value); }
+  RES.weight = userWeight;
+  RES_PESO = userWeight;
+  analisar();
+}
+
+/* ===== IMC CALCULATOR ===== */
+function calcIMC(weight) {
+  var h = 1.63; // altura media brasileira feminina
+  return (weight / (h * h)).toFixed(1);
+}
+
+function renderIMC(weight) {
+  var imc = parseFloat(calcIMC(weight));
+  var el = document.getElementById('imcSection');
+  if (!el) { return; }
+  el.style.display = 'block';
+
+  document.getElementById('imcValue').textContent = imc;
+
+  var zona, corZona, bgZona, pct, alertaHtml;
+  if (imc < 18.5) {
+    zona = 'Abaixo do Peso'; corZona = '#4caf50'; bgZona = '#e8f5e9'; pct = 8;
+    alertaHtml = '<div style="font-size:13px;font-weight:600;color:#1b5e20;margin-bottom:6px;">&#8505;&#65039; Peso abaixo do ideal pode indicar carencias nutricionais</div><div style="font-size:12px;color:#2e7d32;line-height:1.6;">Mesmo abaixo do peso, o inchaco pode ter origem intestinal e hormonal. O protocolo atua diretamente nessa causa.</div>';
+  } else if (imc < 25) {
+    zona = 'Peso Normal'; corZona = '#8bc34a'; bgZona = '#f1f8e9'; pct = 33;
+    alertaHtml = '<div style="font-size:13px;font-weight:600;color:#33691e;margin-bottom:6px;">&#8505;&#65039; Mesmo com peso normal, o inchaco pode ser intenso</div><div style="font-size:12px;color:#558b2f;line-height:1.6;">O inchaco abdominal frequentemente nao esta ligado ao peso — e sim a inflamacao intestinal que o protocolo trata diretamente.</div>';
+  } else if (imc < 30) {
+    zona = 'Sobrepeso'; corZona = '#ffc107'; bgZona = '#fff8e1'; pct = 55;
+    alertaHtml = '<div style="font-size:13px;font-weight:600;color:#5a3c00;margin-bottom:6px;">&#9888;&#65039; Zona de Alerta — Sobrepeso</div><div style="font-size:12px;color:#7a5800;line-height:1.6;">Nessa faixa, o metabolismo tende a ficar mais lento e a retencao de toxinas aumenta. O protocolo age exatamente nesse mecanismo.</div>';
+  } else {
+    zona = 'Obesidade'; corZona = '#f44336'; bgZona = '#ffebee'; pct = 80;
+    alertaHtml = '<div style="font-size:13px;font-weight:600;color:#7f0000;margin-bottom:6px;">&#128308; Zona de Atencao — Obesidade</div><div style="font-size:12px;color:#b71c1c;line-height:1.6;">Nessa faixa e fundamental tratar a inflamacao intestinal que alimenta o ciclo de retencao. O protocolo foi desenhado para agir rapido nessa situacao.</div>';
+  }
+
+  var badge = document.getElementById('imcZonaBadge');
+  if (badge) { badge.textContent = zona; badge.style.color = corZona; badge.style.background = bgZona; }
+
+  var marker = document.getElementById('imcMarker2');
+  if (marker) { setTimeout(function(){ marker.style.left = pct + '%'; }, 400); }
+
+  var alertaEl = document.getElementById('imcAlerta');
+  if (alertaEl) { alertaEl.innerHTML = alertaHtml; alertaEl.style.borderLeftColor = corZona; alertaEl.style.background = bgZona; }
+}
+
+/* ===== OFFER TIMER ===== */
+function startOfferTimer() {
+  var t = 9 * 60 + 59;
+  offerTmr = setInterval(function(){
+    if (t <= 0) { clearInterval(offerTmr); return; }
+    t--;
+    var m = Math.floor(t / 60), s = t % 60;
+    var str = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    var el = document.getElementById('offerTimerDisplay');
+    if (el) { el.textContent = str; }
+  }, 1000);
+}
+
+/* ===== LOADING TESTIMONIALS CAROUSEL ===== */
+var ltTotal = 3;
+function goLt(n) {
+  for (var i = 0; i < ltTotal; i++) {
+    var card = document.getElementById('ltcard' + i);
+    var dot = document.getElementById('ltd' + i);
+    if (card) { card.style.display = i === n ? 'block' : 'none'; }
+    if (dot) { dot.style.background = i === n ? 'var(--v)' : 'var(--bd)'; }
+  }
+  ltIdx = n;
+}
+
+function startLtCarousel() {
+  setInterval(function(){
+    ltIdx = (ltIdx + 1) % ltTotal;
+    goLt(ltIdx);
+  }, 3000);
+}
 
 function irStep(n) {
   var all = document.querySelectorAll('.step');
@@ -1268,6 +1629,7 @@ function analisar() {
   ir(9);
   ev('QuizCompleto');
   scoreVal = calcScore();
+  startLtCarousel();
   setTimeout(function() { document.getElementById('ba1').style.width = '74%'; }, 200);
   setTimeout(function() { document.getElementById('ba2').style.width = '82%'; }, 600);
   setTimeout(function() { document.getElementById('ba3').style.width = '61%'; }, 1000);
@@ -1438,6 +1800,9 @@ function resultado() {
 
   initCarousel();
   startTimer(14 * 60 + 58);
+  startCouponTimer();
+  startOfferTimer();
+  renderIMC(RES_PESO);
   ev('ResultadoExibido');
   // Ativar sticky CTA e toasts na pagina de resultado
   setTimeout(function(){ toggleStickyCta(true); }, 3000);
@@ -1509,6 +1874,103 @@ function notnow() {
 function ev(name) {
   try { if (typeof fbq !== 'undefined') { fbq('track', name); } } catch(e) {}
   try { if (typeof gtag !== 'undefined') { gtag('event', name); } } catch(e) {}
+}
+
+// ── PESO / IMC ──
+var RES_PESO = 70;
+
+function updatePeso(v) {
+  RES_PESO = parseInt(v);
+  var el = document.getElementById('pesoDisplay');
+  if (el) { el.innerHTML = v + '<span style="font-size:24px;display:inline">kg</span>'; }
+  var hint = document.getElementById('pesoHint');
+  if (hint) {
+    if (v < 60) { hint.textContent = 'Perfil leve — o protocolo age rapidamente no seu caso'; }
+    else if (v < 80) { hint.textContent = 'Baseado no seu peso, calcularemos a taxa de desinflamacao esperada'; }
+    else if (v < 100) { hint.textContent = 'Perfil com maior potencial de reducao visivel nos primeiros dias'; }
+    else { hint.textContent = 'Protocolo completo recomendado — maior potencial de transformacao'; }
+  }
+}
+
+function irPeso() {
+  hideAllEncr();
+  var all = document.querySelectorAll('.step');
+  for (var i=0;i<all.length;i++){ all[i].classList.remove('active'); all[i].style.display='none'; }
+  var el = document.getElementById('speso');
+  if (el) { el.style.display=''; el.classList.add('active'); }
+  window.scrollTo(0,0);
+  updateProgress(8);
+  // personalize transition
+  var t = document.getElementById('qtranspeso');
+  if (t && userName) { t.textContent = 'Estamos quase la, '+userName+'! Uma ultima informacao...'; }
+}
+
+function calcIMC(peso) {
+  // altura estimada media brasileira feminina: 1.61m
+  var h = 1.61;
+  return (peso / (h * h)).toFixed(1);
+}
+
+function showIMC(peso) {
+  var imc = parseFloat(calcIMC(peso));
+  var block = document.getElementById('imcBlock');
+  var numEl = document.getElementById('imcNum');
+  var zoneEl = document.getElementById('imcZone');
+  var markerEl = document.getElementById('imcMarker');
+  var alertEl = document.getElementById('imcAlert');
+  if (!block) return;
+  block.style.display = 'block';
+  if (numEl) numEl.textContent = imc;
+  // Zones: <18.5 underweight, 18.5-24.9 normal, 25-29.9 overweight, 30+ obese
+  var pct, zone, bg, color, msg;
+  if (imc < 18.5) {
+    pct=10; zone='Abaixo do Peso'; bg='#e8f5ee'; color='#0f4f35';
+    msg='Seu IMC esta abaixo do ideal. O protocolo vai ajudar a equilibrar o seu peso e reduzir o inchaco por retencao.';
+  } else if (imc < 25) {
+    pct=30; zone='Normal'; bg='#e8f5ee'; color='#0f4f35';
+    msg='Seu IMC esta na faixa normal, mas o inchaco pode ser causado por inflamacao intestinal — que o protocolo resolve independente do peso.';
+  } else if (imc < 30) {
+    pct=55; zone='Zona de Atencao'; bg='#faeeda'; color='#854f0b';
+    msg='Seu metabolismo pode estar a te sabotar sem que voce perceba. O protocolo age diretamente na causa do inchaco abdominal.';
+  } else if (imc < 35) {
+    pct=75; zone='Sobrepeso'; bg='#faeeda'; color='#854f0b';
+    msg='Este e o perfil que mais responde ao protocolo. A combinacao de detox + receitas funcionais gera resultados visiveis rapidamente.';
+  } else {
+    pct=90; zone='Obesidade'; bg='#faece7'; color='#993c1d';
+    msg='Perfil com alto potencial de transformacao. O protocolo foi especialmente testado em mulheres com este perfil com resultados expressivos.';
+  }
+  if (zoneEl) { zoneEl.textContent = zone; zoneEl.style.background = bg; zoneEl.style.color = color; }
+  if (alertEl) { alertEl.textContent = msg; alertEl.style.background = bg; alertEl.style.borderColor = color; }
+  setTimeout(function(){
+    if (markerEl) markerEl.style.left = pct + '%';
+  }, 600);
+}
+
+// ── LOADING SOCIAL PROOF ROTATOR ──
+var azSpIdx = 0;
+function rotateAzSp() {
+  var cards = document.querySelectorAll('.az-sp-card');
+  if (!cards.length) return;
+  cards.forEach(function(c){ c.classList.remove('active'); });
+  cards[azSpIdx % cards.length].classList.add('active');
+  azSpIdx++;
+}
+
+// ── COUPON TIMER ──
+var couponTmr = null;
+function startCouponTimer() {
+  if (couponTmr) return;
+  var t = 9*60+59;
+  couponTmr = setInterval(function(){
+    if (t<=0){ clearInterval(couponTmr); return; }
+    t--;
+    var m=Math.floor(t/60), s=t%60;
+    var me=document.getElementById('couponMin'), se=document.getElementById('couponSec');
+    if(me) me.textContent=(m<10?'0':'')+m;
+    if(se) se.textContent=(s<10?'0':'')+s;
+    var od=document.getElementById('offerTimerDisplay');
+    if(od) od.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  },1000);
 }
 
 // STICKY CTA - mostra na pagina de resultado
