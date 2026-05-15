@@ -672,63 +672,51 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
 
     <!-- OPCAO 1: EM FORMA -->
-    <div class="body-opt" id="bopt1" onclick="pickBody(this,'forma')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 12px;text-align:center;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="margin-bottom:10px;">
-        <svg width="64" height="100" viewBox="0 0 64 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="32" cy="10" rx="9" ry="9" fill="#9fcdb8"/>
-          <path d="M20 28 Q18 42 20 58 Q24 72 28 80 L36 80 Q40 72 44 58 Q46 42 44 28 Q38 22 32 22 Q26 22 20 28Z" fill="#c8e6d4"/>
-          <path d="M20 28 Q14 30 12 46 Q11 56 15 60 Q18 58 20 54 Q20 42 20 28Z" fill="#9fcdb8"/>
-          <path d="M44 28 Q50 30 52 46 Q53 56 49 60 Q46 58 44 54 Q44 42 44 28Z" fill="#9fcdb8"/>
-          <path d="M28 80 Q24 88 22 100 L30 100 L32 88 L34 100 L42 100 Q40 88 36 80Z" fill="#b8d9c8"/>
-        </svg>
+    <div class="body-opt" id="bopt1" onclick="pickBody(this,'forma')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
+      <div style="position:relative;overflow:hidden;height:170px;">
+        <img src="body1.jpg" alt="Em Forma" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform 0.3s;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
       </div>
-      <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:4px;">Em Forma</div>
-      <div style="font-size:11px;color:var(--ts);line-height:1.4;">Definida e tonificada com energia</div>
+      <div style="padding:12px 10px;text-align:center;">
+        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Em Forma</div>
+        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Definida e tonificada com energia</div>
+      </div>
     </div>
 
     <!-- OPCAO 2: NATURAL -->
-    <div class="body-opt" id="bopt2" onclick="pickBody(this,'natural')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 12px;text-align:center;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="margin-bottom:10px;">
-        <svg width="64" height="100" viewBox="0 0 64 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="32" cy="10" rx="9" ry="9" fill="#f5c6a0"/>
-          <path d="M17 28 Q14 43 16 58 Q20 74 26 82 L38 82 Q44 74 48 58 Q50 43 47 28 Q40 21 32 21 Q24 21 17 28Z" fill="#fde8d0"/>
-          <path d="M17 28 Q10 31 8 48 Q7 59 12 63 Q15 60 17 56 Q16 42 17 28Z" fill="#f5c6a0"/>
-          <path d="M47 28 Q54 31 56 48 Q57 59 52 63 Q49 60 47 56 Q48 42 47 28Z" fill="#f5c6a0"/>
-          <path d="M26 82 Q22 90 20 100 L30 100 L32 90 L34 100 L44 100 Q42 90 38 82Z" fill="#f0d4b8"/>
-        </svg>
+    <div class="body-opt" id="bopt2" onclick="pickBody(this,'natural')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
+      <div style="position:relative;overflow:hidden;height:170px;">
+        <img src="body2.jpg" alt="Natural" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;transition:transform 0.3s;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
       </div>
-      <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:4px;">Natural</div>
-      <div style="font-size:11px;color:var(--ts);line-height:1.4;">Saudavel, leve e sem inchaco</div>
+      <div style="padding:12px 10px;text-align:center;">
+        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Natural</div>
+        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Saudavel, leve e sem inchaco</div>
+      </div>
     </div>
 
     <!-- OPCAO 3: ESBELTA -->
-    <div class="body-opt" id="bopt3" onclick="pickBody(this,'esbelta')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 12px;text-align:center;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="margin-bottom:10px;">
-        <svg width="64" height="100" viewBox="0 0 64 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="32" cy="10" rx="9" ry="9" fill="#c4a8d4"/>
-          <path d="M22 28 Q20 42 21 57 Q24 71 28 80 L36 80 Q40 71 43 57 Q44 42 42 28 Q37 22 32 22 Q27 22 22 28Z" fill="#e8d5f5"/>
-          <path d="M22 28 Q16 30 14 45 Q13 55 17 59 Q19 57 21 53 Q21 42 22 28Z" fill="#c4a8d4"/>
-          <path d="M42 28 Q48 30 50 45 Q51 55 47 59 Q45 57 43 53 Q43 42 42 28Z" fill="#c4a8d4"/>
-          <path d="M28 80 Q25 88 23 100 L31 100 L32 88 L33 100 L41 100 Q39 88 36 80Z" fill="#d4bcec"/>
-        </svg>
+    <div class="body-opt" id="bopt3" onclick="pickBody(this,'esbelta')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
+      <div style="position:relative;overflow:hidden;height:170px;">
+        <img src="body3.jpg" alt="Esbelta" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform 0.3s;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
       </div>
-      <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:4px;">Esbelta</div>
-      <div style="font-size:11px;color:var(--ts);line-height:1.4;">Leve, slim e com disposicao</div>
+      <div style="padding:12px 10px;text-align:center;">
+        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Esbelta</div>
+        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Leve, slim e com disposicao</div>
+      </div>
     </div>
 
     <!-- OPCAO 4: FORTE -->
-    <div class="body-opt" id="bopt4" onclick="pickBody(this,'forte')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 12px;text-align:center;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="margin-bottom:10px;">
-        <svg width="64" height="100" viewBox="0 0 64 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="32" cy="10" rx="9" ry="9" fill="#f0a020"/>
-          <path d="M18 27 Q15 42 17 58 Q21 73 27 81 L37 81 Q43 73 47 58 Q49 42 46 27 Q39 20 32 20 Q25 20 18 27Z" fill="#fde8c0"/>
-          <path d="M18 27 Q10 30 8 47 Q7 58 12 62 Q15 59 17 55 Q17 42 18 27Z" fill="#f0a020"/>
-          <path d="M46 27 Q54 30 56 47 Q57 58 52 62 Q49 59 47 55 Q47 42 46 27Z" fill="#f0a020"/>
-          <path d="M27 81 Q23 89 21 100 L31 100 L32 89 L33 100 L43 100 Q41 89 37 81Z" fill="#f5c878"/>
-        </svg>
+    <div class="body-opt" id="bopt4" onclick="pickBody(this,'forte')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
+      <div style="position:relative;overflow:hidden;height:170px;">
+        <img src="body4.jpg" alt="Forte" style="width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;transition:transform 0.3s;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
       </div>
-      <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:4px;">Forte</div>
-      <div style="font-size:11px;color:var(--ts);line-height:1.4;">Vitalidade, saude e autoestima</div>
+      <div style="padding:12px 10px;text-align:center;">
+        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Forte</div>
+        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Vitalidade, saude e autoestima</div>
+      </div>
     </div>
 
   </div>
@@ -1680,12 +1668,16 @@ function pickBody(el, val) {
   var opts = document.querySelectorAll('.body-opt');
   for (var i = 0; i < opts.length; i++) {
     opts[i].style.borderColor = 'var(--bd)';
-    opts[i].style.background = '#fff';
+    opts[i].style.boxShadow = 'none';
     opts[i].style.transform = '';
+    var lbl = opts[i].querySelector('div:last-child div:first-child');
+    if (lbl) { lbl.style.color = 'var(--td)'; }
   }
   el.style.borderColor = 'var(--v)';
-  el.style.background = 'var(--vc)';
+  el.style.boxShadow = '0 0 0 3px rgba(26,122,84,0.15)';
   el.style.transform = 'scale(1.02)';
+  var selLbl = el.querySelector('div:last-child div:first-child');
+  if (selLbl) { selLbl.style.color = 'var(--v)'; }
   RES.qbody = val;
   var btn = document.getElementById('b33');
   if (btn) { btn.style.opacity = '1'; btn.style.pointerEvents = 'auto'; }
