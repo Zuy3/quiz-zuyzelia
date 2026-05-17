@@ -1807,14 +1807,11 @@ function submitEmail() {
   var email = inp ? inp.value.trim() : '';
   if (email) {
     ev('EmailCapturado');
-    // Enviar para Google Sheets via Make webhook (configurar URL abaixo)
-    try {
-      fetch('https://hook.eu2.make.com/SEU_WEBHOOK_AQUI', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, nome: userName, ts: new Date().toISOString() })
-      });
-    } catch(e) {}
+    fetch('https://formspree.io/f/mbdzwbgb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email: email, nome: userName, origem: 'quiz-zuyzelia', ts: new Date().toISOString() })
+    }).catch(function(){});
   }
   resultado();
 }
