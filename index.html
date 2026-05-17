@@ -42,7 +42,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 
 /* STEPS */
 .step{display:none}
-.step.active{display:block;animation:fu 0.35s ease}
+.step.active{display:block;animation:slideIn 0.32s cubic-bezier(0.22,1,0.36,1)}
+@keyframes slideIn{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
 /* HEADER */
@@ -917,60 +919,102 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 <!-- ====== ANALISANDO ====== -->
 <div class="step" id="s9" style="display:none">
   <div class="azwrap">
-    <div style="font-size:38px;margin-bottom:16px">&#128300;</div>
-    <h3>Analisando seu perfil...</h3>
-    <p>Cruzando suas respostas com os padroes mais comuns de inchaco abdominal feminino para montar o seu protocolo</p>
-    <div>
-      <div class="azrow"><span>Retencao de liquidos</span><div class="aztrack"><div class="azfill" id="ba1"></div></div></div>
-      <div class="azrow"><span>Inflamacao intestinal</span><div class="aztrack"><div class="azfill" id="ba2"></div></div></div>
-      <div class="azrow"><span>Equilibrio intestinal</span><div class="aztrack"><div class="azfill" id="ba3"></div></div></div>
-      <div class="azrow"><span>Protocolo personalizado</span><div class="aztrack"><div class="azfill" id="ba4"></div></div></div>
+    <div style="font-size:36px;margin-bottom:12px;">&#128300;</div>
+    <h3 style="font-family:'Lora',serif;font-size:18px;font-weight:600;color:var(--td);margin-bottom:4px;">Analisando o seu perfil...</h3>
+    <p id="azSubtitle" style="font-size:13px;color:var(--ts);margin-bottom:16px;">Cruzando as suas respostas com 12.400 perfis similares</p>
+
+    <!-- BARRA PERCENTAGEM -->
+    <div style="background:var(--cd);border-radius:20px;height:8px;margin-bottom:6px;overflow:hidden;">
+      <div id="azPctBar" style="height:100%;background:var(--v);border-radius:20px;width:0%;transition:width 0.8s ease;"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <div id="azPctNum" style="font-size:13px;font-weight:700;color:var(--v);">0%</div>
+      <div style="font-size:11px;color:var(--ts);">Analise completa em instantes</div>
+    </div>
+
+    <!-- ETAPAS DE ANALISE -->
+    <div id="azSteps" style="text-align:left;display:flex;flex-direction:column;gap:8px;">
+      <div class="az-step" id="azs1" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi1" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Identificando perfil hormonal e faixa etaria</span>
+      </div>
+      <div class="az-step" id="azs2" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi2" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Calculando indice de inflamacao intestinal</span>
+      </div>
+      <div class="az-step" id="azs3" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi3" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Analisando padrao cronico de inchaco</span>
+      </div>
+      <div class="az-step" id="azs4" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi4" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Cruzando com base de 12.400 perfis similares</span>
+      </div>
+      <div class="az-step" id="azs5" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi5" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Calculando IMC e taxa metabolica basal</span>
+      </div>
+      <div class="az-step" id="azs6" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi6" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Identificando causa raiz do inchaco abdominal</span>
+      </div>
+      <div class="az-step" id="azs7" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi7" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Selecionando chas especificos para o teu perfil</span>
+      </div>
+      <div class="az-step" id="azs8" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi8" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Calculando previsao de resultado personalizada</span>
+      </div>
+      <div class="az-step" id="azs9" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi9" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Montando protocolo de chas e receitas</span>
+      </div>
+      <div class="az-step" id="azs10" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
+        <span class="az-icon" id="azi10" style="font-size:16px;">&#9711;</span>
+        <span style="font-size:13px;color:var(--tm);">Finalizando o teu diagnostico completo...</span>
+      </div>
     </div>
   </div>
 
   <!-- SOCIAL PROOF DURANTE LOADING -->
-  <div style="margin-top:8px;">
-    <div style="font-size:12px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;text-align:center;margin-bottom:12px;">&#127942; Enquanto preparamos o seu diagnostico...</div>
-    <div id="loadingTestimonials" style="overflow:hidden;position:relative;">
-      <!-- Card visivel -->
+  <div style="margin-top:16px;">
+    <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;text-align:center;margin-bottom:10px;">&#127942; Enquanto preparamos o teu diagnostico</div>
+    <div id="loadingTestimonials">
       <div class="loading-tcard" id="ltcard0" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:10px;">
-        <img src="img1.jpg" alt="Paula resultado" style="width:100%;display:block;height:120px;object-fit:cover;object-position:center 20%;">
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <img src="img1.jpg" alt="Paula resultado" style="width:100%;display:block;height:110px;object-fit:cover;object-position:center 20%;">
+        <div style="padding:10px 14px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="font-size:13px;font-weight:600;color:var(--td);">Paula, 38 anos</span>
             <span style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:2px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</span>
           </div>
-          <div style="font-family:'Lora',serif;font-size:13px;font-style:italic;color:var(--tm);line-height:1.6;">"33 dias entre as duas fotos. Barriga completamente diferente. Sem academia, sem remedio."</div>
+          <div style="font-size:12px;font-style:italic;color:var(--tm);line-height:1.5;">"33 dias entre as duas fotos. Barriga completamente diferente. Sem academia."</div>
         </div>
       </div>
-
       <div class="loading-tcard" id="ltcard1" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:10px;display:none;">
-        <img src="img4.jpg" alt="Zania resultado" style="width:100%;display:block;height:120px;object-fit:cover;object-position:center 20%;">
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <img src="img4.jpg" alt="Zania resultado" style="width:100%;display:block;height:110px;object-fit:cover;object-position:center 20%;">
+        <div style="padding:10px 14px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="font-size:13px;font-weight:600;color:var(--td);">Zania</span>
             <span style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:2px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</span>
           </div>
-          <div style="font-family:'Lora',serif;font-size:13px;font-style:italic;color:var(--tm);line-height:1.6;">"A barriga que resistia por anos finalmente sumiu. O protocolo de chas foi o que faltava."</div>
+          <div style="font-size:12px;font-style:italic;color:var(--tm);line-height:1.5;">"A barriga que resistia por anos finalmente sumiu com os chas do protocolo."</div>
         </div>
       </div>
-
       <div class="loading-tcard" id="ltcard2" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:10px;display:none;">
-        <img src="img3.jpg" alt="Fernanda resultado" style="width:100%;display:block;height:120px;object-fit:cover;object-position:center 20%;">
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <img src="img3.jpg" alt="Fernanda resultado" style="width:100%;display:block;height:110px;object-fit:cover;object-position:center 20%;">
+        <div style="padding:10px 14px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="font-size:13px;font-weight:600;color:var(--td);">Fernanda, 34 anos</span>
             <span style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:2px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</span>
           </div>
-          <div style="font-family:'Lora',serif;font-size:13px;font-style:italic;color:var(--tm);line-height:1.6;">"Corpo definido em menos de 1 mes. As pessoas perguntam o que fiz de diferente."</div>
+          <div style="font-size:12px;font-style:italic;color:var(--tm);line-height:1.5;">"Corpo definido em menos de 1 mes. As pessoas perguntam o que fiz diferente."</div>
         </div>
       </div>
     </div>
-
-    <!-- Indicadores -->
     <div style="display:flex;justify-content:center;gap:6px;margin-top:4px;">
       <div class="lt-dot" id="ltd0" style="width:7px;height:7px;border-radius:50%;background:var(--v);cursor:pointer;" onclick="goLt(0)"></div>
       <div class="lt-dot" id="ltd1" style="width:7px;height:7px;border-radius:50%;background:var(--bd);cursor:pointer;" onclick="goLt(1)"></div>
@@ -978,6 +1022,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </div>
   </div>
 </div>
+
 
 <!-- ====== DESBLOQUEAR ====== -->
 <div class="step" id="s10" style="display:none">
@@ -1312,6 +1357,48 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div style="text-align:center;margin-top:10px;font-size:12px;color:var(--ts);">+12.400 mulheres ja transformaram a barriga este mes</div>
   </div>
 
+  <!-- VSL DRA. ISABELA VITALLIS -->
+  <div class="rsec">
+    <div style="text-align:center;margin-bottom:10px;">
+      <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;">&#127909; Mensagem especial para o teu perfil</div>
+    </div>
+
+    <div style="background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:0 4px 20px rgba(26,122,84,0.1);">
+      <!-- PERSONA HEADER -->
+      <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--vc);border-bottom:1px solid var(--vm);">
+        <img src="img4.png" alt="Dra. Isabela Vitallis"
+          style="width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid var(--v);">
+        <div>
+          <div style="font-size:14px;font-weight:700;color:var(--ve);">Dra. Isabela Vitallis</div>
+          <div style="font-size:11px;color:var(--ve);opacity:0.8;">Nutricao Funcional &#183; Saude Intestinal Feminina</div>
+        </div>
+        <div style="margin-left:auto;display:flex;align-items:center;gap:5px;font-size:11px;color:var(--v);font-weight:600;">
+          <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;display:inline-block;animation:blink 1.5s infinite;"></span>
+          AO VIVO
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div style="position:relative;width:100%;background:#0a0a0a;">
+        <video
+          id="vsldra"
+          controls
+          playsinline
+          preload="metadata"
+          poster="img1.jpg"
+          style="width:100%;display:block;max-height:340px;object-fit:cover;">
+          <source src="https://res.cloudinary.com/dp1rvn4vn/video/upload/v1776113252/barriga-chapada_mUxBMIEL_ncqztg.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- NOTA ABAIXO DO VIDEO -->
+      <div style="padding:10px 16px;display:flex;align-items:center;gap:8px;background:#f9f9f7;">
+        <span style="font-size:18px;">&#9888;&#65039;</span>
+        <span style="font-size:12px;color:var(--ts);line-height:1.5;">Assiste antes de continuar &#8212; a Dra. Isabela explica por que o teu perfil responde diferente e qual e a solucao especifica para ti.</span>
+      </div>
+    </div>
+  </div>
+
   <div class="timebox rsec">
     <p>&#9203; Sua analise personalizada esta reservada por:</p>
     <div class="timenum" id="rtimer">14:58</div>
@@ -1444,26 +1531,66 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 
   <!-- ═══════════════ S15 — CAPTURA EMAIL ═══════════════ -->
   <div id="s15" class="step" style="display:none">
-    <div class="email-wrap">
-      <div class="email-icon">&#128140;</div>
-      <div class="email-title">Onde envio o teu<br>diagnostico completo?</div>
-      <div class="email-sub">O teu perfil esta pronto. Insere o teu email para receber o diagnostico e o protocolo personalizado — e aceder ao resultado agora.</div>
+    <!-- HEADER URGENCIA -->
+    <div style="background:var(--v);color:#fff;text-align:center;padding:10px 16px;margin:-20px -20px 20px;font-size:13px;font-weight:600;letter-spacing:0.02em;">
+      &#128300; O seu diagnostico esta pronto!
     </div>
 
-    <div style="padding:0 20px">
-      <div class="email-benefits">
-        <div class="email-benefit"><div class="email-benefit-icon">&#127775;</div>Resultado completo do teu Score Intestinal</div>
-        <div class="email-benefit"><div class="email-benefit-icon">&#127807;</div>Protocolo de chas especifico para o teu perfil</div>
-        <div class="email-benefit"><div class="email-benefit-icon">&#128197;</div>Previsao de data personalizada para o teu caso</div>
-      </div>
+    <!-- ICON + TITULO -->
+    <div style="text-align:center;margin-bottom:20px;">
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--vc);border:2px solid var(--vm);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 12px;">&#128140;</div>
+      <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:8px;">Onde enviamos<br>o teu protocolo?</div>
+      <div style="font-size:13px;color:var(--ts);line-height:1.6;max-width:320px;margin:0 auto;">O teu Score Intestinal e o protocolo personalizado ficam guardados no teu email — acede quando quiseres.</div>
+    </div>
 
-      <div class="email-form">
-        <input class="email-inp" id="emailInput" type="email" placeholder="Seu melhor email aqui..." oninput="toggleEmailBtn()">
-        <button class="email-btn" id="emailBtn" onclick="submitEmail()" disabled>Ver meu diagnostico completo &#8594;</button>
+    <!-- PREVIEW DO QUE RECEBE -->
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;margin-bottom:16px;">
+      <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px;">O que recebes no email:</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127775;</span>
+          <span>Resultado completo do teu Score Intestinal</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127807;</span>
+          <span>Protocolo de chas especifico para o teu perfil</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#128197;</span>
+          <span>Previsao de data personalizada para o resultado</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127381;</span>
+          <span>Receita detox exclusiva de boas-vindas</span>
+        </div>
       </div>
+    </div>
 
-      <a class="email-skip" onclick="ir(11)">Prefiro nao receber — ver so o resultado &#8594;</a>
-      <div class="email-privacy">&#128274; Seus dados estao seguros. Sem spam, prometido.</div>
+    <!-- FORMULARIO EMAIL -->
+    <div style="margin-bottom:12px;">
+      <label style="font-size:13px;font-weight:600;color:var(--td);display:block;margin-bottom:8px;">&#128140; O teu melhor email:</label>
+      <input class="email-inp" id="emailInput" type="email"
+        placeholder="nome@email.com"
+        style="font-size:16px;border-radius:12px;padding:15px 16px;"
+        oninput="toggleEmailBtn()">
+    </div>
+    <button class="email-btn" id="emailBtn" onclick="submitEmail()" disabled
+      style="font-size:15px;padding:18px;border-radius:14px;margin-bottom:10px;">
+      &#128300; VER MEU DIAGNOSTICO COMPLETO &#8594;
+    </button>
+
+    <!-- PROVA SOCIAL -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:10px;">
+      <span style="color:#f0a020;font-size:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span style="font-size:12px;color:var(--ts);">+12.400 mulheres ja receberam o protocolo este mes</span>
+    </div>
+
+    <!-- SKIP -->
+    <div style="text-align:center;padding-top:8px;border-top:1px solid var(--cd);">
+      <a onclick="ir(11)" style="font-size:12px;color:var(--ts);cursor:pointer;text-decoration:underline;">Prefiro nao guardar — ver apenas o resultado agora</a>
+    </div>
+    <div style="text-align:center;margin-top:8px;font-size:11px;color:var(--ts);display:flex;align-items:center;justify-content:center;gap:4px;">
+      <span>&#128274;</span> Sem spam. Os teus dados estao seguros.
     </div>
   </div>
 
@@ -1994,11 +2121,49 @@ function analisar() {
   ev('QuizCompleto');
   scoreVal = calcScore();
   startLtCarousel();
-  setTimeout(function() { document.getElementById('ba1').style.width = '74%'; }, 200);
-  setTimeout(function() { document.getElementById('ba2').style.width = '82%'; }, 600);
-  setTimeout(function() { document.getElementById('ba3').style.width = '61%'; }, 1000);
-  setTimeout(function() { document.getElementById('ba4').style.width = '100%'; }, 1400);
-  setTimeout(function() { mostrarDesbloquear(); }, 3200);
+
+  var steps = 10;
+  var totalMs = 18000;
+  var stepMs = totalMs / steps;
+  var pcts = [8, 18, 28, 38, 50, 62, 72, 82, 92, 100];
+  var subtitles = [
+    'Analisando padrao hormonal e faixa etaria...',
+    'Calculando indice de inflamacao intestinal...',
+    'Identificando padrao cronico de inchaco...',
+    'Cruzando com 12.400 perfis similares...',
+    'Calculando IMC e taxa metabolica...',
+    'Identificando causa raiz do inchaco...',
+    'Selecionando chas especificos para o perfil...',
+    'Calculando previsao de resultado...',
+    'Montando protocolo personalizado...',
+    'Diagnostico completo. Preparando resultado...'
+  ];
+
+  function activateStep(n) {
+    var el = document.getElementById('azs' + n);
+    var ic = document.getElementById('azi' + n);
+    var bar = document.getElementById('azPctBar');
+    var num = document.getElementById('azPctNum');
+    var sub = document.getElementById('azSubtitle');
+    if (el) { el.style.opacity = '1'; }
+    if (ic) { ic.textContent = '\u2713'; ic.style.color = 'var(--v)'; ic.style.fontWeight = '700'; }
+    if (bar) { bar.style.width = pcts[n-1] + '%'; }
+    if (num) { num.textContent = pcts[n-1] + '%'; }
+    if (sub) { sub.textContent = subtitles[n-1]; }
+    // Mark previous step as done with check
+    if (n > 1) {
+      var prev = document.getElementById('azs' + (n-1));
+      if (prev) { prev.style.opacity = '0.6'; }
+    }
+  }
+
+  for (var i = 1; i <= steps; i++) {
+    (function(step) {
+      setTimeout(function() { activateStep(step); }, step * stepMs - stepMs * 0.3);
+    })(i);
+  }
+
+  setTimeout(function() { mostrarDesbloquear(); }, totalMs + 500);
 }
 
 function mostrarDesbloquear() {
@@ -2012,7 +2177,7 @@ function mostrarDesbloquear() {
 }
 
 function desbloquear() {
-  resultado();
+  ir(15);
 }
 
 function calcDatePred(profile, q1) {
