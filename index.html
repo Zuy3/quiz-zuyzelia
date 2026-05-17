@@ -1529,70 +1529,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 
 
 
-  <!-- ═══════════════ S15 — CAPTURA EMAIL ═══════════════ -->
-  <div id="s15" class="step" style="display:none">
-    <!-- HEADER URGENCIA -->
-    <div style="background:var(--v);color:#fff;text-align:center;padding:10px 16px;margin:-20px -20px 20px;font-size:13px;font-weight:600;letter-spacing:0.02em;">
-      &#128300; O seu diagnostico esta pronto!
-    </div>
 
-    <!-- ICON + TITULO -->
-    <div style="text-align:center;margin-bottom:20px;">
-      <div style="width:64px;height:64px;border-radius:50%;background:var(--vc);border:2px solid var(--vm);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 12px;">&#128140;</div>
-      <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:8px;">Onde enviamos<br>o teu protocolo?</div>
-      <div style="font-size:13px;color:var(--ts);line-height:1.6;max-width:320px;margin:0 auto;">O teu Score Intestinal e o protocolo personalizado ficam guardados no teu email — acede quando quiseres.</div>
-    </div>
-
-    <!-- PREVIEW DO QUE RECEBE -->
-    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;margin-bottom:16px;">
-      <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px;">O que recebes no email:</div>
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
-          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127775;</span>
-          <span>Resultado completo do teu Score Intestinal</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
-          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127807;</span>
-          <span>Protocolo de chas especifico para o teu perfil</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
-          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#128197;</span>
-          <span>Previsao de data personalizada para o resultado</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
-          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127381;</span>
-          <span>Receita detox exclusiva de boas-vindas</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- FORMULARIO EMAIL -->
-    <div style="margin-bottom:12px;">
-      <label style="font-size:13px;font-weight:600;color:var(--td);display:block;margin-bottom:8px;">&#128140; O teu melhor email:</label>
-      <input class="email-inp" id="emailInput" type="email"
-        placeholder="nome@email.com"
-        style="font-size:16px;border-radius:12px;padding:15px 16px;"
-        oninput="toggleEmailBtn()">
-    </div>
-    <button class="email-btn" id="emailBtn" onclick="submitEmail()" disabled
-      style="font-size:15px;padding:18px;border-radius:14px;margin-bottom:10px;">
-      &#128300; VER MEU DIAGNOSTICO COMPLETO &#8594;
-    </button>
-
-    <!-- PROVA SOCIAL -->
-    <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:10px;">
-      <span style="color:#f0a020;font-size:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-      <span style="font-size:12px;color:var(--ts);">+12.400 mulheres ja receberam o protocolo este mes</span>
-    </div>
-
-    <!-- SKIP -->
-    <div style="text-align:center;padding-top:8px;border-top:1px solid var(--cd);">
-      <a onclick="ir(11)" style="font-size:12px;color:var(--ts);cursor:pointer;text-decoration:underline;">Prefiro nao guardar — ver apenas o resultado agora</a>
-    </div>
-    <div style="text-align:center;margin-top:8px;font-size:11px;color:var(--ts);display:flex;align-items:center;justify-content:center;gap:4px;">
-      <span>&#128274;</span> Sem spam. Os teus dados estao seguros.
-    </div>
-  </div>
 
   <!-- ═══════════════ S12 — OBRIGADO ═══════════════ -->
   <div id="s12" class="step step-page" style="display:none">
@@ -1745,6 +1682,71 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </div>
   </div>
 </div>
+
+  <!-- ═══════════════ S15 — CAPTURA EMAIL ═══════════════ -->
+  <div id="s15" class="step" style="display:none">
+    <!-- HEADER URGENCIA -->
+    <div style="background:var(--v);color:#fff;text-align:center;padding:10px 16px;border-radius:12px;margin-bottom:20px;font-size:13px;font-weight:600;letter-spacing:0.02em;">
+      &#128300; O seu diagnostico esta pronto!
+    </div>
+
+    <!-- ICON + TITULO -->
+    <div style="text-align:center;margin-bottom:20px;">
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--vc);border:2px solid var(--vm);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 12px;">&#128140;</div>
+      <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:8px;">Onde enviamos<br>o teu protocolo?</div>
+      <div style="font-size:13px;color:var(--ts);line-height:1.6;max-width:320px;margin:0 auto;">O teu Score Intestinal e o protocolo personalizado ficam guardados no teu email — acede quando quiseres.</div>
+    </div>
+
+    <!-- PREVIEW DO QUE RECEBE -->
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;margin-bottom:16px;">
+      <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px;">O que recebes no email:</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127775;</span>
+          <span>Resultado completo do teu Score Intestinal</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127807;</span>
+          <span>Protocolo de chas especifico para o teu perfil</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#128197;</span>
+          <span>Previsao de data personalizada para o resultado</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm);">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--vc);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#127381;</span>
+          <span>Receita detox exclusiva de boas-vindas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMULARIO EMAIL -->
+    <div style="margin-bottom:12px;">
+      <label style="font-size:13px;font-weight:600;color:var(--td);display:block;margin-bottom:8px;">&#128140; O teu melhor email:</label>
+      <input class="email-inp" id="emailInput" type="email"
+        placeholder="nome@email.com"
+        style="font-size:16px;border-radius:12px;padding:15px 16px;"
+        oninput="toggleEmailBtn()">
+    </div>
+    <button class="email-btn" id="emailBtn" onclick="submitEmail()" disabled
+      style="font-size:15px;padding:18px;border-radius:14px;margin-bottom:10px;">
+      &#128300; VER MEU DIAGNOSTICO COMPLETO &#8594;
+    </button>
+
+    <!-- PROVA SOCIAL -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:10px;">
+      <span style="color:#f0a020;font-size:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span style="font-size:12px;color:var(--ts);">+12.400 mulheres ja receberam o protocolo este mes</span>
+    </div>
+
+    <!-- SKIP -->
+    <div style="text-align:center;padding-top:8px;border-top:1px solid var(--cd);">
+      <a onclick="ir(11)" style="font-size:12px;color:var(--ts);cursor:pointer;text-decoration:underline;">Prefiro nao guardar — ver apenas o resultado agora</a>
+    </div>
+    <div style="text-align:center;margin-top:8px;font-size:11px;color:var(--ts);display:flex;align-items:center;justify-content:center;gap:4px;">
+      <span>&#128274;</span> Sem spam. Os teus dados estao seguros.
+    </div>
+  </div>
 </div>
 
 <!-- STICKY CTA BAR - aparece na pagina de resultado -->
@@ -1788,6 +1790,33 @@ function pickSize(el, val) {
   var btn = document.getElementById('b44');
   if (btn) { btn.style.opacity = '1'; btn.style.pointerEvents = 'auto'; }
   showEncr(44);
+}
+
+/* ===== EMAIL CAPTURE ===== */
+function toggleEmailBtn() {
+  var inp = document.getElementById('emailInput');
+  var btn = document.getElementById('emailBtn');
+  if (!inp || !btn) return;
+  var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value.trim());
+  btn.disabled = !valid;
+  btn.style.opacity = valid ? '1' : '0.5';
+}
+
+function submitEmail() {
+  var inp = document.getElementById('emailInput');
+  var email = inp ? inp.value.trim() : '';
+  if (email) {
+    ev('EmailCapturado');
+    // Enviar para Google Sheets via Make webhook (configurar URL abaixo)
+    try {
+      fetch('https://hook.eu2.make.com/SEU_WEBHOOK_AQUI', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, nome: userName, ts: new Date().toISOString() })
+      });
+    } catch(e) {}
+  }
+  resultado();
 }
 
 /* ===== BODY TYPE SELECTION ===== */
