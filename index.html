@@ -478,6 +478,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .vn-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink 1.5s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
 </style>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('TX0AaseRaSWK4pxT4');</script>
 </head>
 <body>
 
@@ -1805,8 +1807,20 @@ function toggleEmailBtn() {
 function submitEmail() {
   var inp = document.getElementById('emailInput');
   var email = inp ? inp.value.trim() : '';
+  var btn = document.getElementById('emailBtn');
+  if (btn) { btn.disabled = true; btn.textContent = 'A enviar...'; }
   if (email) {
     ev('EmailCapturado');
+    emailjs.send('service_umr9uq6', 'template_b2ftyuy', {
+      nome: userName || 'Amiga',
+      email: email,
+      origem: 'quiz-zuyzelia'
+    }).then(function() {
+      console.log('Email enviado com sucesso');
+    }).catch(function(err) {
+      console.log('Erro EmailJS:', err);
+    });
+    // Guardar no Formspree também
     fetch('https://formspree.io/f/mbdzwbgb', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
