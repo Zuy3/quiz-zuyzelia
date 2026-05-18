@@ -1804,12 +1804,23 @@ function toggleEmailBtn() {
   btn.style.opacity = valid ? '1' : '0.5';
 }
 
-function submitEmail() {
+function sendToBrevo(email) {
+  var fd = new FormData();
+  fd.append('EMAIL', email);
+  fd.append('email_address_check', '');
+  fd.append('locale', 'pt');
+  fd.append('html_type', 'simple');
+  fetch('https://86b092aa.sibforms.com/serve/MUIFAPzY_bOkXHO0Gdfdutv2AhymCi6QSl1rRzpXRVP0GQoXRV2y6toQdEwDw-5ZNsltc0BovRJ7e6ZOvc0Gbxt21ybnp_JSZwtCDYHmq7EJTWJkB91j5UnU1CxsRvVu2yExyRe7x2SDY7xbGEji6lNtW1SZ8HFZhEzt744Sqcw0Ao6d5KC2ImIeLjWxquFqA_JA0pLoZNpv5WCu-A==', {
+    method: 'POST', body: fd, mode: 'no-cors'
+  }).catch(function(e){console.log('Brevo:',e);});
+}
+  function submitEmail() {
   var inp = document.getElementById('emailInput');
   var email = inp ? inp.value.trim() : '';
   var btn = document.getElementById('emailBtn');
   if (btn) { btn.disabled = true; btn.textContent = 'A enviar...'; }
   if (email) {
+   sendToBrevo(email); 
     ev('EmailCapturado');
     emailjs.send('service_umr9uq6', 'template_b2ftyuy', {
       nome: userName || 'Amiga',
