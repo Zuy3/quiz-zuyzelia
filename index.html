@@ -1803,24 +1803,17 @@ function toggleEmailBtn() {
 }
 
 function sendToEmailOctopus(email, firstName) {
-  var payload = {
-    api_key: 'eo_ad10fd58cf646cc012a500b3cd9e1f2ac4f61800a68e5c802d7c649591960143',
-    email_address: email
-  };
-  if (firstName) {
-    payload.fields = { FirstName: firstName };
-  }
-  fetch('https://emailoctopus.com/api/1.6/lists/47a030c2-569f-11f1-bad6-b1e006b0732a/contacts', {
+  fetch('https://quiz-proxy.marianozuy37.workers.dev', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
+    body: JSON.stringify({ email: email, firstName: firstName || '' })
   }).then(function(r) {
     return r.json();
   }).then(function(data) {
-    if (data && data.error && data.error.code !== 'MEMBER_EXISTS_WITH_EMAIL_ADDRESS') {
-      console.log('EmailOctopus error:', data.error);
+    if (data && data.error) {
+      console.log('Proxy error:', data.error);
     }
-  }).catch(function(e) { console.log('EmailOctopus:', e); });
+  }).catch(function(e) { console.log('Proxy:', e); });
 }
 
 function submitEmail() {
