@@ -478,8 +478,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .vn-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink 1.5s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
 </style>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>emailjs.init('TX0AaseRaSWK4pxT4');</script>
 </head>
 <body>
 
@@ -1804,39 +1802,35 @@ function toggleEmailBtn() {
   btn.style.opacity = valid ? '1' : '0.5';
 }
 
-function sendToBrevo(email) {
-  var fd = new FormData();
-  fd.append('EMAIL', email);
-  fd.append('email_address_check', '');
-  fd.append('locale', 'pt');
-  fd.append('html_type', 'simple');
-  fetch('https://86b092aa.sibforms.com/serve/MUIFAPzY_bOkXHO0Gdfdutv2AhymCi6QSl1rRzpXRVP0GQoXRV2y6toQdEwDw-5ZNsltc0BovRJ7e6ZOvc0Gbxt21ybnp_JSZwtCDYHmq7EJTWJkB91j5UnU1CxsRvVu2yExyRe7x2SDY7xbGEji6lNtW1SZ8HFZhEzt744Sqcw0Ao6d5KC2ImIeLjWxquFqA_JA0pLoZNpv5WCu-A==', {
-    method: 'POST', body: fd, mode: 'no-cors'
-  }).catch(function(e){console.log('Brevo:',e);});
+function sendToEmailOctopus(email, firstName) {
+  var payload = {
+    api_key: 'eo_ad10fd58cf646cc012a500b3cd9e1f2ac4f61800a68e5c802d7c649591960143',
+    email_address: email
+  };
+  if (firstName) {
+    payload.fields = { FirstName: firstName };
+  }
+  fetch('https://emailoctopus.com/api/1.6/lists/47a030c2-569f-11f1-bad6-b1e006b0732a/contacts', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).then(function(r) {
+    return r.json();
+  }).then(function(data) {
+    if (data && data.error && data.error.code !== 'MEMBER_EXISTS_WITH_EMAIL_ADDRESS') {
+      console.log('EmailOctopus error:', data.error);
+    }
+  }).catch(function(e) { console.log('EmailOctopus:', e); });
 }
-  function submitEmail() {
+
+function submitEmail() {
   var inp = document.getElementById('emailInput');
   var email = inp ? inp.value.trim() : '';
   var btn = document.getElementById('emailBtn');
   if (btn) { btn.disabled = true; btn.textContent = 'A enviar...'; }
   if (email) {
-   sendToBrevo(email); 
+    sendToEmailOctopus(email, userName || '');
     ev('EmailCapturado');
-    emailjs.send('service_umr9uq6', 'template_b2ftyuy', {
-      nome: userName || 'Amiga',
-      email: email,
-      origem: 'quiz-zuyzelia'
-    }).then(function() {
-      console.log('Email enviado com sucesso');
-    }).catch(function(err) {
-      console.log('Erro EmailJS:', err);
-    });
-    // Guardar no Formspree também
-    fetch('https://formspree.io/f/mbdzwbgb', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ email: email, nome: userName, origem: 'quiz-zuyzelia', ts: new Date().toISOString() })
-    }).catch(function(){});
   }
   resultado();
 }
