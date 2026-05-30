@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -627,7 +627,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,1,'60mais')"><div class="oicon">&#127876;</div><div class="obody"><div class="omain">Acima de 60 anos</div><div class="ohint">Intestino precisa de estimulos mais especificos nesta fase</div></div></div>
   </div>
   <div class="qstat">73% das mulheres acima dos 40 notam mudanca no corpo mesmo sem mudar a alimentacao</div>
-  <button class="nextbtn" id="b1" onclick="ir(2)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b1" onclick="qcomplete(1);ir(2)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q2: FREQUENCIA ====== -->
@@ -644,7 +644,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,2,'eventual')"><div class="oicon">&#128197;</div><div class="obody"><div class="omain">So em alguns dias, sem padrao claro</div><div class="ohint">Ora melhora, ora piora — sem explicacao</div></div></div>
   </div>
   <div class="qstat">68% das mulheres com inchaco diario relataram reducao visivel em 7 dias com o protocolo correto</div>
-  <button class="nextbtn" id="b2" onclick="ir(3)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b2" onclick="qcomplete(2);ir(3)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q3: PARTE DO CORPO ====== -->
@@ -661,7 +661,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,3,'incerto')"><div class="oicon">&#128532;</div><div class="obody"><div class="omain">Nao consigo identificar o que mudou</div><div class="ohint">Algo esta diferente mas e dificil colocar em palavras</div></div></div>
   </div>
   <div class="qstat">68% das mulheres que escolheram barriga relataram reducao visivel em 2 semanas</div>
-  <button class="nextbtn" id="b3" onclick="ir(33)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b3" onclick="qcomplete(3);ir(33)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q3B: CORPO DOS SONHOS ====== -->
@@ -724,7 +724,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   </div>
 
   <div class="qstat">O protocolo adapta as receitas com base no seu objetivo fisico</div>
-  <button class="nextbtn" id="b33" onclick="ir(4)" style="opacity:0.35;pointer-events:none;">Continuar &#8594;</button>
+  <button class="nextbtn" id="b33" onclick="qcomplete(4);ir(4)" style="opacity:0.35;pointer-events:none;">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q4: IMPACTO EMOCIONAL ====== -->
@@ -741,7 +741,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,4,'relacionamento')"><div class="oicon">&#128148;</div><div class="obody"><div class="omain">Me sinto menos bem comigo mesma e isso afeta tudo</div><div class="ohint">A autoestima baixa impacta relacionamentos e confianca</div></div></div>
   </div>
   <div class="qstat">Voce nao esta sozinha &#8212; 7 em cada 10 mulheres se identificam com pelo menos uma dessas situacoes</div>
-  <button class="nextbtn" id="b4" onclick="ir(44)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b4" onclick="qcomplete(5);ir(44)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q4B: TAMANHO DE ROUPA ====== -->
@@ -804,7 +804,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   </div>
 
   <div class="qstat">O protocolo adapta as combinacoes de chas ao seu objetivo de reducao de medidas</div>
-  <button class="nextbtn" id="b44" onclick="ir(5)" style="opacity:0.35;pointer-events:none;">Continuar &#8594;</button>
+  <button class="nextbtn" id="b44" onclick="qcomplete(6);ir(5)" style="opacity:0.35;pointer-events:none;">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q5: INTESTINO ====== -->
@@ -822,7 +822,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" id="opt5men" onclick="pick(this,5,'menopausa')" style="display:none"><div class="oicon">&#127801;</div><div class="obody"><div class="omain">Mudou muito desde a menopausa ou perimenopausa</div><div class="ohint">Hormonal e intestinal ao mesmo tempo</div></div></div>
   </div>
   <div class="qstat">82% das mulheres com esse perfil intestinal responderam ao protocolo em menos de 5 dias</div>
-  <button class="nextbtn" id="b5" onclick="ir(6)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b5" onclick="qcomplete(7);ir(6)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q6: O QUE ACONTECE AO TENTAR ====== -->
@@ -839,7 +839,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,6,'tempo')"><div class="oicon">&#9203;</div><div class="obody"><div class="omain">Nao consigo manter por falta de tempo ou praticidade</div><div class="ohint">A rotina agitada nao deixa espaco para protocolos complexos</div></div></div>
   </div>
   <div class="qstat" style="color:#1a7a54;font-weight:600">Independente do que voce escolheu &#8212; todas essas situacoes tem a mesma causa intestinal</div>
-  <button class="nextbtn" id="b6" onclick="ir(7)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b6" onclick="qcomplete(8);ir(7)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q7: TENTATIVAS ====== -->
@@ -856,7 +856,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,7,'nada')"><div class="oicon">&#128588;</div><div class="obody"><div class="omain">Ainda nao tentei nada especifico</div><div class="ohint">Ainda nao encontrei algo que me desse confianca para tentar</div></div></div>
   </div>
   <div class="qstat">Sim &#8212; sinto que meu intestino mudou e nao sei exatamente porque</div>
-  <button class="nextbtn" id="b7" onclick="ir(8)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b7" onclick="qcomplete(9);ir(8)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q8: MOTIVACAO ====== -->
@@ -873,7 +873,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,8,'conf')"><div class="oicon">&#10024;</div><div class="obody"><div class="omain">Me sentir bem comigo mesma novamente</div><div class="ohint">Olhar no espelho e me reconhecer — e me gostar do que vejo</div></div></div>
   </div>
   <div class="qstat">Quase la &#8212; sua resposta vai definir qual protocolo e ideal para voce</div>
-  <button class="nextbtn" id="b8" onclick="ir(88)">Ver meu diagnostico &#8594;</button>
+  <button class="nextbtn" id="b8" onclick="qcomplete(10);ir(88)">Ver meu diagnostico &#8594;</button>
 </div>
 
 <!-- ====== PESO SLIDER ====== -->
@@ -1693,7 +1693,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <!-- ICON + TITULO -->
     <div style="text-align:center;margin-bottom:20px;">
       <div style="width:64px;height:64px;border-radius:50%;background:var(--vc);border:2px solid var(--vm);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 12px;">&#128140;</div>
-      <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:8px;">Onde enviamos<br>o teu protocolo?</div>
+      <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:8px;">O seu Score Intestinal est&#225; pronto &#8212; onde enviamos o resultado?</div>
       <div style="font-size:13px;color:var(--ts);line-height:1.6;max-width:320px;margin:0 auto;">O teu Score Intestinal e o protocolo personalizado ficam guardados no teu email — acede quando quiseres.</div>
     </div>
 
@@ -1820,6 +1820,7 @@ function submitEmail() {
   if (email) {
     sendToEmailOctopus(email, userName || '');
     ev('EmailCapturado');
+    gtag('event', 'email_submitted');
   }
   resultado();
 }
@@ -2012,6 +2013,7 @@ function startQuiz() {
   updateTransitions();
   ir(1);
   ev('QuizInicio');
+  gtag('event', 'quiz_started');
 }
 
 function updateTransitions() {
@@ -2204,10 +2206,8 @@ function mostrarDesbloquear() {
   var pct = scoreVal;
   document.getElementById('scoreNum').textContent = pct + '/100';
   document.getElementById('scoreNote').textContent = pct < 30 ? 'Inflamacao intestinal elevada' : pct < 40 ? 'Inflamacao intestinal ativa' : 'Desequilibrio intestinal moderado';
-  ir(10);
-  setTimeout(function() {
-    document.getElementById('scoreFill').style.width = pct + '%';
-  }, 300);
+  ir(15);
+  gtag('event', 'email_screen_shown');
 }
 
 function desbloquear() {
@@ -2479,6 +2479,15 @@ function ev(name) {
   try { if (typeof gtag !== 'undefined') { gtag('event', name); } } catch(e) {}
 }
 
+function qcomplete(n) {
+  gtag('event', 'question_completed', {step_number: n});
+}
+
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="hotmart"]');
+  if (a) { gtag('event', 'checkout_clicked', {url: a.href}); }
+});
+
 // ── PESO / IMC ──
 var RES_PESO = 70;
 
@@ -2623,3 +2632,4 @@ window.addEventListener("load", checkStepParam);
 </script>
 </body>
 </html>
+
