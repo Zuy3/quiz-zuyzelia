@@ -570,7 +570,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div style="font-size:12px;font-weight:600;color:var(--ve);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;text-align:center;">Como funciona</div>
     <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
       <div style="width:28px;height:28px;border-radius:50%;background:var(--v);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">1</div>
-      <div style="font-size:13px;color:var(--ve);line-height:1.5;padding-top:4px;">Responde 8 perguntas r&#225;pidas sobre o seu corpo e rotina</div>
+      <div style="font-size:13px;color:var(--ve);line-height:1.5;padding-top:4px;">Responde 5 perguntas r&#225;pidas sobre o seu corpo e rotina</div>
     </div>
     <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
       <div style="width:28px;height:28px;border-radius:50%;background:var(--v);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">2</div>
@@ -644,87 +644,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,2,'eventual')"><div class="oicon">&#128197;</div><div class="obody"><div class="omain">So em alguns dias, sem padrao claro</div><div class="ohint">Ora melhora, ora piora — sem explicacao</div></div></div>
   </div>
   <div class="qstat">68% das mulheres com inchaco diario relataram reducao visivel em 7 dias com o protocolo correto</div>
-  <button class="nextbtn" id="b2" onclick="qcomplete(2);ir(3)">Continuar &#8594;</button>
-</div>
-
-<!-- ====== Q3: PARTE DO CORPO ====== -->
-<div class="step" id="s3" style="display:none">
-  <div class="encr" id="encr3"></div>
-  <div class="qtransition" id="qtrans3">Sabe aquela peca no guarda-roupa que voce adora mas evita usar?</div>
-  <div class="qtext">Qual parte do corpo mais te incomoda quando voce se olha no espelho?</div>
-  <div class="qsub">Mulheres com o mesmo perfil que o seu voltaram a usar tudo isso em 7 dias.</div>
-  <div class="edupop">Onde o inchaco se concentra mais revela o tipo de retencao predominante no seu corpo. Isso define quais chas do protocolo tem acao mais imediata para o seu caso.</div>
-  <div class="opts">
-    <div class="opt" onclick="pick(this,3,'barriga')"><div class="oicon">&#128293;</div><div class="obody"><div class="omain">Barriga e cintura que nao saem</div><div class="ohint">Mesmo na balanca certa, a barriga continua inchada</div></div></div>
-    <div class="opt" onclick="pick(this,3,'corpo')"><div class="oicon">&#128580;</div><div class="obody"><div class="omain">Corpo inteiro &#8212; sinto que mudou tudo</div><div class="ohint">Nao e so a barriga — e o corpo todo que nao responde</div></div></div>
-    <div class="opt" onclick="pick(this,3,'energia')"><div class="oicon">&#9889;</div><div class="obody"><div class="omain">Falta de energia &#8212; me sinto esgotada</div><div class="ohint">O cansaco e tao visivel quanto o inchaco</div></div></div>
-    <div class="opt" onclick="pick(this,3,'incerto')"><div class="oicon">&#128532;</div><div class="obody"><div class="omain">Nao consigo identificar o que mudou</div><div class="ohint">Algo esta diferente mas e dificil colocar em palavras</div></div></div>
-  </div>
-  <div class="qstat">68% das mulheres que escolheram barriga relataram reducao visivel em 2 semanas</div>
-  <button class="nextbtn" id="b3" onclick="qcomplete(3);ir(33)">Continuar &#8594;</button>
-</div>
-
-<!-- ====== Q3B: CORPO DOS SONHOS ====== -->
-<div class="step" id="s33" style="display:none">
-  <div class="encr" id="encr33"></div>
-  <div class="qtransition" id="qtrans33">Agora quero entender o seu objetivo...</div>
-  <div class="qtext">Qual e o <em style="color:var(--v);font-style:normal">corpo dos seus sonhos?</em></div>
-  <div class="qsub">Escolha a opcao que mais combina com o que voce quer alcancar. Isso personaliza as receitas do seu protocolo.</div>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
-
-    <!-- OPCAO 1: EM FORMA -->
-    <div class="body-opt" id="bopt1" onclick="pickBody(this,'forma')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="position:relative;overflow:hidden;height:170px;">
-        <img src="body1.jpg" alt="Em Forma" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform 0.3s;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
-      </div>
-      <div style="padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Em Forma</div>
-        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Definida e tonificada com energia</div>
-      </div>
-    </div>
-
-    <!-- OPCAO 2: NATURAL -->
-    <div class="body-opt" id="bopt2" onclick="pickBody(this,'natural')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="position:relative;overflow:hidden;height:170px;">
-        <img src="body2.jpg" alt="Natural" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;transition:transform 0.3s;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
-      </div>
-      <div style="padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Natural</div>
-        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Saudavel, leve e sem inchaco</div>
-      </div>
-    </div>
-
-    <!-- OPCAO 3: ESBELTA -->
-    <div class="body-opt" id="bopt3" onclick="pickBody(this,'esbelta')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="position:relative;overflow:hidden;height:170px;">
-        <img src="body3.jpg" alt="Esbelta" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform 0.3s;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
-      </div>
-      <div style="padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Esbelta</div>
-        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Leve, slim e com disposicao</div>
-      </div>
-    </div>
-
-    <!-- OPCAO 4: FORTE -->
-    <div class="body-opt" id="bopt4" onclick="pickBody(this,'forte')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;">
-      <div style="position:relative;overflow:hidden;height:170px;">
-        <img src="body4.jpg" alt="Forte" style="width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;transition:transform 0.3s;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,122,84,0.6) 0%,transparent 50%);"></div>
-      </div>
-      <div style="padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Forte</div>
-        <div style="font-size:11px;color:var(--ts);line-height:1.4;">Vitalidade, saude e autoestima</div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="qstat">O protocolo adapta as receitas com base no seu objetivo fisico</div>
-  <button class="nextbtn" id="b33" onclick="qcomplete(4);ir(4)" style="opacity:0.35;pointer-events:none;">Continuar &#8594;</button>
+  <button class="nextbtn" id="b2" onclick="qcomplete(2);ir(5)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q4: IMPACTO EMOCIONAL ====== -->
@@ -741,70 +661,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,4,'relacionamento')"><div class="oicon">&#128148;</div><div class="obody"><div class="omain">Me sinto menos bem comigo mesma e isso afeta tudo</div><div class="ohint">A autoestima baixa impacta relacionamentos e confianca</div></div></div>
   </div>
   <div class="qstat">Voce nao esta sozinha &#8212; 7 em cada 10 mulheres se identificam com pelo menos uma dessas situacoes</div>
-  <button class="nextbtn" id="b4" onclick="qcomplete(5);ir(44)">Continuar &#8594;</button>
-</div>
-
-<!-- ====== Q4B: TAMANHO DE ROUPA ====== -->
-<div class="step" id="s44" style="display:none">
-  <div class="encr" id="encr44"></div>
-  <div class="qtransition" id="qtrans44">Ja que falamos de roupas...</div>
-  <div class="qtext">Qual tamanho de roupa voce <em style="color:var(--v);font-style:normal">usa atualmente?</em></div>
-  <div class="qsub">Isso ajuda a personalizar o protocolo de reducao de medidas — nao e so o peso que muda, e o corpo todo.</div>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;">
-
-    <div class="size-opt" onclick="pickSize(this,'pp')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 14px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px;">
-      <div style="font-size:22px;flex-shrink:0;">&#128248;</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">P ou PP</div>
-        <div style="font-size:12px;color:var(--ts);line-height:1.4;">Quero definir e tonificar</div>
-      </div>
-    </div>
-
-    <div class="size-opt" onclick="pickSize(this,'m')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 14px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px;">
-      <div style="font-size:22px;flex-shrink:0;">&#128248;</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">M</div>
-        <div style="font-size:12px;color:var(--ts);line-height:1.4;">Quero perder alguns centimetros</div>
-      </div>
-    </div>
-
-    <div class="size-opt" onclick="pickSize(this,'g')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 14px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px;">
-      <div style="font-size:22px;flex-shrink:0;">&#128248;</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">G</div>
-        <div style="font-size:12px;color:var(--ts);line-height:1.4;">Quero reduzir 1 a 2 tamanhos</div>
-      </div>
-    </div>
-
-    <div class="size-opt" onclick="pickSize(this,'gg')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 14px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px;">
-      <div style="font-size:22px;flex-shrink:0;">&#128248;</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">GG</div>
-        <div style="font-size:12px;color:var(--ts);line-height:1.4;">Quero reduzir 2 a 3 tamanhos</div>
-      </div>
-    </div>
-
-    <div class="size-opt" onclick="pickSize(this,'xgg')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 14px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px;">
-      <div style="font-size:22px;flex-shrink:0;">&#128248;</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">XGG</div>
-        <div style="font-size:12px;color:var(--ts);line-height:1.4;">Quero uma transformacao real</div>
-      </div>
-    </div>
-
-    <div class="size-opt" onclick="pickSize(this,'plus')" style="background:#fff;border:2px solid var(--bd);border-radius:var(--r);padding:16px 14px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px;">
-      <div style="font-size:22px;flex-shrink:0;">&#127811;</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;">Plus Size</div>
-        <div style="font-size:12px;color:var(--ts);line-height:1.4;">Quero comecar minha jornada</div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="qstat">O protocolo adapta as combinacoes de chas ao seu objetivo de reducao de medidas</div>
-  <button class="nextbtn" id="b44" onclick="qcomplete(6);ir(5)" style="opacity:0.35;pointer-events:none;">Continuar &#8594;</button>
+  <button class="nextbtn" id="b4" onclick="qcomplete(4);ir(8)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q5: INTESTINO ====== -->
@@ -822,41 +679,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" id="opt5men" onclick="pick(this,5,'menopausa')" style="display:none"><div class="oicon">&#127801;</div><div class="obody"><div class="omain">Mudou muito desde a menopausa ou perimenopausa</div><div class="ohint">Hormonal e intestinal ao mesmo tempo</div></div></div>
   </div>
   <div class="qstat">82% das mulheres com esse perfil intestinal responderam ao protocolo em menos de 5 dias</div>
-  <button class="nextbtn" id="b5" onclick="qcomplete(7);ir(6)">Continuar &#8594;</button>
-</div>
-
-<!-- ====== Q6: O QUE ACONTECE AO TENTAR ====== -->
-<div class="step" id="s6" style="display:none">
-  <div class="encr" id="encr6"></div>
-  <div class="qtransition" id="qtrans6">Sei que voce ja tentou mudar isso antes...</div>
-  <div class="qtext">O que mais acontece quando voce tenta emagrecer?</div>
-  <div class="qsub">Nao e falta de forca de vontade. Se o peso sempre volta ou o resultado nao aparece, e sinal de que o metodo estava errado &#8212; nao voce.</div>
-  <div class="edupop">Entender o padrao do seu corpo ao tentar emagrecer revela se o bloqueio e metabolico, inflamatorio ou intestinal. Esta resposta personaliza o angulo do protocolo para voce.</div>
-  <div class="opts">
-    <div class="opt" onclick="pick(this,6,'sanfona')"><div class="oicon">&#128257;</div><div class="obody"><div class="omain">O peso vai e volta &#8212; efeito sanfona constante</div><div class="ohint">Perco e recupero sempre os mesmos quilos</div></div></div>
-    <div class="opt" onclick="pick(this,6,'trava')"><div class="oicon">&#128274;</div><div class="obody"><div class="omain">Emagreco um pouco e trava &#8212; nao sai mais nada</div><div class="ohint">Chego num ponto e o corpo para de responder</div></div></div>
-    <div class="opt" onclick="pick(this,6,'tudo')"><div class="oicon">&#128533;</div><div class="obody"><div class="omain">Faco tudo certo e o resultado nao aparece</div><div class="ohint">Dieta, exercicio, agua — e a barriga continua la</div></div></div>
-    <div class="opt" onclick="pick(this,6,'tempo')"><div class="oicon">&#9203;</div><div class="obody"><div class="omain">Nao consigo manter por falta de tempo ou praticidade</div><div class="ohint">A rotina agitada nao deixa espaco para protocolos complexos</div></div></div>
-  </div>
-  <div class="qstat" style="color:#1a7a54;font-weight:600">Independente do que voce escolheu &#8212; todas essas situacoes tem a mesma causa intestinal</div>
-  <button class="nextbtn" id="b6" onclick="qcomplete(8);ir(7)">Continuar &#8594;</button>
-</div>
-
-<!-- ====== Q7: TENTATIVAS ====== -->
-<div class="step" id="s7" style="display:none">
-  <div class="encr" id="encr7"></div>
-  <div class="qtransition" id="qtrans7">Voce ja considerou que pode ser o seu intestino te sabotando?</div>
-  <div class="qtext">Ja tentou alguma coisa especifica para o inchaco antes?</div>
-  <div class="qsub">Seja honesta &#8212; isso define qual protocolo funciona melhor para o seu caso</div>
-  <div class="edupop">As suas tentativas anteriores sao dados, nao fracassos. Elas ajudam a ajustar o protocolo para evitar os mesmos bloqueios e agir mais rapido desta vez.</div>
-  <div class="opts">
-    <div class="opt" onclick="pick(this,7,'dieta')"><div class="oicon">&#129367;</div><div class="obody"><div class="omain">Fiz dieta, mas o inchaco voltou logo depois</div><div class="ohint">Restricao alimentar sem tratar a causa intestinal</div></div></div>
-    <div class="opt" onclick="pick(this,7,'remedio')"><div class="oicon">&#128138;</div><div class="obody"><div class="omain">Tomei remedio ou suplemento, mas nao resolveu</div><div class="ohint">Produto generico sem personalizacao para o meu perfil</div></div></div>
-    <div class="opt" onclick="pick(this,7,'cha')"><div class="oicon">&#127861;</div><div class="obody"><div class="omain">Experimentei chas caseiros, mas sem protocolo</div><div class="ohint">Resultado foi fraco ou nao durou — faltou a sequencia certa</div></div></div>
-    <div class="opt" onclick="pick(this,7,'nada')"><div class="oicon">&#128588;</div><div class="obody"><div class="omain">Ainda nao tentei nada especifico</div><div class="ohint">Ainda nao encontrei algo que me desse confianca para tentar</div></div></div>
-  </div>
-  <div class="qstat">Sim &#8212; sinto que meu intestino mudou e nao sei exatamente porque</div>
-  <button class="nextbtn" id="b7" onclick="qcomplete(9);ir(8)">Continuar &#8594;</button>
+  <button class="nextbtn" id="b5" onclick="qcomplete(3);ir(4)">Continuar &#8594;</button>
 </div>
 
 <!-- ====== Q8: MOTIVACAO ====== -->
@@ -873,48 +696,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,8,'conf')"><div class="oicon">&#10024;</div><div class="obody"><div class="omain">Me sentir bem comigo mesma novamente</div><div class="ohint">Olhar no espelho e me reconhecer — e me gostar do que vejo</div></div></div>
   </div>
   <div class="qstat">Quase la &#8212; sua resposta vai definir qual protocolo e ideal para voce</div>
-  <button class="nextbtn" id="b8" onclick="qcomplete(10);ir(88)">Ver meu diagnostico &#8594;</button>
-</div>
-
-<!-- ====== PESO SLIDER ====== -->
-<div class="step" id="s88" style="display:none">
-  <div class="qtransition">Ultima pergunta — e a mais importante para calibrar o seu protocolo...</div>
-  <div class="qtext">Qual e o seu <em style="color:var(--v);font-style:normal">peso atual?</em></div>
-  <div class="qsub">Isso permite calcular o seu indice de inflamacao corporal e ajustar as dosagens do protocolo especificamente para o seu perfil.</div>
-
-  <div style="background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:28px 20px;margin-bottom:16px;text-align:center;box-shadow:0 2px 12px rgba(26,122,84,0.06);">
-    <div id="weightDisplay" style="font-family:'Lora',serif;font-size:56px;font-weight:600;color:var(--td);line-height:1;margin-bottom:6px;">70<span id="weightUnit" style="font-size:22px;color:var(--ts);font-family:'DM Sans',sans-serif;font-weight:400"> kg</span></div>
-    <div style="font-size:13px;color:var(--ts);margin-bottom:18px;">&#8592; Arraste para selecionar o seu peso &#8594;</div>
-    <input type="range" id="weightSlider" min="45" max="130" value="70" step="1"
-      style="width:100%;height:6px;-webkit-appearance:none;appearance:none;background:var(--cd);border-radius:6px;outline:none;cursor:pointer;accent-color:var(--v);margin-bottom:6px;"
-      oninput="updateWeight(this.value)">
-    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--ts);padding:0 2px;"><span>45kg</span><span>130kg</span></div>
-  </div>
-
-  <div style="background:var(--vc);border:1px solid var(--vm);border-radius:var(--rs);padding:12px 16px;font-size:13px;color:var(--ve);margin-bottom:18px;display:flex;align-items:center;gap:10px;line-height:1.5;">
-    <span style="font-size:18px;flex-shrink:0;">&#9989;</span>
-    <span>Baseado nisso, ajustaremos a dosagem ideal e o ritmo do protocolo para os melhores resultados no seu caso</span>
-  </div>
-
-  <button class="nextbtn ok" onclick="confirmarPeso()">&#128300; Ver meu diagnostico personalizado &#8594;</button>
-  <p class="bnote" style="margin-top:10px;">&#128274; Seus dados sao usados apenas para personalizar o protocolo</p>
+  <button class="nextbtn" id="b8" onclick="qcomplete(5);analisar()">Ver meu diagnostico &#8594;</button>
 </div>
 
 <!-- ====== EMAIL CAPTURE ====== -->
-
-<!-- ====== PESO ATUAL ====== -->
-<div class="step" id="speso" style="display:none">
-  <div class="encr" id="encrpeso" style="display:none"></div>
-  <div class="qtransition" id="qtranspeso">Estamos quase la! Uma ultima informacao...</div>
-  <div class="qtext">Qual e o seu peso atual?</div>
-  <div class="qsub">Baseado nisso, ajustaremos a dosagem e o protocolo ideal para os melhores resultados no seu caso.</div>
-  <div class="peso-display" id="pesoDisplay">70<span class="peso-unit-lbl" style="font-size:24px;display:inline">kg</span></div>
-  <div class="peso-unit-lbl">Arraste para selecionar</div>
-  <input type="range" class="peso-slider" id="pesoSlider" min="45" max="130" value="70" oninput="updatePeso(this.value)">
-  <div class="peso-hint" id="pesoHint">Baseado no seu peso, calcularemos a taxa de desinflamacao esperada para o seu perfil</div>
-  <button class="nextbtn ok" onclick="analisar()">Analisar meu perfil &#8594;</button>
-  <p class="bnote">&#128274; Seus dados sao privados e usados apenas para personalizar o protocolo</p>
-</div>
 
 <!-- ====== ANALISANDO ====== -->
 <div class="step" id="s9" style="display:none">
@@ -2028,7 +1813,9 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function updateProgress(n) {
-  var pct = Math.round((n / 8) * 100);
+  var posMap = {1:1, 2:2, 5:3, 4:4, 8:5};
+  var pos = posMap[n] !== undefined ? posMap[n] : n;
+  var pct = Math.round((pos / 5) * 100);
   var bar = document.getElementById('progressbar');
   if (bar) { bar.style.width = pct + '%'; }
 }
@@ -2044,10 +1831,7 @@ function ir(n) {
   if (target) { target.style.display = ''; target.classList.add('active'); }
   window.scrollTo(0, 0);
   if (n >= 1 && n <= 8) { updateProgress(n); }
-  if (n === 33) { updateProgress(3); adaptQ33(); }
-  if (n === 44) { updateProgress(4); adaptQ44(); }
   if (n === 5) { adaptQ5(); }
-  if (n === 6) { adaptQ6(); }
 }
 
 function adaptQ33() {
@@ -2136,7 +1920,6 @@ function calcScore() {
   var base = 50;
   var q1 = RES.q1 || '30a40';
   var q5 = RES.q5 || 'gases';
-  var q6 = RES.q6 || 'sanfona';
   if (q1 === '41a50') { base -= 6; }
   if (q1 === '51a60') { base -= 10; }
   if (q1 === '60mais') { base -= 14; }
@@ -2144,9 +1927,6 @@ function calcScore() {
   if (q5 === 'irregular') { base -= 18; }
   if (q5 === 'gases') { base -= 16; }
   if (q5 === 'alternado') { base -= 12; }
-  if (q6 === 'sanfona') { base -= 4; }
-  if (q6 === 'trava') { base -= 3; }
-  if (q6 === 'tudo') { base -= 5; }
   if (base < 18) { base = 18; }
   if (base > 42) { base = 42; }
   return base;
@@ -2405,7 +2185,6 @@ function resultado() {
   startTimer(14 * 60 + 58);
   startCouponTimer();
   startOfferTimer();
-  renderIMC(RES_PESO);
   ev('ResultadoExibido');
   // Ativar sticky CTA e toasts na pagina de resultado
   setTimeout(function(){ toggleStickyCta(true); }, 3000);
