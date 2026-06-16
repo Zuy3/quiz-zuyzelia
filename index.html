@@ -561,11 +561,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 
   <!-- TRUST STRIP -->
   <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;flex-wrap:wrap;">
-    <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--ts);">
-      <span style="color:#22c55e;font-size:13px;">&#9679;</span>
-      <span id="liveCount">47</span> a fazer o quiz agora
-    </div>
-    <div style="width:3px;height:3px;border-radius:50%;background:var(--bd);"></div>
     <div style="font-size:11px;color:var(--ts);display:flex;align-items:center;gap:4px;">
       <span>&#128274;</span> 100% gratuito e seguro
     </div>
@@ -588,7 +583,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,1,'51a60')"><div class="oicon">&#129716;</div><div class="obody"><div class="omain">51 a 60 anos</div><div class="ohint">Pos-menopausa altera completamente o metabolismo</div></div></div>
     <div class="opt" onclick="pick(this,1,'60mais')"><div class="oicon">&#127876;</div><div class="obody"><div class="omain">Acima de 60 anos</div><div class="ohint">Intestino precisa de estimulos mais especificos nesta fase</div></div></div>
   </div>
-  <div class="qstat">73% das mulheres acima dos 40 notam mudanca no corpo mesmo sem mudar a alimentacao</div>
+  <div class="qstat">Sua faixa etaria ajuda a calibrar o protocolo certo para a sua fase</div>
   <button class="nextbtn" id="b1" onclick="qcomplete(1);ir(2)">Continuar &#8594;</button>
 </div>
 
@@ -605,7 +600,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,2,'comer')"><div class="oicon">&#127373;</div><div class="obody"><div class="omain">Logo depois das refeicoes</div><div class="ohint">Inchaco aparece rapido apos comer</div></div></div>
     <div class="opt" onclick="pick(this,2,'eventual')"><div class="oicon">&#128197;</div><div class="obody"><div class="omain">So em alguns dias, sem padrao claro</div><div class="ohint">Ora melhora, ora piora — sem explicacao</div></div></div>
   </div>
-  <div class="qstat">68% das mulheres com inchaco diario relataram reducao visivel em 7 dias com o protocolo correto</div>
+  <div class="qstat">O padrao de horario do inchaco ajuda a identificar a causa mais provavel</div>
   <button class="nextbtn" id="b2" onclick="qcomplete(2);ir(5)">Continuar &#8594;</button>
 </div>
 
@@ -622,7 +617,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,4,'cansada')"><div class="oicon">&#128564;</div><div class="obody"><div class="omain">Acordo cansada mesmo dormindo bastante</div><div class="ohint">O descanso nao repoe mais a energia que repunha antes</div></div></div>
     <div class="opt" onclick="pick(this,4,'relacionamento')"><div class="oicon">&#128148;</div><div class="obody"><div class="omain">Me sinto menos bem comigo mesma e isso afeta tudo</div><div class="ohint">A autoestima baixa impacta relacionamentos e confianca</div></div></div>
   </div>
-  <div class="qstat">Voce nao esta sozinha &#8212; 7 em cada 10 mulheres se identificam com pelo menos uma dessas situacoes</div>
+  <div class="qstat">Voce nao esta sozinha nisso</div>
   <button class="nextbtn" id="b4" onclick="qcomplete(4);ir(8)">Continuar &#8594;</button>
 </div>
 
@@ -640,7 +635,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="opt" onclick="pick(this,5,'gases')"><div class="oicon">&#128168;</div><div class="obody"><div class="omain">Vou regularmente, mas com muitos gases e barulhos</div><div class="ohint">Microbiota desequilibrada gerando fermentacao interna</div></div></div>
     <div class="opt" id="opt5men" onclick="pick(this,5,'menopausa')" style="display:none"><div class="oicon">&#127801;</div><div class="obody"><div class="omain">Mudou muito desde a menopausa ou perimenopausa</div><div class="ohint">Hormonal e intestinal ao mesmo tempo</div></div></div>
   </div>
-  <div class="qstat">82% das mulheres com esse perfil intestinal responderam ao protocolo em menos de 5 dias</div>
+  <div class="qstat">O funcionamento intestinal e o fator mais importante deste diagnostico</div>
   <button class="nextbtn" id="b5" onclick="qcomplete(3);ir(4)">Continuar &#8594;</button>
 </div>
 
@@ -734,7 +729,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="font-size:13px;font-weight:600;color:var(--td);">Paula, 38 anos</span>
             <span style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:2px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</span>
           </div>
           <div style="font-size:12px;font-style:italic;color:var(--tm);line-height:1.5;">"33 dias entre as duas fotos. Barriga completamente diferente. Sem academia."</div>
         </div>
@@ -745,7 +739,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="font-size:13px;font-weight:600;color:var(--td);">Zania</span>
             <span style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:2px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</span>
           </div>
           <div style="font-size:12px;font-style:italic;color:var(--tm);line-height:1.5;">"A barriga que resistia por anos finalmente sumiu com os chas do protocolo."</div>
         </div>
@@ -756,7 +749,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="font-size:13px;font-weight:600;color:var(--td);">Fernanda, 34 anos</span>
             <span style="color:#f0a020;font-size:11px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span style="margin-left:auto;font-size:10px;background:var(--vc);color:var(--ve);padding:2px 8px;border-radius:20px;font-weight:600;">&#10003; Verificada</span>
           </div>
           <div style="font-size:12px;font-style:italic;color:var(--tm);line-height:1.5;">"Corpo definido em menos de 1 mes. As pessoas perguntam o que fiz diferente."</div>
         </div>
@@ -808,58 +800,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="datebox-sub" id="dateSub">Calculado com base em 12.400 perfis similares ao seu este mes</div>
   </div>
 
-  <!-- IMC SEMAFORO -->
-  <div id="imcSection" class="rsec" style="display:none">
-    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:18px 20px;box-shadow:0 2px 12px rgba(26,122,84,0.06);">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-        <div>
-          <div style="font-size:12px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;">&#9888;&#65039; Indice de Massa Corporal</div>
-          <div style="font-family:'Lora',serif;font-size:28px;font-weight:600;" id="imcValue">25.7</div>
-        </div>
-        <div id="imcZonaBadge" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;background:#fff3e0;color:#e65100;">Sobrepeso</div>
-      </div>
-
-      <!-- BARRA SEMAFORO -->
-      <div style="position:relative;height:14px;border-radius:14px;overflow:hidden;background:linear-gradient(to right,#4caf50 0%,#8bc34a 22%,#ffc107 44%,#ff9800 66%,#f44336 100%);margin-bottom:6px;">
-        <div id="imcMarker2" style="position:absolute;top:-3px;width:6px;height:20px;background:#1c1c1a;border-radius:3px;transform:translateX(-50%);transition:left 0.8s ease;left:50%;"></div>
-      </div>
-      <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--ts);margin-bottom:14px;">
-        <span>Abaixo</span><span>Normal</span><span>Sobrepeso</span><span>Obesidade</span>
-      </div>
-
-      <!-- ALERTA -->
-      <div id="imcAlerta" style="background:#fff8e6;border-left:3px solid #f0a020;border-radius:0 var(--rs) var(--rs) 0;padding:12px 14px;">
-        <div style="font-size:13px;font-weight:600;color:#5a3c00;margin-bottom:6px;">&#8505;&#65039; Seu metabolismo pode estar a te sabotar sem que percebes</div>
-        <div style="font-size:12px;color:#7a6030;line-height:1.6;">Mesmo com peso na zona de sobrepeso, o corpo pode estar retendo toxinas e trabalhando mais devagar, dificultando a queima de gordura e causando o inchaco persistente.</div>
-      </div>
-
-      <!-- SINAIS -->
-      <div style="margin-top:12px;">
-        <div style="font-size:12px;font-weight:600;color:var(--ts);margin-bottom:8px;">&#8505;&#65039; Alguns sinais de alerta no seu perfil:</div>
-        <div id="imcSinais">
-          <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--td);margin-bottom:6px;"><span style="color:#d85a30;font-weight:700;flex-shrink:0;">&#10007;</span><span>Metabolismo lento e dificuldade para emagrecer mesmo comendo pouco</span></div>
-          <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--td);margin-bottom:6px;"><span style="color:#d85a30;font-weight:700;flex-shrink:0;">&#10007;</span><span>Cansaco constante e sensacao de inchaco ao longo do dia</span></div>
-          <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--td);"><span style="color:#d85a30;font-weight:700;flex-shrink:0;">&#10007;</span><span>Acumulo de gordura em areas especificas, principalmente na barriga</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMC SEMAFORO -->
-  <div class="imc-wrap rsec" id="imcBlock" style="display:none">
-    <div class="imc-title">&#9888; Seu IMC calculado</div>
-    <div class="imc-num-row">
-      <div class="imc-num" id="imcNum">25.0</div>
-      <div class="imc-zone" id="imcZone" style="background:#faeeda;color:#854f0b">Calculando...</div>
-    </div>
-    <div class="imc-bar-track" style="position:relative">
-      <div class="imc-marker" id="imcMarker" style="left:40%"></div>
-    </div>
-    <div class="imc-labels">
-      <span>Abaixo</span><span>Normal</span><span>Sobrepeso</span><span>Obesidade</span>
-    </div>
-    <div class="imc-alert" id="imcAlert" style="background:#faeeda"></div>
-  </div>
+  <!-- BLOCO DE IMC REMOVIDO: mostrava "25.7 / Sobrepeso" fixo para todos os visitantes.
+       O quiz atual (5 perguntas) nao coleta peso/altura, entao este numero nunca era
+       calculado de fato - era um valor estatico deixado de uma versao anterior do quiz.
+       Decisao pendente: reintroduzir IMC real (exige adicionar pergunta de peso/altura)
+       ou manter removido. -->
 
   <!-- VOCE ESTA AQUI vs VOCE ESTARA AQUI -->
   <div class="rsec">
@@ -1120,8 +1065,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
           <div style="font-size:11px;color:var(--ve);opacity:0.8;">Nutricao Funcional &#183; Saude Intestinal Feminina</div>
         </div>
         <div style="margin-left:auto;display:flex;align-items:center;gap:5px;font-size:11px;color:var(--v);font-weight:600;">
-          <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;display:inline-block;animation:blink 1.5s infinite;"></span>
-          AO VIVO
+          MENSAGEM EM VIDEO
         </div>
       </div>
 
@@ -1205,7 +1149,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       </div>
       <div style="font-size:12px;color:var(--ts);text-align:center;margin-bottom:12px;">&#129689; Menos de R$1 por dia para transformar o seu corpo<br>&#127829; Menos que um lanche fora &#8212; resultado para a vida toda</div>
       <a class="ctabtn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=oferta_principal&utm_campaign=barriga7dias" target="_blank" onclick="ev('InicioCheckoutP1')">&#11088; QUERO O MAIS POPULAR &#8212; R$29,90 &#8594;</a>
-      <div style="text-align:center;font-size:12px;color:var(--ts);margin-top:8px;">87% das mulheres com o seu perfil escolhem este pacote</div>
     </div>
 
     <!-- PACOTE 2: TRANSFORMACAO TOTAL -->
@@ -1245,7 +1188,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="divider">Quem ja usou e comprovou</div>
 
   <div class="rsec">
-    <div class="viewing-now"><div class="vn-dot"></div><span><strong>47 mulheres</strong> visualizando este protocolo agora</span></div>
     <div class="wppcard"><img src="img2.jpg" alt="Camila 10kg" loading="lazy"><div class="wpplabel"><strong>Camila</strong> &#8212; Perdeu 10kg. Mensagem enviada direto no WhatsApp.</div></div>
     <div class="wppcard"><img src="img3.jpg" alt="Zania resultado" loading="lazy"><div class="wpplabel"><strong>Zania</strong> &#8212; Comparou o antes e depois e a motivacao voltou imediatamente.</div></div>
     <div class="wppcard"><img src="img1.jpg" alt="Paula resultado" loading="lazy"><div class="wpplabel"><strong>Paula</strong> &#8212; Resultado visivel em dias seguindo o protocolo.</div></div>
@@ -1497,11 +1439,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <a class="sticky-cta-btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=sticky_cta&utm_campaign=barriga7dias" target="_blank" onclick="ev('StickyCTA')">QUERO &#8594;</a>
 </div>
 
-<!-- SOCIAL PROOF TOAST -->
-<div class="sp-toast" id="spToast">
-  <div class="sp-toast-icon">&#127942;</div>
-  <div class="sp-toast-text"><strong id="spName">Ana</strong> <span id="spMsg">acabou de adquirir o protocolo</span></div>
-</div>
 
 <script>
 var RES = {};
@@ -2138,9 +2075,8 @@ function resultado() {
   startCouponTimer();
   startOfferTimer();
   ev('ResultadoExibido');
-  // Ativar sticky CTA e toasts na pagina de resultado
+  // Ativar sticky CTA na pagina de resultado
   setTimeout(function(){ toggleStickyCta(true); }, 3000);
-  startSpToasts();
 }
 
 function getDeadline() {
@@ -2322,43 +2258,13 @@ function toggleStickyCta(show) {
   if (bar) { bar.classList.toggle('visible', show); }
 }
 
-// SOCIAL PROOF TOASTS
-var spNames = ['Ana','Fernanda','Claudia','Patricia','Marcia','Juliana','Renata','Beatriz','Carla','Luciana','Simone','Vanessa'];
-var spMsgs = ['acabou de adquirir o protocolo','desbloqueou o diagnostico agora','esta iniciando o protocolo de 7 dias','acabou de comprar o eBook'];
-var spInterval = null;
-
-function showSpToast() {
-  var toast = document.getElementById('spToast');
-  var nameEl = document.getElementById('spName');
-  var msgEl = document.getElementById('spMsg');
-  if (!toast || !nameEl || !msgEl) { return; }
-  var n = spNames[Math.floor(Math.random() * spNames.length)];
-  var m = spMsgs[Math.floor(Math.random() * spMsgs.length)];
-  nameEl.textContent = n;
-  msgEl.textContent = m;
-  toast.classList.add('show');
-  setTimeout(function(){ toast.classList.remove('show'); }, 4000);
-}
-
-function startSpToasts() {
-  if (spInterval) { return; }
-  setTimeout(showSpToast, 8000);
-  spInterval = setInterval(showSpToast, 22000);
-}
+// Sistema de notificacoes "toast" removido: simulava compras de pessoas (nomes/mensagens
+// aleatorios de uma lista fixa) sem qualquer ligacao a vendas reais da Hotmart.
+// Caso queira reativar, ligar a eventos reais via webhook da Hotmart, nao a dados aleatorios.
 
 window.addEventListener("load", checkStepParam);
 
-// LIVE COUNT ANIMATION — intro page
-(function() {
-  var base = 47;
-  var el = document.getElementById('liveCount');
-  if (!el) return;
-  setInterval(function() {
-    var delta = Math.random() < 0.5 ? -1 : 1;
-    base = Math.max(38, Math.min(63, base + delta));
-    if (el) el.textContent = base;
-  }, 4500);
-})();
+// Contador "ao vivo" removido: gerava numero aleatorio (38-63) sem relacao com usuarios reais.
 
 </script>
 </body>
