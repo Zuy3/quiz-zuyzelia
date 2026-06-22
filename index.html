@@ -28,45 +28,45 @@
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-height:100vh;-webkit-font-smoothing:antialiased;}
 .wrap{max-width:520px;margin:0 auto;padding:24px 20px 60px;}
- 
+
 /* HEADER FIXO */
 .qheader{background:#0f4f35;padding:10px 20px;text-align:center;position:sticky;top:0;z-index:10;display:none;align-items:center;justify-content:center;gap:8px;}
 .qheader.visible{display:flex;}
 .qheader-label{font-size:13px;font-weight:600;color:#fff;letter-spacing:0.04em;}
 .qheader-bar{height:3px;background:rgba(255,255,255,0.2);border-radius:3px;overflow:hidden;margin-top:6px;}
 .qheader-fill{height:100%;background:#f0a020;border-radius:3px;transition:width 0.5s ease;}
- 
+
 /* TOPO */
 .topo{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;font-family:'Lora',serif;font-size:13px;color:var(--v);letter-spacing:0.03em;}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--v);opacity:0.5;}
- 
+
 /* STEPS */
 .step{display:none}
 .step.active{display:block;animation:slideIn 0.32s cubic-bezier(0.22,1,0.36,1)}
 @keyframes slideIn{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
 @keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
- 
+
 /* HEADER */
 .hdr{text-align:center;margin-bottom:24px}
- 
+
 .bdot{width:6px;height:6px;border-radius:50%;background:var(--v);display:inline-block;}
 .hdr h1,.hdr h2{font-family:'Lora',serif;font-weight:600;color:var(--td);line-height:1.35;margin-bottom:10px;}
 .hdr h1{font-size:26px}.hdr h2{font-size:21px}
 .hdr em{color:var(--v);font-style:italic;}
 .hdr p{font-size:14px;color:var(--ts);line-height:1.6}
- 
+
 /* METRICAS */
 .mtr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px;}
 .mc{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 10px;text-align:center;}
 .mn{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--v);display:block;margin-bottom:2px;}
 .ml{font-size:11px;color:var(--ts);line-height:1.3}
- 
+
 /* PERGUNTA */
 .qtransition{font-size:13px;color:var(--ts);font-style:italic;margin-bottom:4px;}
 .qtext{font-family:'Lora',serif;font-size:20px;font-weight:600;line-height:1.4;color:var(--td);margin-bottom:6px;}
 .qsub{font-size:13px;color:var(--ts);margin-bottom:18px;line-height:1.5;}
- 
+
 /* OPCOES */
 .opts{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
 .opt{display:flex;align-items:center;gap:14px;background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:14px 16px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;}
@@ -77,15 +77,15 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .obody{flex:1}
 .omain{font-size:15px;color:var(--td);line-height:1.4;font-weight:500}
 .ohint{font-size:12px;color:var(--ts);margin-top:3px}
- 
+
 /* STAT VERDE */
 .qstat{font-size:12px;color:var(--v);font-style:italic;text-align:center;margin-bottom:18px;padding:0 8px;line-height:1.5;}
- 
+
 /* BOTOES */
 .nextbtn{width:100%;padding:17px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;opacity:0.35;pointer-events:none;transition:all 0.2s;}
 .nextbtn.ok{opacity:1;pointer-events:auto}
 .nextbtn.ok:hover{background:var(--ve);transform:translateY(-1px)}
- 
+
 .bnote{text-align:center;font-size:12px;color:var(--ts)}
 .ctabtn{display:block;width:100%;padding:20px 16px;background:var(--gold);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:none;text-align:center;transition:all 0.2s;margin-bottom:8px;letter-spacing:0.01em;line-height:1.3;}
 .ctabtn:hover{background:#a06d08;transform:translateY(-1px)}
@@ -93,7 +93,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .unlocktbtn{width:100%;padding:18px;background:#f0a020;color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.2s;letter-spacing:0.02em;}
 .unlocktbtn:hover{background:#c9860a;transform:translateY(-1px)}
 .notnow{display:block;text-align:center;font-size:13px;color:var(--ts);text-decoration:underline;cursor:pointer;margin-top:14px;padding:4px;}
- 
+
 /* ANALISANDO */
 .azwrap{text-align:center;padding:48px 0 32px}
 .azwrap h3{font-family:'Lora',serif;font-size:20px;color:var(--td);margin-bottom:8px;}
@@ -102,7 +102,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .azrow span{font-size:13px;color:var(--tm);width:175px;flex-shrink:0}
 .aztrack{flex:1;height:6px;background:var(--cd);border-radius:6px;overflow:hidden}
 .azfill{height:100%;background:var(--v);width:0;border-radius:6px;transition:width 1.3s cubic-bezier(.4,0,.2,1)}
- 
+
 /* DESBLOQUEAR */
 .unlock-hdr{text-align:center;margin-bottom:20px;}
 .unlock-hdr h2{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--td);line-height:1.4;margin-bottom:8px;}
@@ -118,7 +118,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .locked-item{background:#fff;border:1px solid var(--bd);border-radius:var(--rs);padding:14px 16px;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--tm);}
 .lock-icon{font-size:18px;flex-shrink:0;}
 .unlock-note{text-align:center;font-size:12px;color:var(--ts);margin-bottom:16px;}
- 
+
 /* RESULTADO */
 .rsec{margin-bottom:18px}
 .card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:20px;box-shadow:0 2px 20px rgba(26,122,84,0.06);}
@@ -224,13 +224,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .datebox-lbl{font-size:11px;color:var(--vm);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
 .datebox-date{font-family:'Lora',serif;font-size:20px;font-weight:600;color:#fff;margin-bottom:4px;line-height:1.3}
 .datebox-sub{font-size:12px;color:var(--vm);line-height:1.4}
- 
+
 .vsl-wrap{margin-bottom:18px}
 .vsl-label{font-size:12px;font-weight:500;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;text-align:center;margin-bottom:10px;}
 .vsl-frame{position:relative;width:100%;max-width:320px;margin:0 auto;aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;background:#000;}
 .vsl-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
 .vsl-note{font-size:11px;color:var(--ts);text-align:center;margin-top:8px;}
- 
+
 .step-page{padding:0 0 80px}
 .page-topbar{background:#d4572a;color:#fff;text-align:center;padding:11px 16px;font-size:13px;font-weight:600}
 .page-topbar.pink{background:#993556}
@@ -312,33 +312,33 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .stat-ob{text-align:center}
 .stat-ob-num{font-size:22px;font-weight:700;color:#1a7a54}
 .stat-ob-lbl{font-size:11px;color:var(--ts)}
- 
+
 .encr{background:#e8f5ee;border-left:3px solid #1D9E75;border-radius:0 var(--rs) var(--rs) 0;padding:10px 14px;margin-bottom:14px;font-size:13px;color:#085041;line-height:1.5;font-weight:500;display:none;animation:fadeIn 0.3s ease}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
- 
+
 #progresswrap{position:relative}
- 
+
 .email-inp:focus{border-color:var(--v)}
- 
+
 .email-btn:disabled{opacity:0.5;cursor:not-allowed}
- 
+
 .email-inp:focus{border-color:#1a7a54}
 .email-inp::placeholder{color:var(--ts);font-size:14px}
- 
+
 .email-prev-item:last-child{margin-bottom:0}
- 
+
 .email-btn:disabled{opacity:.4;cursor:not-allowed}
- 
+
 .badge{display:inline-flex;align-items:center;gap:6px;background:var(--vc);color:var(--ve);font-size:12px;font-weight:600;letter-spacing:0.03em;padding:6px 16px;border-radius:20px;margin-bottom:14px;}
- 
+
 /* keyframe removido - fragmento invalido do original */
- 
+
 .startbtn{width:100%;padding:18px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.2s;margin-bottom:10px;position:relative;overflow:hidden;}
 .startbtn:hover{background:var(--ve);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,122,84,0.35);}
 .startbtn.pulse{animation:ctaPulse 2s infinite}
 @keyframes ctaPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,122,84,0.4)}50%{box-shadow:0 0 0 10px rgba(26,122,84,0)}}
 .bnote{text-align:center;font-size:12px;color:var(--ts)}
- 
+
 /* NAME INPUT */
 .name-wrap{margin-bottom:16px}
 .name-label{font-size:14px;font-weight:600;color:var(--td);margin-bottom:8px;display:block}
@@ -347,7 +347,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .name-inp::placeholder{color:var(--ts)}
 .name-inp.error{border-color:#d85a30;animation:shake 0.3s ease}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
- 
+
 /* STICKY CTA BAR */
 .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#0f4f35;padding:12px 20px;display:none;align-items:center;justify-content:space-between;gap:12px;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,0.2);}
 .sticky-cta.visible{display:flex}
@@ -355,20 +355,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .sticky-cta-text strong{display:block;font-size:15px}
 .sticky-cta-btn{background:#f0a020;color:#fff;border:none;border-radius:10px;padding:12px 18px;font-size:14px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;text-decoration:none;flex-shrink:0;transition:background 0.2s;}
 .sticky-cta-btn:hover{background:#c9860a}
- 
+
 /* SOCIAL PROOF TOAST */
 .sp-toast{position:fixed;bottom:80px;left:12px;right:12px;max-width:340px;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--td);box-shadow:0 4px 20px rgba(0,0,0,0.12);z-index:99;transform:translateY(20px);opacity:0;transition:all 0.4s ease;pointer-events:none;}
 .sp-toast.show{transform:translateY(0);opacity:1}
 .sp-toast-icon{font-size:20px;flex-shrink:0}
 .sp-toast-text{line-height:1.4}
 .sp-toast-text strong{color:var(--v)}
- 
+
 /* DATEBOX MELHORADO */
 .datebox{background:linear-gradient(135deg,#0f4f35,#1a7a54);border-radius:var(--r);padding:18px 20px;text-align:center;color:#fff;}
 .datebox-lbl{font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;opacity:0.8;margin-bottom:6px}
 .datebox-date{font-family:'Lora',serif;font-size:22px;font-weight:600;margin-bottom:4px}
 .datebox-sub{font-size:12px;opacity:0.75}
- 
+
 /* LOADING SOCIAL PROOF */
 .az-sp-wrap{margin-top:24px}
 .az-sp-card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;display:none;animation:fu 0.5s ease}
@@ -377,7 +377,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .az-sp-text{font-family:'Lora',serif;font-size:14px;font-style:italic;color:var(--td);line-height:1.6;margin-bottom:6px}
 .az-sp-name{font-size:12px;color:var(--ts)}
 .az-pct{font-family:'Lora',serif;font-size:13px;font-weight:600;color:var(--v);text-align:right;margin-bottom:4px}
- 
+
 /* IMC SEMAFORO */
 .imc-wrap{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:16px;margin-bottom:16px}
 .imc-title{font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px}
@@ -388,7 +388,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .imc-marker{position:absolute;top:-5px;width:4px;height:24px;background:#1c1c1a;border-radius:2px;transform:translateX(-50%);transition:left 1.2s cubic-bezier(.4,0,.2,1)}
 .imc-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--ts);margin-bottom:10px}
 .imc-alert{border-left:3px solid #e87c30;border-radius:0 var(--rs) var(--rs) 0;padding:10px 14px;font-size:13px;line-height:1.5}
- 
+
 /* SLIDER PESO */
 .peso-display{font-family:'Lora',serif;font-size:52px;font-weight:600;color:var(--v);text-align:center;margin-bottom:2px;line-height:1}
 .peso-unit-lbl{text-align:center;font-size:16px;color:var(--ts);margin-bottom:16px}
@@ -396,7 +396,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .peso-slider::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:var(--v);cursor:pointer;border:3px solid #fff;box-shadow:0 2px 10px rgba(26,122,84,0.45)}
 .peso-slider::-moz-range-thumb{width:30px;height:30px;border-radius:50%;background:var(--v);cursor:pointer;border:3px solid #fff}
 .peso-hint{background:var(--vc);border-radius:var(--rs);padding:10px 14px;font-size:13px;color:var(--ve);text-align:center;line-height:1.5}
- 
+
 /* DOIS PACOTES */
 .pkg-header{text-align:center;margin-bottom:16px}
 .pkg-header h3{font-family:'Lora',serif;font-size:19px;font-weight:600;color:var(--td);margin-bottom:4px}
@@ -425,7 +425,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .pkg-cta{display:block;width:100%;padding:17px 12px;border:none;border-radius:var(--r);font-size:15px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:none;text-align:center;color:#fff;line-height:1.3;transition:all 0.2s}
 .pkg-cta.g{background:var(--v)}.pkg-cta.g:hover{background:var(--ve);transform:translateY(-1px)}
 .pkg-cta.au{background:var(--gold)}.pkg-cta.au:hover{background:#a06d08;transform:translateY(-1px)}
- 
+
 /* COUPON + TRUST */
 .coupon-box{background:#fff8e6;border:1.5px dashed var(--gold);border-radius:var(--rs);padding:10px 16px;text-align:center;margin-bottom:12px}
 .coupon-label{font-size:11px;color:#6b4800;margin-bottom:3px}
@@ -434,7 +434,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .trust-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:8px 0;padding:8px}
 .trust-item{font-size:11px;color:var(--ts);display:flex;align-items:center;gap:4px}
 .gar-risk-btn{display:block;text-align:center;font-size:13px;color:var(--v);font-weight:600;text-decoration:underline;cursor:pointer;margin-top:8px;padding:4px}
- 
+
 /* VIEWING NOW */
 .viewing-now{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--bd);border-radius:var(--rs);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--tm);}
 .vn-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink 1.5s infinite}
@@ -442,7 +442,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 </style>
 </head>
 <body>
- 
+
 <!-- HEADER FIXO COM BARRA DE PROGRESSO -->
 <div class="qheader" id="topbar" style="display:none">
   <span style="font-size:16px">&#127807;</span>
@@ -452,13 +452,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 <div style="height:4px;background:#0f4f35;display:none" id="progresswrap">
   <div id="progressbar" style="height:100%;background:#f0a020;width:0;transition:width 0.5s ease;"></div>
 </div>
- 
+
 <div class="wrap">
 <div class="topo"><div class="dot"></div>Barriga Chapada em 7 Dias<div class="dot"></div></div>
- 
+
 <!-- ====== INTRO ====== -->
 <div class="step active" id="s0" style="display:block">
- 
+
   <!-- HERO TOP BADGE -->
   <div style="text-align:center;margin-bottom:20px;">
     <div style="display:inline-flex;align-items:center;gap:7px;background:var(--vc);border:1px solid var(--vm);border-radius:30px;padding:7px 16px;">
@@ -466,7 +466,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <span style="font-size:12px;font-weight:600;color:var(--ve);letter-spacing:0.03em;">Diagn&#243;stico gratuito &#8212; resultado personalizado na hora</span>
     </div>
   </div>
- 
+
   <!-- HEADLINE -->
   <div style="text-align:center;margin-bottom:18px;">
     <h1 style="font-family:'Lora',serif;font-size:28px;font-weight:600;line-height:1.3;color:var(--td);margin-bottom:10px;">
@@ -475,7 +475,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </h1>
     <p style="font-size:15px;color:var(--tm);line-height:1.6;max-width:400px;margin:0 auto;">Em 2 minutos, o seu protocolo personalizado de ch&#225;s e receitas &#8212; sem dieta maluca, sem efeito sanfona.</p>
   </div>
- 
+
   <!-- STATS STRIP -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px;">
     <div style="background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 8px;text-align:center;">
@@ -491,7 +491,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div style="font-size:11px;color:var(--ts);margin-top:3px;line-height:1.3;">para ver<br>resultado</div>
     </div>
   </div>
- 
+
   <!-- MINI DEPOIMENTOS -->
   <div style="background:#fff;border:1px solid var(--bd);border-radius:14px;overflow:hidden;margin-bottom:20px;">
     <!-- Imagem destaque -->
@@ -526,7 +526,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       </div>
     </div>
   </div>
- 
+
   <!-- COMO FUNCIONA - 3 PASSOS -->
   <div style="background:var(--vc);border:1px solid var(--vm);border-radius:14px;padding:16px;margin-bottom:20px;">
     <div style="font-size:12px;font-weight:600;color:var(--ve);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;text-align:center;">Como funciona</div>
@@ -543,7 +543,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div style="font-size:13px;color:var(--ve);line-height:1.5;padding-top:4px;">Acedes ao protocolo de ch&#225;s e receitas criado para o teu perfil</div>
     </div>
   </div>
- 
+
   <!-- NAME INPUT -->
   <div style="margin-bottom:16px;">
     <label style="font-size:14px;font-weight:600;color:var(--td);margin-bottom:8px;display:block;">&#128075; Como posso te chamar?</label>
@@ -552,13 +552,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       maxlength="30" autocomplete="given-name"
       style="font-size:16px;">
   </div>
- 
+
   <!-- CTA BUTTON -->
   <button class="startbtn pulse" id="startBtn" onclick="startQuiz()"
     style="font-size:16px;letter-spacing:0.03em;padding:19px;">
     &#128300; DESCOBRIR MEU PROTOCOLO &#8594;
   </button>
- 
+
   <!-- TRUST STRIP -->
   <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;flex-wrap:wrap;">
     <div style="font-size:11px;color:var(--ts);display:flex;align-items:center;gap:4px;">
@@ -567,9 +567,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div style="width:3px;height:3px;border-radius:50%;background:var(--bd);"></div>
     <div style="font-size:11px;color:var(--ts);">&#9200; 2 minutos</div>
   </div>
- 
+
 </div>
- 
+
 <!-- ====== Q1: FAIXA ETARIA ====== -->
 <div class="step" id="s1" style="display:none">
   <div class="encr" id="encr1"></div>
@@ -586,7 +586,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="qstat">Sua faixa etaria ajuda a calibrar o protocolo certo para a sua fase</div>
   <button class="nextbtn" id="b1" onclick="qcomplete(1);ir(2)">Continuar &#8594;</button>
 </div>
- 
+
 <!-- ====== Q2: FREQUENCIA ====== -->
 <div class="step" id="s2" style="display:none">
   <div class="encr" id="encr2"></div>
@@ -603,7 +603,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="qstat">O padrao de horario do inchaco ajuda a identificar a causa mais provavel</div>
   <button class="nextbtn" id="b2" onclick="qcomplete(2);ir(5)">Continuar &#8594;</button>
 </div>
- 
+
 <!-- ====== Q4: IMPACTO EMOCIONAL ====== -->
 <div class="step" id="s4" style="display:none">
   <div class="encr" id="encr4"></div>
@@ -620,7 +620,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="qstat">Voce nao esta sozinha nisso</div>
   <button class="nextbtn" id="b4" onclick="qcomplete(4);ir(8)">Continuar &#8594;</button>
 </div>
- 
+
 <!-- ====== Q5: INTESTINO ====== -->
 <div class="step" id="s5" style="display:none">
   <div class="encr" id="encr5"></div>
@@ -638,7 +638,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="qstat">O funcionamento intestinal e o fator mais importante deste diagnostico</div>
   <button class="nextbtn" id="b5" onclick="qcomplete(3);ir(4)">Continuar &#8594;</button>
 </div>
- 
+
 <!-- ====== Q8: MOTIVACAO ====== -->
 <div class="step" id="s8" style="display:none">
   <div class="encr" id="encr8"></div>
@@ -655,16 +655,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="qstat">Quase la &#8212; sua resposta vai definir qual protocolo e ideal para voce</div>
   <button class="nextbtn" id="b8" onclick="qcomplete(5);analisar()">Ver meu diagnostico &#8594;</button>
 </div>
- 
+
 <!-- ====== EMAIL CAPTURE ====== -->
- 
+
 <!-- ====== ANALISANDO ====== -->
 <div class="step" id="s9" style="display:none">
   <div class="azwrap">
     <div style="font-size:36px;margin-bottom:12px;">&#128300;</div>
     <h3 style="font-family:'Lora',serif;font-size:18px;font-weight:600;color:var(--td);margin-bottom:4px;">Analisando o seu perfil...</h3>
     <p id="azSubtitle" style="font-size:13px;color:var(--ts);margin-bottom:16px;">Cruzando as suas respostas com 12.400 perfis similares</p>
- 
+
     <!-- BARRA PERCENTAGEM -->
     <div style="background:var(--cd);border-radius:20px;height:8px;margin-bottom:6px;overflow:hidden;">
       <div id="azPctBar" style="height:100%;background:var(--v);border-radius:20px;width:0%;transition:width 0.8s ease;"></div>
@@ -673,7 +673,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div id="azPctNum" style="font-size:13px;font-weight:700;color:var(--v);">0%</div>
       <div style="font-size:11px;color:var(--ts);">Analise completa em instantes</div>
     </div>
- 
+
     <!-- ETAPAS DE ANALISE -->
     <div id="azSteps" style="text-align:left;display:flex;flex-direction:column;gap:8px;">
       <div class="az-step" id="azs1" style="display:flex;align-items:center;gap:10px;opacity:0.3;transition:opacity 0.4s;">
@@ -718,7 +718,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       </div>
     </div>
   </div>
- 
+
   <!-- SOCIAL PROOF DURANTE LOADING -->
   <div style="margin-top:16px;">
     <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;text-align:center;margin-bottom:10px;">&#127942; Enquanto preparamos o teu diagnostico</div>
@@ -761,8 +761,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </div>
   </div>
 </div>
- 
- 
+
+
 <!-- ====== DESBLOQUEAR ====== -->
 <div class="step" id="s10" style="display:none">
   <div class="unlock-hdr">
@@ -786,10 +786,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   <div class="unlock-note">Diagnostico 100% personalizado baseado nas suas respostas</div>
   <button class="unlocktbtn" onclick="desbloquear()">&#128274; DESBLOQUEAR MEU DIAGNOSTICO &#8212; GRATIS</button>
 </div>
- 
+
 <!-- ====== RESULTADO ====== -->
 <div class="step" id="s11" style="display:none">
- 
+
   <div class="hdr" style="margin-bottom:18px">
     <div class="badge"><span class="bdot"></span>Diagnostico completo</div>
     <h2 id="res-h2">Identificamos por que sua barriga nao sai &#8212; <em>mesmo quando voce faz tudo certo</em></h2>
@@ -799,22 +799,22 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div class="datebox-date" id="datePred">Calculando...</div>
     <div class="datebox-sub" id="dateSub">Calculado com base em 12.400 perfis similares ao seu este mes</div>
   </div>
- 
+
   <!-- BLOCO DE IMC REMOVIDO: mostrava "25.7 / Sobrepeso" fixo para todos os visitantes.
        O quiz atual (5 perguntas) nao coleta peso/altura, entao este numero nunca era
        calculado de fato - era um valor estatico deixado de uma versao anterior do quiz.
        Decisao pendente: reintroduzir IMC real (exige adicionar pergunta de peso/altura)
        ou manter removido. -->
- 
+
   <!-- VOCE ESTA AQUI vs VOCE ESTARA AQUI -->
   <div class="rsec">
     <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 12px rgba(26,122,84,0.06);">
- 
+
       <!-- HEADER -->
       <div style="background:var(--v);padding:12px 16px;text-align:center;">
         <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:0.05em;">Sua jornada de transformacao</div>
       </div>
- 
+
       <!-- LINHA DO TEMPO -->
       <div style="display:flex;align-items:center;justify-content:center;gap:6px;padding:14px 16px 10px;background:#f9f9f7;border-bottom:1px solid var(--bd);">
         <div style="text-align:center;flex:1;">
@@ -843,10 +843,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
           <div style="font-size:11px;color:var(--ts);">Com protocolo</div>
         </div>
       </div>
- 
+
       <!-- COMPARATIVO ESTADO -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
- 
+
         <!-- VOCE ESTA AQUI -->
         <div style="padding:16px 14px;border-right:1px solid var(--bd);background:#fff5f5;">
           <div style="font-size:11px;font-weight:700;color:#d85a30;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px;display:flex;align-items:center;gap:5px;">
@@ -861,7 +861,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
             <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#7a3010;"><span style="color:#d85a30;font-weight:700;flex-shrink:0;font-size:13px;">&#10007;</span> Barriga inchada</div>
           </div>
         </div>
- 
+
         <!-- VOCE ESTARA AQUI -->
         <div style="padding:16px 14px;background:#f0faf4;">
           <div style="font-size:11px;font-weight:700;color:var(--ve);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px;display:flex;align-items:center;gap:5px;">
@@ -876,16 +876,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
             <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ve);"><span style="color:var(--v);font-weight:700;flex-shrink:0;font-size:13px;">&#10003;</span> Barriga chapada</div>
           </div>
         </div>
- 
+
       </div>
- 
+
       <!-- RODAPE COM NUMERO SOCIAL -->
       <div style="background:var(--vc);border-top:1px solid var(--vm);padding:10px 16px;text-align:center;font-size:12px;color:var(--ve);font-weight:600;">
         &#10003; Baseado no resultado de <span id="timelineCount">3.291</span> mulheres com o mesmo perfil
       </div>
     </div>
   </div>
- 
+
   <!-- PERFIL + SCORE -->
   <div class="card rsec">
     <div class="ppill" id="rpill">Perfil Inflamatorio</div>
@@ -920,7 +920,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <p id="objtxt"></p>
     </div>
   </div>
- 
+
   <!-- PROBLEMAS -->
   <div class="card rsec">
     <div style="font-size:12px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:12px">Identificamos no seu perfil</div>
@@ -931,7 +931,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="issrow"><span class="isx">&#10007;</span><span>Peso que volta sempre que para qualquer protocolo</span></div>
     </div>
   </div>
- 
+
   <!-- CAROUSEL -->
   <div class="rsec">
     <div class="cheader">&#127942; Transformacoes reais de quem ja usou o protocolo</div>
@@ -949,14 +949,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </div>
     <div class="cnav" id="cnav"></div>
   </div>
- 
+
   <!-- NUMEROS -->
   <div class="sstrip rsec">
     <div class="sitem"><span class="snum">12.400+</span><span class="slbl">diagnosticos este mes</span></div>
     <div class="sitem"><span class="snum">12kg</span><span class="slbl">media perdida</span></div>
     <div class="sitem"><span class="snum">7 dias</span><span class="slbl">para resultado</span></div>
   </div>
- 
+
   <!-- COMPARATIVO -->
   <div class="rsec">
     <div style="font-size:13px;font-weight:600;color:var(--td);margin-bottom:10px;text-align:center">Voce se identifica com isso?</div>
@@ -977,7 +977,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       </div>
     </div>
   </div>
- 
+
   <!-- BENEFICIOS -->
   <div class="card rsec">
     <div style="font-size:14px;font-weight:600;color:var(--td);margin-bottom:14px">O que o protocolo vai fazer por voce</div>
@@ -988,28 +988,28 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="benitem"><div class="bentitle">Ingredientes simples</div><div class="bendesc">Tudo no mercado proximo. Sem suplementos caros</div></div>
     </div>
   </div>
- 
+
   <!-- DEPOIMENTO -->
   <div class="testcard rsec">
     <div class="teststars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
     <div class="testquote" id="rtestQ">Tentei varias dietas e nada resolvia o inchaco. Em 4 dias ja sentia a diferenca.</div>
     <div class="testname" id="rtestN">Juliana M., 34 anos &#8212; Sao Paulo</div>
   </div>
- 
+
   <!-- PERSONA -->
   <div class="persona rsec">
-    <img src="img4.png" alt="Dra. Isabela Vitallis" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid var(--vm);">
+    <img src="img4.png" alt="Isabela Vitallis" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid var(--vm);">
     <div class="pinfo">
-      <div class="pname">Dra. Isabela Vitallis</div>
-      <div class="prole">Nutricao Funcional &#183; Saude Intestinal Feminina</div>
+      <div class="pname">Isabela Vitallis</div>
+      <div class="prole">Conte&#250;do Educativo &#183; Sa&#250;de Intestinal Feminina</div>
       <div class="pquote" id="pquote">O inchaco abdominal feminino quase sempre tem uma causa especifica e identificavel. Nao e sobre comer menos &#8212; e sobre dar ao intestino as ferramentas certas.</div>
     </div>
   </div>
- 
+
   <!-- PROVA SOCIAL VISUAL — substitui VSL -->
   <div class="rsec">
     <div style="font-size:12px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;text-align:center;margin-bottom:12px;">&#127942; Transformacoes reais com o protocolo</div>
- 
+
     <!-- DESTAQUE: img6 — a mais dramatica -->
     <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:12px;box-shadow:0 2px 16px rgba(26,122,84,0.08);">
       <img src="img6.jpg" alt="Ana Paula transformacao" loading="lazy" style="width:100%;display:block;max-height:340px;object-fit:cover;">
@@ -1024,7 +1024,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
         </div>
       </div>
     </div>
- 
+
     <!-- GRID 2x2 das outras 4 -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
       <div style="border-radius:10px;overflow:hidden;position:relative;">
@@ -1044,30 +1044,30 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(15,79,53,0.92),transparent);padding:10px 10px 8px;color:#fff;font-size:11px;font-weight:600;">Marcia &#8212; 30 dias</div>
       </div>
     </div>
- 
+
     <div style="text-align:center;margin-top:10px;font-size:12px;color:var(--ts);">+12.400 mulheres ja transformaram a barriga este mes</div>
   </div>
- 
+
   <!-- VSL DRA. ISABELA VITALLIS -->
   <div class="rsec">
     <div style="text-align:center;margin-bottom:10px;">
       <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;">&#127909; Mensagem especial para o teu perfil</div>
     </div>
- 
+
     <div style="background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:0 4px 20px rgba(26,122,84,0.1);">
       <!-- PERSONA HEADER -->
       <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--vc);border-bottom:1px solid var(--vm);">
-        <img src="img4.png" alt="Dra. Isabela Vitallis"
+        <img src="img4.png" alt="Isabela Vitallis"
           style="width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid var(--v);">
         <div>
-          <div style="font-size:14px;font-weight:700;color:var(--ve);">Dra. Isabela Vitallis</div>
-          <div style="font-size:11px;color:var(--ve);opacity:0.8;">Nutricao Funcional &#183; Saude Intestinal Feminina</div>
+          <div style="font-size:14px;font-weight:700;color:var(--ve);">Isabela Vitallis</div>
+          <div style="font-size:11px;color:var(--ve);opacity:0.8;">Conte&#250;do Educativo &#183; Sa&#250;de Intestinal Feminina</div>
         </div>
         <div style="margin-left:auto;display:flex;align-items:center;gap:5px;font-size:11px;color:var(--v);font-weight:600;">
           MENSAGEM EM VIDEO
         </div>
       </div>
- 
+
       <!-- VIDEO 9:16 VERTICAL -->
       <div style="position:relative;width:100%;max-width:320px;margin:0 auto;aspect-ratio:9/16;background:#000;overflow:hidden;">
         <video
@@ -1080,21 +1080,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
           <source src="https://res.cloudinary.com/dp1rvn4vn/video/upload/v1776113252/barriga-chapada_mUxBMIEL_ncqztg.mp4" type="video/mp4">
         </video>
       </div>
- 
+
       <!-- NOTA ABAIXO DO VIDEO -->
       <div style="padding:10px 16px;display:flex;align-items:center;gap:8px;background:#f9f9f7;">
         <span style="font-size:18px;">&#9888;&#65039;</span>
-        <span style="font-size:12px;color:var(--ts);line-height:1.5;">Assiste antes de continuar &#8212; a Dra. Isabela explica por que o teu perfil responde diferente e qual e a solucao especifica para ti.</span>
+        <span style="font-size:12px;color:var(--ts);line-height:1.5;">Assiste antes de continuar &#8212; Isabela explica por que o teu perfil responde diferente e qual e a solucao especifica para ti.</span>
       </div>
     </div>
   </div>
- 
+
   <div class="timebox rsec">
     <p>&#9203; Sua analise personalizada esta reservada por:</p>
     <div class="timenum" id="rtimer">14:58</div>
   </div>
   <div class="urgline rsec" id="urgline">Efetue a inscricao ate 23h47 de hoje &#8212; depois o preco pode voltar ao normal.</div>
- 
+
   <!-- GARANTIA -->
   <div class="garhero rsec">
     <div class="garicon">&#128737;</div>
@@ -1103,7 +1103,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="gardesc">Se voce nao sentir resultado em 7 dias, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. A Hotmart processa imediatamente.</div>
     </div>
   </div>
- 
+
   <!-- OFERTA PERSONALIZADA - DOIS PACOTES -->
   <div class="rsec">
     <!-- CUPAO + TIMER -->
@@ -1112,7 +1112,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div style="font-family:'Lora',serif;font-size:32px;font-weight:600;color:#d4572a;" id="offerTimerDisplay">09:59</div>
       <div style="font-size:12px;color:var(--ts);margin-top:4px;">Apos esse tempo o preco volta ao normal</div>
     </div>
- 
+
     <!-- CUPAO PERSONALIZADO -->
     <div id="couponBox" style="background:var(--vc);border:1.5px dashed var(--vm);border-radius:var(--rs);padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px;">
       <span style="font-size:20px;flex-shrink:0;">&#127881;</span>
@@ -1122,10 +1122,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
         <div style="font-size:11px;color:var(--ts);">Desconto exclusivo para seguidoras</div>
       </div>
     </div>
- 
+
     <!-- ESCOLHER PACOTE -->
     <div style="font-size:16px;font-weight:700;color:var(--td);text-align:center;margin-bottom:14px;">&#11088; Escolha o seu pacote:</div>
- 
+
     <!-- PACOTE 1: MAIS POPULAR -->
     <div style="border:2px solid var(--v);border-radius:var(--r);background:#fff;padding:20px;margin-bottom:12px;position:relative;box-shadow:0 4px 24px rgba(26,122,84,0.14);">
       <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--v);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 16px;border-radius:20px;white-space:nowrap;">&#11088; Recomendado para o seu perfil</div>
@@ -1149,7 +1149,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div style="font-size:12px;color:var(--ts);text-align:center;margin-bottom:12px;">&#129689; Menos de R$1 por dia para transformar o seu corpo<br>&#127829; Menos que um lanche fora &#8212; resultado para a vida toda</div>
       <a class="ctabtn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=oferta_principal&utm_campaign=barriga7dias" target="_blank" onclick="ev('InicioCheckoutP1')">&#11088; QUERO O MAIS POPULAR &#8212; R$29,90 &#8594;</a>
     </div>
- 
+
     <!-- PACOTE 2: TRANSFORMACAO TOTAL -->
     <div style="border:2px solid var(--gold);border-radius:var(--r);background:#fffdf5;padding:20px;margin-bottom:16px;position:relative;">
       <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 16px;border-radius:20px;white-space:nowrap;">&#127942; Resultado mais completo</div>
@@ -1173,7 +1173,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div style="font-size:12px;color:var(--ts);text-align:center;margin-bottom:12px;">&#129689; Menos de R$1,30 por dia &#8212; acesso vitalicio<br>&#127828; Menos que uma pizza &#8212; resultado permanente</div>
       <a class="ctabtn" style="background:var(--gold);" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=oferta_total&utm_campaign=barriga7dias" target="_blank" onclick="ev('InicioCheckoutP2')">&#127942; QUERO A TRANSFORMACAO TOTAL &#8212; R$37,90 &#8594;</a>
     </div>
- 
+
     <!-- TRUST BADGES -->
     <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:14px;">
       <div style="font-size:12px;color:var(--ts);display:flex;align-items:center;gap:4px;"><span>&#128274;</span> Compra Segura</div>
@@ -1181,17 +1181,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div style="font-size:12px;color:var(--ts);display:flex;align-items:center;gap:4px;"><span>&#128241;</span> Acesso Imediato</div>
     </div>
   </div>
- 
+
   <span class="notnow" onclick="notnow()">Nao posso agora &#8212; prefiro testar sem risco</span>
- 
+
   <div class="divider">Quem ja usou e comprovou</div>
- 
+
   <div class="rsec">
     <div class="wppcard"><img src="img2.jpg" alt="Camila 10kg" loading="lazy"><div class="wpplabel"><strong>Camila</strong> &#8212; Perdeu 10kg. Mensagem enviada direto no WhatsApp.</div></div>
     <div class="wppcard"><img src="img3.jpg" alt="Zania resultado" loading="lazy"><div class="wpplabel"><strong>Zania</strong> &#8212; Comparou o antes e depois e a motivacao voltou imediatamente.</div></div>
     <div class="wppcard"><img src="img1.jpg" alt="Paula resultado" loading="lazy"><div class="wpplabel"><strong>Paula</strong> &#8212; Resultado visivel em dias seguindo o protocolo.</div></div>
   </div>
- 
+
   <div class="garhero rsec">
     <div class="garicon">&#128737;</div>
     <div class="gartext">
@@ -1208,13 +1208,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <span class="trust-item">&#128241; Acesso Imediato</span>
   </div>
   <div class="urgline" id="urgline2" style="margin-top:8px"></div>
- 
+
   <div class="footer">
     Barriga Chapada em 7 Dias &#183; Produto digital<br>
     Todos os direitos reservados &#183; Processado pela Hotmart<br>
     Resultados podem variar de pessoa para pessoa
   </div>
- 
+
   <!-- ═══════════════ S12 — OBRIGADO ═══════════════ -->
   <div id="s12" class="step step-page" style="display:none">
     <div class="page-topbar green">&#127881; Pedido confirmado! Bem-vinda ao protocolo Barriga Chapada!</div>
@@ -1223,48 +1223,48 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <h1>Parabens! <em class="green">Compra confirmada!</em> &#127881;</h1>
       <p>A tua decisao de hoje vai transformar o teu corpo e a tua saude. O teu eBook ja esta a caminho — verifica o teu email nos proximos minutos.</p>
     </div>
- 
+
     <div class="confirm-grid">
       <div class="confirm-item"><div class="confirm-icon">&#128230;</div><div class="confirm-label">Pedido</div><div class="confirm-val">Confirmado</div></div>
       <div class="confirm-item"><div class="confirm-icon">&#10003;</div><div class="confirm-label">Status</div><div class="confirm-val">Aprovado</div></div>
       <div class="confirm-item"><div class="confirm-icon">&#128140;</div><div class="confirm-label">Entrega</div><div class="confirm-val">Por email</div></div>
       <div class="confirm-item"><div class="confirm-icon">&#9889;</div><div class="confirm-label">Acesso</div><div class="confirm-val">Imediato</div></div>
     </div>
- 
+
     <div class="steps-how">
       <h3>Como aceder ao teu eBook</h3>
       <div class="step-how"><div class="step-num">1</div><div class="step-how-text">Abre o teu email e procura a mensagem da Hotmart com o assunto "Seu produto esta disponivel"</div></div>
       <div class="step-how"><div class="step-num">2</div><div class="step-how-text">Clica no link de acesso dentro do email — seras redirecionada para a area de membros</div></div>
       <div class="step-how"><div class="step-num">3</div><div class="step-how-text">Faz o download do eBook e comeca as receitas ainda hoje!</div></div>
     </div>
- 
+
     <div class="obrigado-cta">
       <h3>&#9889; Oferta especial para ti</h3>
       <p>Enquanto o teu email chega, temos uma oferta exclusiva criada especialmente para quem acabou de comprar. Esta oferta <strong>nao existe em nenhuma outra pagina</strong> e expira em breve.</p>
       <a class="pbtn-yes green" href="javascript:void(0)" onclick="irStep(13)">&#127873; Ver minha oferta exclusiva agora<br><span style="font-size:12px;font-weight:400">Oferta especial so para quem acabou de comprar</span></a>
       <a class="pbtn-no" href="javascript:void(0)" onclick="irStep(13)">Nao obrigada, prefiro ir directamente para o meu eBook &#8594;</a>
     </div>
- 
+
     <div class="stats-row">
       <div class="stat-ob"><div class="stat-ob-num">5M+</div><div class="stat-ob-lbl">Seguidores</div></div>
       <div class="stat-ob"><div class="stat-ob-num">181</div><div class="stat-ob-lbl">Compras este mes</div></div>
       <div class="stat-ob"><div class="stat-ob-num">4.9&#9733;</div><div class="stat-ob-lbl">Avaliacao media</div></div>
     </div>
   </div>
- 
+
   <!-- ═══════════════ S13 — UPSELL ═══════════════ -->
   <div id="s13" class="step step-page" style="display:none">
     <div class="page-topbar">&#9888; ATENCAO: Esta oferta expira quando voce sair desta pagina!</div>
     <div class="ptimer"><span>Oferta exclusiva expira em: </span><span class="ptimer-num" id="ut1">14</span> min : <span class="ptimer-num" id="ut2">59</span> seg</div>
- 
+
     <div class="phero">
       <div class="phero-badge green">Oferta exclusiva pos-compra</div>
       <h1>E depois dos 7 dias... <em class="green">o que acontece?</em></h1>
       <p>A maioria das mulheres conquista resultados na primeira semana — e depois volta ao ponto de partida. Isso acontece porque falta um plano para continuar.</p>
     </div>
- 
+
     <div class="pwarn">Esta e uma oferta unica criada apenas para quem acabou de comprar. O preco especial nao existe em nenhuma outra pagina e some assim que voce sair daqui.</div>
- 
+
     <div class="pcard">
       <h2>&#127807; Saude Natural Descomplicada</h2>
       <div class="pbenefit"><div class="pbicon">&#127807;</div><div><div class="pbtitle">Mantem a barriga chapada</div><div class="pbdesc">Apos os 7 dias, continua com receitas que sustentam os resultados</div></div></div>
@@ -1274,7 +1274,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="pbenefit"><div class="pbicon">&#9889;</div><div><div class="pbtitle">Mais energia no dia a dia</div><div class="pbdesc">Ingredientes que recarregam o teu corpo naturalmente</div></div></div>
       <div class="pbenefit"><div class="pbicon">&#128218;</div><div><div class="pbtitle">50 receitas caseiras</div><div class="pbdesc">Simples, com ingredientes de mercado, prontas em minutos</div></div></div>
     </div>
- 
+
     <div class="pprice green">
       <div class="pprice-old">Preco normal: R$ 67,00</div>
       <div class="pprice-new green">R$47,90</div>
@@ -1283,13 +1283,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <a class="pbtn-yes green" href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=orderbump&utm_campaign=saudenatural">&#10003; SIM! Quero garantir meus resultados por R$ 47,90<br><span style="font-size:12px;font-weight:400">Clique aqui e adicione ao meu pedido com 1 clique</span></a>
       <a class="pbtn-no" href="javascript:void(0)" onclick="irStep(14)">Nao obrigada, dispenso os resultados duradouros &#8594;</a>
     </div>
- 
+
     <div class="psecure"><span class="psec-item">&#128274; Compra segura</span><span class="psec-item">&#127970; Hotmart</span><span class="psec-item">&#128241; Acesso imediato</span><span class="psec-item">&#128260; Garantia 7 dias</span></div>
- 
+
     <div class="ptcard"><div class="pt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="pt-quote">Comprei o Barriga Chapada e logo depois peguei este. Foi a melhor decisao. Ja sao 3 semanas mantendo os resultados!</div><div class="pt-name">Claudia M. &#183; Sao Paulo</div></div>
     <div class="ptcard"><div class="pt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="pt-quote">As receitas sao simples e deliciosas. Minha familia toda adotou. A barriga nunca mais voltou como antes.</div><div class="pt-name">Fernanda R. &#183; Rio de Janeiro</div></div>
     <div class="ptcard"><div class="pt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="pt-quote">Perdi mais 4kg nas 3 semanas seguintes. O guia foi o complemento perfeito pro Barriga Chapada.</div><div class="pt-name">Luciana S. &#183; Curitiba</div></div>
- 
+
     <div class="pgar green">
       <div class="pgar-icon">&#128737;</div>
       <div>
@@ -1297,31 +1297,31 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
         <div class="pgar-desc green">Se nao ficar satisfeita, devolvemos 100% do seu dinheiro — sem perguntas, sem burocracia.</div>
       </div>
     </div>
- 
+
     <div style="margin:0 20px">
       <a class="pbtn-yes green" href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=orderbump&utm_campaign=saudenatural">&#10003; SIM! Quero o Saude Natural por R$ 47,90</a>
       <a class="pbtn-no" href="javascript:void(0)" onclick="irStep(14)">Nao obrigada, nao preciso manter meus resultados &#8594;</a>
     </div>
- 
+
     <div style="text-align:center;margin-top:20px;font-size:11px;color:var(--ts)">&#169; 2026 Biomedico Zuy &#183; Todos os direitos reservados &#183; Compra Segura</div>
- 
+
     <div class="psticky">
       <div class="psticky-timer red">&#9203; Oferta expira em <span id="ut3">14:59</span></div>
       <a class="psticky-btn green" href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=orderbump&utm_campaign=saudenatural">Quero R$47,90 &#8594;</a>
     </div>
   </div>
- 
+
   <!-- ═══════════════ S14 — DOWNSELL ═══════════════ -->
   <div id="s14" class="step step-page" style="display:none">
     <div class="page-topbar pink">&#10084; Espera! Temos uma ultima oferta especial so para voce!</div>
     <div class="ptimer purple"><span>Oferta especial disponivel por: </span><span class="ptimer-num" id="dt1">09</span> min : <span class="ptimer-num" id="dt2">59</span> seg</div>
- 
+
     <div class="phero">
       <div class="phero-badge pink">Oferta de ultima chance</div>
       <h1>Tudo bem! Mas antes de ir... <em class="pink">e a sua pele?</em></h1>
       <p>Voce ja esta no caminho certo para a barriga chapada. Mas existe um segredo que as mulheres mais jovens e bonitas guardam — e que ninguem te contou ainda.</p>
     </div>
- 
+
     <div class="pcard">
       <h2>&#10024; Colageno Caseiro<br><span style="font-size:13px;font-weight:400;color:var(--ts)">O Segredo para uma Pele Jovem Sem Gastar Uma Fortuna</span></h2>
       <div class="pbenefit"><div class="pbicon">&#127800;</div><div><div class="pbtitle">Pele firme e jovem sem cirurgia</div><div class="pbdesc">40 receitas que estimulam o colageno natural — sem agulhas, sem procedimentos caros</div></div></div>
@@ -1329,7 +1329,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <div class="pbenefit"><div class="pbicon">&#9889;</div><div><div class="pbtitle">Resultados em 14 dias</div><div class="pbdesc">Pele mais hidratada e luminosa ja na segunda semana</div></div></div>
       <div class="pbenefit"><div class="pbicon">&#127807;</div><div><div class="pbtitle">100% natural e caseiro</div><div class="pbdesc">Sem quimicos — ingredientes que voce ja tem em casa</div></div></div>
     </div>
- 
+
     <div class="pprice pink">
       <div class="pprice-old">Preco normal: R$ 47,00</div>
       <div class="pprice-new pink">R$27,90</div>
@@ -1338,13 +1338,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       <a class="pbtn-yes pink" href="https://pay.hotmart.com/B93427134G?offerId=b0bfwvb3&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=downsell&utm_campaign=pelejovem">&#10003; SIM! Quero a pele jovem por apenas R$ 27,90<br><span style="font-size:12px;font-weight:400">Acesso imediato &#183; Pagamento 100% seguro via Hotmart</span></a>
       <a class="pbtn-no" href="javascript:void(0)" onclick="irStep(12)">Nao obrigada, prefiro continuar gastando em cremes que nao funcionam &#8594;</a>
     </div>
- 
+
     <div class="psecure"><span class="psec-item">&#128274; Compra segura</span><span class="psec-item">&#127970; Hotmart</span><span class="psec-item">&#128241; Acesso imediato</span><span class="psec-item">&#128260; Garantia 7 dias</span></div>
- 
+
     <div class="ptcard"><div class="pt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="pt-quote">Gastava R$300 por mes em cremes. Com R$15 de ingredientes e as receitas deste guia transformei minha pele completamente.</div><div class="pt-name">Beatriz M., 44 anos &#183; Goiania</div></div>
     <div class="ptcard"><div class="pt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="pt-quote">As olheiras sumiram, a pele ficou mais firme e eu pareco 5 anos mais nova.</div><div class="pt-name">Simone A., 48 anos &#183; Fortaleza</div></div>
     <div class="ptcard"><div class="pt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="pt-quote">Comprei junto com o Barriga Chapada e foi o combo perfeito. Alem de emagrecer, minha pele ficou linda.</div><div class="pt-name">Carla F., 38 anos &#183; Recife</div></div>
- 
+
     <div class="pgar pink">
       <div class="pgar-icon">&#128737;</div>
       <div>
@@ -1352,35 +1352,35 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
         <div class="pgar-desc pink">Experimente por 7 dias. Se nao ficar satisfeita, devolvemos 100% do seu dinheiro — sem perguntas.</div>
       </div>
     </div>
- 
+
     <div style="margin:0 20px">
       <a class="pbtn-yes pink" href="https://pay.hotmart.com/B93427134G?offerId=b0bfwvb3&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=downsell&utm_campaign=pelejovem">&#10003; SIM! Quero a pele jovem por R$ 27,90</a>
       <a class="pbtn-no" href="javascript:void(0)" onclick="irStep(12)">Nao obrigada, prefiro continuar sem resultado &#8594;</a>
     </div>
- 
+
     <div style="text-align:center;margin-top:20px;font-size:11px;color:var(--ts)">&#169; 2026 Biomedico Zuy &#183; Todos os direitos reservados &#183; Compra Segura</div>
- 
+
     <div class="psticky">
       <div class="psticky-timer pink">&#10084; Ultima oferta expira em <span id="dt3">09:59</span></div>
       <a class="psticky-btn pink" href="https://pay.hotmart.com/B93427134G?offerId=b0bfwvb3&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=downsell&utm_campaign=pelejovem">R$27,90 &#8594;</a>
     </div>
   </div>
 </div>
- 
+
   <!-- ═══════════════ S15 — CAPTURA EMAIL ═══════════════ -->
   <div id="s15" class="step" style="display:none">
     <!-- HEADER URGENCIA -->
     <div style="background:var(--v);color:#fff;text-align:center;padding:10px 16px;border-radius:12px;margin-bottom:20px;font-size:13px;font-weight:600;letter-spacing:0.02em;">
       &#128300; O seu diagnostico esta pronto!
     </div>
- 
+
     <!-- ICON + TITULO -->
     <div style="text-align:center;margin-bottom:20px;">
       <div style="width:64px;height:64px;border-radius:50%;background:var(--vc);border:2px solid var(--vm);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 12px;">&#128140;</div>
       <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:8px;">O seu Score Intestinal est&#225; pronto &#8212; onde enviamos o resultado?</div>
       <div style="font-size:13px;color:var(--ts);line-height:1.6;max-width:320px;margin:0 auto;">O teu Score Intestinal e o protocolo personalizado ficam guardados no teu email — acede quando quiseres.</div>
     </div>
- 
+
     <!-- PREVIEW DO QUE RECEBE -->
     <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;margin-bottom:16px;">
       <div style="font-size:11px;font-weight:600;color:var(--ts);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px;">O que recebes no email:</div>
@@ -1403,7 +1403,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
         </div>
       </div>
     </div>
- 
+
     <!-- FORMULARIO EMAIL -->
     <div style="margin-bottom:12px;">
       <label style="font-size:13px;font-weight:600;color:var(--td);display:block;margin-bottom:8px;">&#128140; O teu melhor email:</label>
@@ -1416,19 +1416,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
       style="font-size:15px;padding:18px;border-radius:14px;margin-bottom:10px;">
       &#128300; VER MEU DIAGNOSTICO COMPLETO &#8594;
     </button>
- 
+
     <!-- PROVA SOCIAL -->
     <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:10px;">
       <span style="color:#f0a020;font-size:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
       <span style="font-size:12px;color:var(--ts);">+12.400 mulheres ja receberam o protocolo este mes</span>
     </div>
- 
+
     <div style="text-align:center;margin-top:8px;font-size:11px;color:var(--ts);display:flex;align-items:center;justify-content:center;gap:4px;">
       <span>&#128274;</span> Sem spam. Os teus dados estao seguros.
     </div>
   </div>
 </div>
- 
+
 <!-- STICKY CTA BAR - aparece na pagina de resultado -->
 <div class="sticky-cta" id="stickyCta">
   <div class="sticky-cta-text">
@@ -1437,8 +1437,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
   </div>
   <a class="sticky-cta-btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&redirectCheckoutTo=https://zuy3.github.io/quiz-zuyzelia/?step=obrigado&utm_source=quiz&utm_medium=sticky_cta&utm_campaign=barriga7dias" target="_blank" onclick="ev('StickyCTA')">QUERO &#8594;</a>
 </div>
- 
- 
+
+
 <script>
 var RES = {};
 var tmr = null;
@@ -1449,9 +1449,9 @@ var userName = '';
 var userWeight = 70;
 var offerTmr = null;
 var ltIdx = 0;
- 
+
 var uTmr = null, dTmr = null;
- 
+
 /* ===== CLOTHES SIZE SELECTION ===== */
 function pickSize(el, val) {
   var opts = document.querySelectorAll('.size-opt');
@@ -1466,7 +1466,7 @@ function pickSize(el, val) {
   if (btn) { btn.style.opacity = '1'; btn.style.pointerEvents = 'auto'; }
   showEncr(44);
 }
- 
+
 /* ===== EMAIL CAPTURE ===== */
 function toggleEmailBtn() {
   var inp = document.getElementById('emailInput');
@@ -1476,7 +1476,7 @@ function toggleEmailBtn() {
   btn.disabled = !valid;
   btn.style.opacity = valid ? '1' : '0.5';
 }
- 
+
 function sendToEmailOctopus(email, firstName) {
   fetch('https://quiz-proxy.marianozuy37.workers.dev', {
     method: 'POST',
@@ -1490,7 +1490,7 @@ function sendToEmailOctopus(email, firstName) {
     }
   }).catch(function(e) { console.log('Proxy:', e); });
 }
- 
+
 function submitEmail() {
   var inp = document.getElementById('emailInput');
   var email = inp ? inp.value.trim() : '';
@@ -1503,7 +1503,7 @@ function submitEmail() {
   }
   resultado();
 }
- 
+
 /* ===== BODY TYPE SELECTION ===== */
 function pickBody(el, val) {
   var opts = document.querySelectorAll('.body-opt');
@@ -1524,14 +1524,14 @@ function pickBody(el, val) {
   if (btn) { btn.style.opacity = '1'; btn.style.pointerEvents = 'auto'; }
   showEncr(33);
 }
- 
+
 /* ===== WEIGHT SLIDER ===== */
 function updateWeight(val) {
   userWeight = parseInt(val);
   var el = document.getElementById('weightDisplay');
   if (el) { el.innerHTML = val + '<span style="font-size:22px;color:#7a7a74;font-weight:400"> kg</span>'; }
 }
- 
+
 function confirmarPeso() {
   var sl = document.getElementById('weightSlider');
   if (sl) { userWeight = parseInt(sl.value); }
@@ -1539,21 +1539,21 @@ function confirmarPeso() {
   RES_PESO = userWeight;
   analisar();
 }
- 
+
 /* ===== IMC CALCULATOR ===== */
 function calcIMC(weight) {
   var h = 1.63; // altura media brasileira feminina
   return (weight / (h * h)).toFixed(1);
 }
- 
+
 function renderIMC(weight) {
   var imc = parseFloat(calcIMC(weight));
   var el = document.getElementById('imcSection');
   if (!el) { return; }
   el.style.display = 'block';
- 
+
   document.getElementById('imcValue').textContent = imc;
- 
+
   var zona, corZona, bgZona, pct, alertaHtml;
   if (imc < 18.5) {
     zona = 'Abaixo do Peso'; corZona = '#4caf50'; bgZona = '#e8f5e9'; pct = 8;
@@ -1568,17 +1568,17 @@ function renderIMC(weight) {
     zona = 'Obesidade'; corZona = '#f44336'; bgZona = '#ffebee'; pct = 80;
     alertaHtml = '<div style="font-size:13px;font-weight:600;color:#7f0000;margin-bottom:6px;">&#128308; Zona de Atencao — Obesidade</div><div style="font-size:12px;color:#b71c1c;line-height:1.6;">Nessa faixa e fundamental tratar a inflamacao intestinal que alimenta o ciclo de retencao. O protocolo foi desenhado para agir rapido nessa situacao.</div>';
   }
- 
+
   var badge = document.getElementById('imcZonaBadge');
   if (badge) { badge.textContent = zona; badge.style.color = corZona; badge.style.background = bgZona; }
- 
+
   var marker = document.getElementById('imcMarker2');
   if (marker) { setTimeout(function(){ marker.style.left = pct + '%'; }, 400); }
- 
+
   var alertaEl = document.getElementById('imcAlerta');
   if (alertaEl) { alertaEl.innerHTML = alertaHtml; alertaEl.style.borderLeftColor = corZona; alertaEl.style.background = bgZona; }
 }
- 
+
 /* ===== OFFER TIMER ===== */
 function startOfferTimer() {
   var t = 9 * 60 + 59;
@@ -1591,7 +1591,7 @@ function startOfferTimer() {
     if (el) { el.textContent = str; }
   }, 1000);
 }
- 
+
 /* ===== LOADING TESTIMONIALS CAROUSEL ===== */
 var ltTotal = 3;
 function goLt(n) {
@@ -1603,14 +1603,14 @@ function goLt(n) {
   }
   ltIdx = n;
 }
- 
+
 function startLtCarousel() {
   setInterval(function(){
     ltIdx = (ltIdx + 1) % ltTotal;
     goLt(ltIdx);
   }, 3000);
 }
- 
+
 function irStep(n) {
   var all = document.querySelectorAll('.step');
   for (var i = 0; i < all.length; i++) {
@@ -1633,7 +1633,7 @@ function irStep(n) {
   // Esconder sticky CTA nas paginas de compra (tem os proprios CTAs)
   if (n === 12 || n === 13 || n === 14) { toggleStickyCta(false); }
 }
- 
+
 function startUTimer() {
   var t = 14*60+59;
   uTmr = setInterval(function(){
@@ -1645,7 +1645,7 @@ function startUTimer() {
     if(e1)e1.textContent=ms; if(e2)e2.textContent=ss; if(e3)e3.textContent=ms+':'+ss;
   },1000);
 }
- 
+
 function startDTimer() {
   var t = 9*60+59;
   dTmr = setInterval(function(){
@@ -1657,7 +1657,7 @@ function startDTimer() {
     if(e1)e1.textContent=ms; if(e2)e2.textContent=ss; if(e3)e3.textContent=ms+':'+ss;
   },1000);
 }
- 
+
 function checkStepParam() {
   var params = window.location.search ? new URLSearchParams(window.location.search) : null;
   var step = params ? params.get('step') : null;
@@ -1666,9 +1666,9 @@ function checkStepParam() {
   else if (step === 'downsell') { irStep(14); }
   // sem parametro: s0 ja esta visivel pelo HTML/CSS inicial
 }
- 
+
 function toggleStart() {}
- 
+
 function startQuiz() {
   var inp = document.getElementById('nameInput');
   var rawName = inp ? inp.value.trim() : '';
@@ -1688,18 +1688,18 @@ function startQuiz() {
   ev('QuizInicio');
   gtag('event', 'quiz_started');
 }
- 
+
 function updateTransitions() {
   var t1 = document.getElementById('qtrans1');
   if (t1) { t1.textContent = 'Antes de tudo, ' + userName + ', me conta uma coisa...'; }
 }
- 
+
 // Allow Enter key on name input
 document.addEventListener('DOMContentLoaded', function(){
   var ni = document.getElementById('nameInput');
   if(ni){ ni.addEventListener('keypress', function(e){ if(e.key==='Enter'){ startQuiz(); } }); }
 });
- 
+
 function updateProgress(n) {
   var posMap = {1:1, 2:2, 5:3, 4:4, 8:5};
   var pos = posMap[n] !== undefined ? posMap[n] : n;
@@ -1707,7 +1707,7 @@ function updateProgress(n) {
   var bar = document.getElementById('progressbar');
   if (bar) { bar.style.width = pct + '%'; }
 }
- 
+
 function ir(n) {
   hideAllEncr();
   var all = document.querySelectorAll('.step');
@@ -1721,17 +1721,17 @@ function ir(n) {
   if (n >= 1 && n <= 8) { updateProgress(n); }
   if (n === 5) { adaptQ5(); }
 }
- 
+
 function adaptQ33() {
   var t = document.getElementById('qtrans33');
   if (t && userName) { t.textContent = 'Agora quero entender o seu objetivo, ' + userName + '...'; }
 }
- 
+
 function adaptQ44() {
   var t = document.getElementById('qtrans44');
   if (t && userName) { t.textContent = userName + ', ja que falamos de roupas...'; }
 }
- 
+
 function adaptQ5() {
   var q1 = RES.q1 || '';
   var trans = document.getElementById('qtrans5');
@@ -1751,7 +1751,7 @@ function adaptQ5() {
     if (optMen3) optMen3.style.display = 'none';
   }
 }
- 
+
 function adaptQ6() {
   var q1 = RES.q1 || '';
   var q2 = RES.q2 || '';
@@ -1762,7 +1762,7 @@ function adaptQ6() {
     if (trans6) trans6.textContent = userName ? 'Com esse nivel de inchaco diario, ' + userName + ', e normal ter tentado de tudo...' : 'Com esse nivel de inchaco diario, e normal ter tentado de tudo...';
   }
 }
- 
+
 function pick(el, q, v) {
   var siblings = el.parentNode.querySelectorAll('.opt');
   for (var i = 0; i < siblings.length; i++) {
@@ -1774,7 +1774,7 @@ function pick(el, q, v) {
   if (btn) { btn.classList.add('ok'); }
   showEncr(q);
 }
- 
+
 var encrMsgs = {
   1: '',
   2: 'Otimo! Esse padrao e muito revelador para o seu diagnostico.',
@@ -1787,7 +1787,7 @@ var encrMsgs = {
   7: 'Suas tentativas anteriores sao dados, nao fracassos.',
   8: 'Perfeito! Calculando o seu protocolo personalizado...'
 };
- 
+
 function showEncr(q) {
   var nextQ = q + 1;
   var el = document.getElementById('encr' + nextQ);
@@ -1798,12 +1798,12 @@ function showEncr(q) {
   el.innerHTML = '&#128077; ' + msg;
   el.style.display = 'block';
 }
- 
+
 function hideAllEncr() {
   var els = document.querySelectorAll('.encr');
   for (var i = 0; i < els.length; i++) { els[i].style.display = 'none'; }
 }
- 
+
 function calcScore() {
   var base = 50;
   var q1 = RES.q1 || '30a40';
@@ -1819,13 +1819,13 @@ function calcScore() {
   if (base > 42) { base = 42; }
   return base;
 }
- 
+
 function analisar() {
   ir(9);
   ev('QuizCompleto');
   scoreVal = calcScore();
   startLtCarousel();
- 
+
   var steps = 10;
   var totalMs = 18000;
   var stepMs = totalMs / steps;
@@ -1842,7 +1842,7 @@ function analisar() {
     'Montando protocolo personalizado...',
     'Diagnostico completo. Preparando resultado...'
   ];
- 
+
   function activateStep(n) {
     var el = document.getElementById('azs' + n);
     var ic = document.getElementById('azi' + n);
@@ -1860,16 +1860,16 @@ function analisar() {
       if (prev) { prev.style.opacity = '0.6'; }
     }
   }
- 
+
   for (var i = 1; i <= steps; i++) {
     (function(step) {
       setTimeout(function() { activateStep(step); }, step * stepMs - stepMs * 0.3);
     })(i);
   }
- 
+
   setTimeout(function() { mostrarDesbloquear(); }, totalMs + 500);
 }
- 
+
 function mostrarDesbloquear() {
   var pct = scoreVal;
   document.getElementById('scoreNum').textContent = pct + '/100';
@@ -1877,11 +1877,11 @@ function mostrarDesbloquear() {
   ir(15);
   gtag('event', 'email_screen_shown');
 }
- 
+
 function desbloquear() {
   ir(15);
 }
- 
+
 function calcDatePred(profile, q1) {
   var now = new Date();
   var days = 7;
@@ -1896,7 +1896,7 @@ function calcDatePred(profile, q1) {
   var meses = ['janeiro','fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
   return dias[target.getDay()] + ', ' + target.getDate() + ' de ' + meses[target.getMonth()];
 }
- 
+
 function resultado() {
   var q5 = RES.q5 || 'gases';
   var q1 = RES.q1 || '30a40';
@@ -1905,11 +1905,11 @@ function resultado() {
   var q8 = RES.q8 || 'conf';
   var qsize = RES.qsize || '';
   var qbody = RES.qbody || '';
- 
+
   var pill, pillCls, titl, subt, diag, h1p, h2p, hn1;
   var otag, otitp, osubt, b2t, b2d, pqt;
   var scoreClr;
- 
+
   if (q5 === 'preso' || q5 === 'irregular') {
     pill = 'Perfil Intestinal'; pillCls = 'ppill pint';
     h1p = 18; h2p = 86; scoreClr = '#378add';
@@ -1950,28 +1950,28 @@ function resultado() {
     b2d = 'Combinacoes que reequilibram a microbiota e tornam os dias previsiveis';
     pqt = 'O perfil misto e o que mais precisa de um protocolo estruturado. Quando tem multiplas causas, tratar so uma nao resolve. O protocolo foi desenhado exatamente para agir em camadas.';
   }
- 
+
   var issMap = {
     fotos: 'Evitar fotos e se esconder nas roupas largas',
     roupa: 'Roupas que voce ama mas nao consegue fechar',
     cansada: 'Cansaco que nao passa mesmo dormindo bastante',
     relacionamento: 'Autoestima afetada que impacta tudo ao redor'
   };
- 
+
   var objMap = {
     cha: 'Voce ja estava no caminho certo. O problema nao era o cha: era a combinacao e o horario errados. O protocolo usa combinacoes testadas na dose e no momento certo. Quem ja tentou cha tende a responder mais rapido porque o intestino ja reconhece os estimulos.',
     dieta: 'Dieta sozinha nao resolve o inchaco de causa intestinal. Ela reduz o inchaco superficialmente mas nao trata a raiz, que e a microbiota desequilibrada. Por isso o inchaco volta assim que para. O protocolo ataca a causa, nao o sintoma.',
     remedio: 'Remedios e suplementos tratam o sintoma mas raramente reequilibram a flora intestinal a longo prazo. O protocolo usa ingredientes naturais que alimentam a microbiota benefica. O resultado dura porque voce esta corrigindo o ambiente, nao mascarando o problema.',
     nada: ''
   };
- 
+
   var testMap = {
     conf: { q: 'Em 5 dias me olhei no espelho e me reconheci. Voltei a me sentir bem na minha propria pele depois de muito tempo.', n: 'Vania S., 41 anos - Rio de Janeiro' },
     roupa: { q: 'Fui pegar uma calca que estava guardada ha 2 anos e consegui fechar. Chorei de emocao. O protocolo funciona mesmo.', n: 'Juliana M., 34 anos - Sao Paulo' },
     barriga: { q: 'Em 4 dias usando o protocolo, ja sentia a diferenca. Na semana, a barriga tinha desinchado visivelmente.', n: 'Marcia T., 38 anos - Belo Horizonte' },
     energia: { q: 'Alem de desinchar, a energia voltou. Nao fico mais arrastada no meio da tarde. Parece que o corpo acordou.', n: 'Carla B., 38 anos - Belo Horizonte' }
   };
- 
+
   var displayName = userName ? userName : '';
   var dateStr = calcDatePred(q5, q1);
   var dpEl = document.getElementById('datePred');
@@ -1998,14 +1998,14 @@ function resultado() {
   var _ot = document.getElementById('ofertaTag'); if(_ot) _ot.textContent = otag;
   var _oti = document.getElementById('ofertaTitulo'); if(_oti) _oti.textContent = otitp;
   var _os = document.getElementById('ofertaSub'); if(_os) _os.textContent = osubt;
- 
+
   var iss2 = issMap[q4] || 'Inchaco persistente que nao cede mesmo nos dias de dieta';
   document.getElementById('riss').innerHTML =
     '<div class="issrow"><span class="isx">&#10007;</span><span>Barriga que resiste mesmo fazendo dieta e exercicio</span></div>' +
     '<div class="issrow"><span class="isx">&#10007;</span><span>' + iss2 + '</span></div>' +
     '<div class="issrow"><span class="isx">&#10007;</span><span>Cansaco que nao passa nem dormindo</span></div>' +
     '<div class="issrow"><span class="isx">&#10007;</span><span>Peso que volta sempre que para qualquer protocolo</span></div>';
- 
+
   var objTxt = objMap[q7] || '';
   if (objTxt) {
     document.getElementById('objbox').style.display = 'block';
@@ -2013,23 +2013,23 @@ function resultado() {
   } else {
     document.getElementById('objbox').style.display = 'none';
   }
- 
+
   var ts = testMap[q8] || testMap.conf;
   document.getElementById('rtestQ').textContent = ts.q;
   document.getElementById('rtestN').textContent = ts.n;
- 
+
   var deadline = getDeadline();
   var urgEl1 = document.getElementById('urgline');
   var urgEl2 = document.getElementById('urgline2');
   var urgMsg = 'Efetue a inscricao ate ' + deadline + ' de hoje &#8212; depois o preco pode voltar ao normal.';
   if (urgEl1) { urgEl1.innerHTML = urgMsg; }
   if (urgEl2) { urgEl2.innerHTML = urgMsg; }
- 
+
   // Personalizar timeline com base no perfil
   var timelineCountEl = document.getElementById('timelineCount');
   var timelineCounts = { preso: '2.847', irregular: '3.104', gases: '3.291', alternado: '2.619', menopausa: '1.983' };
   if (timelineCountEl) { timelineCountEl.textContent = timelineCounts[q5] || '3.291'; }
- 
+
   // Personalizar lado direito da timeline com base na motivacao (q8) + tamanho (qsize)
   var timelineGoals = {
     barriga: ['Energia ao acordar', 'Metabolismo ativado', 'Barriga chapada', 'Roupas que fecham'],
@@ -2054,21 +2054,21 @@ function resultado() {
       return '<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ve);"><span style="color:var(--v);font-weight:700;flex-shrink:0;font-size:13px;">&#10003;</span> ' + g + '</div>';
     }).join('');
   }
- 
+
   // Personalizar dateSub com referencia ao tamanho se disponivel
   var dsEl = document.getElementById('dateSub');
   if (dsEl && qsize) {
     var sizeRef = { pp: 'PP', m: 'M', g: 'G', gg: 'GG', xgg: 'XGG', plus: 'Plus Size' };
     dsEl.textContent = 'Calculado para mulheres no tamanho ' + (sizeRef[qsize] || '') + ' com o seu perfil intestinal';
   }
- 
+
   ir(11);
   setTimeout(function() {
     document.getElementById('score2Fill').style.width = scoreVal + '%';
     document.getElementById('hb1').style.width = h1p + '%';
     document.getElementById('hb2').style.width = h2p + '%';
   }, 400);
- 
+
   initCarousel();
   startTimer(14 * 60 + 58);
   startCouponTimer();
@@ -2077,14 +2077,14 @@ function resultado() {
   // Ativar sticky CTA na pagina de resultado
   setTimeout(function(){ toggleStickyCta(true); }, 3000);
 }
- 
+
 function getDeadline() {
   var now = new Date();
   var h = 23;
   var m = now.getMinutes() < 30 ? 47 : 17;
   return h + 'h' + (m < 10 ? '0' : '') + m;
 }
- 
+
 function initCarousel() {
   var nav = document.getElementById('cnav');
   nav.innerHTML = '';
@@ -2108,7 +2108,7 @@ function setSlide(n) {
     dots[i].classList.toggle('on', i === n);
   }
 }
- 
+
 function startTimer(total) {
   if (tmr) { clearInterval(tmr); }
   var t = total;
@@ -2124,7 +2124,7 @@ function startTimer(total) {
   tick();
   tmr = setInterval(tick, 1000);
 }
- 
+
 function notnow() {
   var overlay = document.createElement('div');
   overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.65);z-index:200;display:flex;align-items:flex-end;';
@@ -2139,24 +2139,24 @@ function notnow() {
   overlay.onclick = function(e){ if(e.target===overlay){ overlay.remove(); } };
   document.body.appendChild(overlay);
 }
- 
+
 function ev(name) {
   try { if (typeof fbq !== 'undefined') { fbq('track', name); } } catch(e) {}
   try { if (typeof gtag !== 'undefined') { gtag('event', name); } } catch(e) {}
 }
- 
+
 function qcomplete(n) {
   gtag('event', 'question_completed', {step_number: n});
 }
- 
+
 document.addEventListener('click', function(e) {
   var a = e.target.closest('a[href*="hotmart"]');
   if (a) { gtag('event', 'checkout_clicked', {url: a.href}); }
 });
- 
+
 // ── PESO / IMC ──
 var RES_PESO = 70;
- 
+
 function updatePeso(v) {
   RES_PESO = parseInt(v);
   var el = document.getElementById('pesoDisplay');
@@ -2169,7 +2169,7 @@ function updatePeso(v) {
     else { hint.textContent = 'Protocolo completo recomendado — maior potencial de transformacao'; }
   }
 }
- 
+
 function irPeso() {
   hideAllEncr();
   var all = document.querySelectorAll('.step');
@@ -2182,13 +2182,13 @@ function irPeso() {
   var t = document.getElementById('qtranspeso');
   if (t && userName) { t.textContent = 'Estamos quase la, '+userName+'! Uma ultima informacao...'; }
 }
- 
+
 function calcIMC(peso) {
   // altura estimada media brasileira feminina: 1.61m
   var h = 1.61;
   return (peso / (h * h)).toFixed(1);
 }
- 
+
 function showIMC(peso) {
   var imc = parseFloat(calcIMC(peso));
   var block = document.getElementById('imcBlock');
@@ -2223,7 +2223,7 @@ function showIMC(peso) {
     if (markerEl) markerEl.style.left = pct + '%';
   }, 600);
 }
- 
+
 // ── LOADING SOCIAL PROOF ROTATOR ──
 var azSpIdx = 0;
 function rotateAzSp() {
@@ -2233,7 +2233,7 @@ function rotateAzSp() {
   cards[azSpIdx % cards.length].classList.add('active');
   azSpIdx++;
 }
- 
+
 // ── COUPON TIMER ──
 var couponTmr = null;
 function startCouponTimer() {
@@ -2250,22 +2250,21 @@ function startCouponTimer() {
     if(od) od.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
   },1000);
 }
- 
+
 // STICKY CTA - mostra na pagina de resultado
 function toggleStickyCta(show) {
   var bar = document.getElementById('stickyCta');
   if (bar) { bar.classList.toggle('visible', show); }
 }
- 
+
 // Sistema de notificacoes "toast" removido: simulava compras de pessoas (nomes/mensagens
 // aleatorios de uma lista fixa) sem qualquer ligacao a vendas reais da Hotmart.
 // Caso queira reativar, ligar a eventos reais via webhook da Hotmart, nao a dados aleatorios.
- 
+
 window.addEventListener("load", checkStepParam);
- 
+
 // Contador "ao vivo" removido: gerava numero aleatorio (38-63) sem relacao com usuarios reais.
- 
+
 </script>
 </body>
 </html>
- 
