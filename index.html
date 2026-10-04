@@ -5,15 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Por que sua barriga incha? — Barriga Chapada em 7 Dias</title>
 <meta name="description" content="Responda 5 perguntas e receba o plano de chás e receitas para o seu tipo de inchaço.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Por que sua barriga incha? Teste gratuito de 1 minuto">
+<meta property="og:description" content="Responda 5 perguntas e receba a receita para o seu tipo de inchaço.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8D%B5%3C/text%3E%3C/svg%3E">
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1242713591247490');fbq('track','PageView');</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1242713591247490&ev=PageView&noscript=1"/></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2TZQJLE7L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z2TZQJLE7L');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--v:#1a7a54;--vc:#e8f5ee;--vm:#9fcdb8;--ve:#0f4f35;--cr:#faf8f4;--td:#1c1c1a;--tm:#4a4a46;--ts:#7a7a74;--bd:#e2ddd6;--gold:#c9860a;--pink:#b8456b;--r:14px}
+:root{--v:#1a7a54;--vc:#e8f5ee;--vm:#9fcdb8;--ve:#0f4f35;--cr:#faf8f4;--td:#1c1c1a;--tm:#4a4a46;--ts:#66665f;--bd:#e2ddd6;--gold:#c9860a;--pink:#b8456b;--r:14px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cr);color:var(--td);-webkit-font-smoothing:antialiased;line-height:1.5}
 .wrap{max-width:520px;margin:0 auto;padding:20px 20px 60px}
@@ -38,6 +42,7 @@ h2{font-family:'Lora',serif;font-size:21px;line-height:1.3;margin-bottom:10px}
 .link{display:block;text-align:center;font-size:14px;color:var(--ts);text-decoration:underline;margin-top:14px;cursor:pointer;background:none;border:none;width:100%}
 input{width:100%;padding:15px 16px;border:1.5px solid var(--bd);border-radius:12px;font-size:16px;font-family:inherit;margin-bottom:10px;background:#fff}
 input:focus{outline:none;border-color:var(--v)}
+.opt:focus-visible,.btn:focus-visible,.link:focus-visible{outline:3px solid var(--vm);outline-offset:2px}
 .card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-bottom:16px}
 .card.green{background:var(--vc);border-color:var(--vm)}
 .li{display:flex;gap:8px;font-size:14px;color:var(--tm);margin-bottom:8px}
@@ -58,6 +63,7 @@ input:focus{outline:none;border-color:var(--v)}
 .pcard{border:2px solid var(--vm)}.pcard.pink{border-color:#e7b3c5}
 .ptag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--ts);margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.rt{font-size:23px}
 .chip{font-size:12px;background:#fff;border:1px solid var(--bd);border-radius:20px;padding:4px 10px;color:var(--tm)}
 .sp{margin:4px 0 16px}
 .sp-t{font-size:15px;font-weight:700;color:var(--td);margin-bottom:10px}
@@ -69,6 +75,7 @@ input:focus{outline:none;border-color:var(--v)}
 </style>
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1242713591247490&ev=PageView&noscript=1"/></noscript>
 <div class="wrap">
 <div class="prog" id="prog"><div id="progbar"></div></div>
 
@@ -77,7 +84,7 @@ input:focus{outline:none;border-color:var(--v)}
   <div class="badge">Teste gratuito · 1 minuto</div>
   <h1>Por que sua barriga incha mesmo quando você come pouco?</h1>
   <p class="sub">Responda 5 perguntas e receba o plano de chás e receitas para o seu tipo de inchaço.</p>
-  <input id="nameInput" type="text" placeholder="Seu primeiro nome" autocomplete="given-name">
+  <input id="nameInput" type="text" aria-label="Seu primeiro nome" placeholder="Seu primeiro nome" autocomplete="given-name">
   <button class="btn" onclick="startQuiz()">Começar o teste →</button>
   <p class="small" style="margin-top:12px">Feito para mulheres acima dos 30 que sentem que o corpo mudou.</p>
 </div>
@@ -146,8 +153,8 @@ input:focus{outline:none;border-color:var(--v)}
   <h2>Montando seu plano personalizado...</h2>
   <div class="loader">
     <div class="lstep" id="l1">✓ Analisando suas respostas</div>
-    <div class="lstep" id="l2">✓ Identificando seu tipo de inchaço</div>
-    <div class="lstep" id="l3">✓ Separando os chás mais indicados</div>
+    <div class="lstep" id="l2">✓ Organizando seu perfil de respostas</div>
+    <div class="lstep" id="l3">✓ Separando uma sugestão para começar</div>
     <div class="lstep" id="l4">✓ Preparando sua receita de hoje</div>
   </div>
 </div>
@@ -157,7 +164,7 @@ input:focus{outline:none;border-color:var(--v)}
   <div class="badge">Seu resultado está pronto</div>
   <h2 id="emailTitle">Para onde enviamos seu plano?</h2>
   <p class="sub">Você vê o resultado agora na tela e recebe uma cópia no email, com a receita do seu tipo de inchaço.</p>
-  <input id="emailInput" type="email" placeholder="seu@email.com" autocomplete="email" oninput="checkEmail()">
+  <input id="emailInput" type="email" aria-label="Seu email" inputmode="email" placeholder="seu@email.com" autocomplete="email" oninput="checkEmail()">
   <button class="btn" id="emailBtn" disabled onclick="submitEmail()">Ver meu resultado →</button>
   <p class="small" style="margin-top:10px">🔒 Sem spam. Você pode sair da lista quando quiser.</p>
   <button class="link" onclick="skipEmail()">Prefiro ver só na tela</button>
@@ -166,17 +173,20 @@ input:focus{outline:none;border-color:var(--v)}
 <!-- S8 RESULTADO + OFERTA -->
 <div class="step" id="s8">
   <div class="badge">Resultado personalizado</div>
-  <h1 id="rTitle"></h1>
+  <h1 id="rTitle" class="rt"></h1>
   <div class="chips" id="rChips"></div>
+  <p class="sub" id="rRelato"></p>
+  <div class="note" id="rPonto"></div>
   <p class="sub" id="rText"></p>
+  <p class="sub" id="rSec" style="display:none"></p>
 
   <div class="card green">
-    <div style="font-size:13px;font-weight:700;color:var(--ve);margin-bottom:6px">🍵 Comece hoje: sua receita</div>
+    <div style="font-size:13px;font-weight:700;color:var(--ve);margin-bottom:6px">🍵 Uma sugestão simples para começar</div>
     <div style="font-size:15px;font-weight:600;margin-bottom:6px" id="rRecName"></div>
     <div style="font-size:14px;color:var(--tm)" id="rRec"></div>
   </div>
 
-  <div class="card">
+  <div class="card" id="rRotBox">
     <div style="font-size:13px;font-weight:700;color:var(--ve);margin-bottom:6px" id="rRotT"></div>
     <div style="font-size:14px;color:var(--tm)" id="rRot"></div>
   </div>
@@ -185,9 +195,11 @@ input:focus{outline:none;border-color:var(--v)}
     <div style="font-size:14px;color:var(--tm)" id="rIdade"></div>
   </div>
 
+  <p class="small" id="rAlerta" style="display:none;text-align:left;margin-bottom:16px"></p>
+
   <div class="card">
     <h2 style="font-size:19px" id="rOferta">Quer o plano completo dos 7 dias?</h2>
-    <p style="font-size:14px;color:var(--tm);margin-bottom:12px">A receita acima é o primeiro passo. No eBook <b>Barriga Chapada em 7 Dias</b> você tem o passo a passo de cada dia:</p>
+    <p style="font-size:14px;color:var(--tm);margin-bottom:12px">Se quiser seguir uma sequência organizada por 7 dias, o eBook <b>Barriga Chapada em 7 Dias</b> traz o passo a passo de cada dia:</p>
     <!-- TODO: confirmar com o conteúdo REAL do eBook antes de publicar -->
     <div class="li"><b>✓</b><span>Plano de 7 dias, dia por dia, do café da manhã ao jantar</span></div>
     <div class="li"><b>✓</b><span>Receitas de chás e sucos com ingredientes de mercado</span></div>
@@ -198,7 +210,7 @@ input:focus{outline:none;border-color:var(--v)}
     -->
     <div class="price" style="margin-top:14px">R$ 29,90</div>
     <div class="pnote">pagamento único · acesso imediato</div>
-    <a class="btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&utm_source=quiz&utm_medium=oferta_principal&utm_campaign=barriga7dias" target="_blank" onclick="ck('oferta_principal')">Quero o plano completo →</a>
+    <a class="btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&utm_source=quiz&utm_medium=oferta_principal&utm_campaign=barriga7dias" target="_blank" rel="noopener" onclick="ck('oferta_principal')">Quero o plano completo →</a>
     <div class="trust"><span>🔒 Compra segura</span><span>🏢 Hotmart</span><span>🛡️ Garantia 7 dias</span></div>
   </div>
 
@@ -233,7 +245,7 @@ input:focus{outline:none;border-color:var(--v)}
     <div class="sp-n">Comentários públicos sobre receitas gratuitas dos nossos perfis, com nomes reduzidos para preservar a privacidade. Resultados variam de pessoa para pessoa e dependem da rotina como um todo.</div>
   </div>
 
-  <a class="btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&utm_source=quiz&utm_medium=cta_final&utm_campaign=barriga7dias" target="_blank" onclick="ck('cta_final')">Começar meu plano por R$ 29,90 →</a>
+  <a class="btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&utm_source=quiz&utm_medium=cta_final&utm_campaign=barriga7dias" target="_blank" rel="noopener" onclick="ck('cta_final')">Começar meu plano por R$ 29,90 →</a>
 
   <div class="footer">
     Barriga Chapada em 7 Dias · Produto digital processado pela Hotmart<br>
@@ -245,9 +257,9 @@ input:focus{outline:none;border-color:var(--v)}
 
 <!-- S12 OBRIGADO (redirect pós-compra: ?step=obrigado) -->
 <div class="step" id="s12">
-  <div class="badge">Compra confirmada 🎉</div>
-  <h1>Pronto! Seu eBook está a caminho.</h1>
-  <p class="sub">Abra seu email e procure a mensagem da Hotmart com o link de acesso. Se não aparecer em alguns minutos, olhe o spam ou a aba Promoções.</p>
+  <div class="badge">Pedido recebido 🎉</div>
+  <h1>Pronto! Seu acesso chega por email.</h1>
+  <p class="sub">Procure a mensagem da Hotmart com o link de acesso. Se não aparecer em alguns minutos, olhe o spam ou a aba Promoções. Pagou com Pix ou boleto? O acesso é liberado assim que o pagamento for confirmado.</p>
   <div class="card green">
     <div style="font-size:15px;font-weight:700;margin-bottom:6px">Antes de ir: o que fazer depois dos 7 dias</div>
     <p style="font-size:14px;color:var(--tm);margin-bottom:10px">Quem termina o plano costuma perguntar: "e agora, como eu continuo?"</p>
@@ -343,82 +355,358 @@ input:focus{outline:none;border-color:var(--v)}
 <div class="step" id="s15">
   <h1>Tudo certo! 💚</h1>
   <p class="sub">Seu acesso chega pelo email da Hotmart. Enquanto isso, entre no nosso canal para receber receitas novas toda semana.</p>
-  <a class="btn" href="https://wa.me/message/OEAA7CU7GKANM1" target="_blank" onclick="ev('CanalWhatsApp')">Entrar no canal do WhatsApp →</a>
+  <a class="btn" href="https://wa.me/message/OEAA7CU7GKANM1" target="_blank" rel="noopener" onclick="ev('CanalWhatsApp')">Entrar no canal do WhatsApp →</a>
   <div class="footer">© 2026 Barriga Chapada em 7 Dias · Todos os direitos reservados · Compra Segura</div>
 </div>
 </div>
 
 <script>
-var RES = {}, userName = '';
-var ORDER = [1,2,3,4,5];
+// =====================================================================
+// CONFIGURAÇÃO — tudo que é peso, limite ou texto editável fica aqui.
+// =====================================================================
 
+var ORDER = [1,2,3,4,5];
+var Q_FIELD = {1:'idade', 2:'quando', 3:'perfilIntestinal', 4:'incomoda', 5:'objetivo'};
+
+// Pesos do perfil. Não são evidência médica: são regras editoriais para
+// escolher qual conteúdo mostrar. A Q3 é a única pergunta que descreve o
+// intestino, por isso tem peso 10 e a soma dos outros eixos nunca chega a 10:
+// nenhuma resposta indireta pode contradizer o que a pessoa disse na Q3.
+var SCORE_RULES = {
+  padrao: {
+    q3: {
+      preso:     {preso: 10},
+      irregular: {irregular: 10},
+      alternado: {alternado: 10},
+      gases:     {gases: 10},
+      menopausa: {menopausa: 10}
+    },
+    q2: {
+      sempre:   {preso: 2},
+      tarde:    {preso: 1, gases: 1},
+      comer:    {gases: 3},
+      eventual: {alternado: 2, irregular: 1}
+    },
+    q1: {
+      '30a40':  {},
+      '41a50':  {menopausa: 1},
+      '51a60':  {menopausa: 3},
+      '60mais': {menopausa: 3}
+    }
+  },
+  secundarioMin: 3,          // pontos mínimos para citar um padrão secundário
+  fallback: 'gases',         // receita usada quando a Q3 não foi respondida
+  impacto: {
+    q4: {desconforto: 3, roupa: 2, fotos: 2, autoestima: 2},
+    q2: {sempre: 2, tarde: 1, comer: 1, eventual: 0},
+    niveis: [{min: 5, id: 'alto'}, {min: 3, id: 'moderado'}, {min: 0, id: 'leve'}]
+  }
+};
+var PERFIL_ORDEM = ['preso','irregular','alternado','gases','menopausa']; // desempate
+
+// Score comercial: só comportamento observado. checkoutStarted e purchased
+// não são visíveis no navegador; ficam reservados para o webhook da Hotmart.
+var LEAD_SCORE_RULES = {
+  quizStarted: 5, quizCompleted: 20, emailCaptured: 20, resultViewed: 10,
+  offerClicked: 25, checkoutStarted: 20, purchased: 100
+};
+var LEAD_SCORE_TIERS = [
+  {min: 80, id: 'muito_alto'}, {min: 60, id: 'alto'}, {min: 30, id: 'medio'}, {min: 0, id: 'baixo'}
+];
+
+// ---------------------------------------------------------------------
+// Textos
+// ---------------------------------------------------------------------
 var PERFIS = {
   preso: {
-    t: 'Seu perfil: Intestino Travado',
-    d: 'Quando o intestino passa dias sem funcionar, a barriga acumula gases e fica estufada — mesmo comendo pouco. O foco do seu plano é ajudar o intestino a funcionar todo dia: água, fibras e chás que favorecem o ritmo.',
+    label: 'Intestino travado',
+    d: 'Quando o intestino passa dias sem funcionar, é comum a barriga ficar estufada, mesmo comendo pouco. Por isso a sugestão para este padrão começa pelo ritmo: água, fibras e horários.',
+    ponto: 'o tempo que o intestino passa sem funcionar',
+    sec: 'o intestino que passa dias sem funcionar',
     rn: 'Ameixa + linhaça da noite para a manhã',
-    r: 'À noite, deixe 3 ameixas secas de molho em 1 copo de água. De manhã, coma as ameixas, beba a água e acrescente 1 colher (chá) de linhaça ao café da manhã. Beba bastante água ao longo do dia — fibra sem água piora o intestino preso.'
+    r: 'À noite, deixe 3 ameixas secas de molho em 1 copo de água. De manhã, coma as ameixas, beba a água e acrescente 1 colher (chá) de linhaça ao café da manhã. Beba bastante água ao longo do dia: fibra sem água pode piorar o intestino preso.'
   },
   irregular: {
-    t: 'Seu perfil: Ritmo Intestinal Irregular',
-    d: 'Você vai ao banheiro, mas com esforço e sensação de incompleto. Isso costuma deixar a barriga pesada no fim do dia. O foco do seu plano é regularidade: horários, hidratação e fibras suaves.',
+    label: 'Ritmo intestinal irregular',
+    d: 'Ir ao banheiro com esforço ou com sensação de incompleto costuma deixar a barriga pesada. A sugestão para este padrão começa pela regularidade: horários, hidratação e fibras suaves.',
+    ponto: 'o esforço e a sensação de que o intestino não esvaziou',
+    sec: 'um ritmo intestinal irregular',
     rn: 'Aveia com mamão no café da manhã',
     r: 'Misture 2 colheres (sopa) de aveia em flocos com meia fatia de mamão picado e um fio de mel. Coma no café da manhã, de preferência sempre no mesmo horário, com um copo de água morna antes.'
   },
   gases: {
-    t: 'Seu perfil: Gases e Retenção',
-    d: 'Seu intestino funciona, mas a fermentação gera gases e a barriga estufa, principalmente depois de comer. O foco do seu plano é aliviar os gases: chás digestivos e ajustes simples nas refeições.',
+    label: 'Gases e estufamento',
+    d: 'O intestino funciona, mas os gases deixam a barriga estufada. A sugestão para este padrão começa por chás digestivos e ajustes simples na forma de comer.',
+    ponto: 'os gases e o estufamento',
+    sec: 'gases e estufamento depois de comer',
     rn: 'Chá de erva-doce depois do almoço',
     r: 'Ferva 1 xícara de água, desligue o fogo e coloque 1 colher (chá) de sementes de erva-doce. Tampe por 10 minutos, coe e beba morno depois do almoço. Coma devagar e evite refrigerante nesses dias.'
   },
   alternado: {
-    t: 'Seu perfil: Intestino Alternado',
-    d: 'Dias presos alternando com dias soltos mostram um intestino sem estabilidade. O foco do seu plano é constância: refeições regulares, chás calmantes e menos alimentos que irritam.',
+    label: 'Intestino alternado',
+    d: 'Dias de intestino preso alternando com dias soltos mostram um ritmo sem estabilidade. A sugestão para este padrão começa pela constância: refeições regulares e chás calmantes.',
+    ponto: 'a alternância entre dias de intestino preso e solto',
+    sec: 'alternância entre intestino preso e solto',
     rn: 'Chá de camomila com gengibre',
-    r: 'Em 1 xícara de água quente, coloque 1 colher (sopa) de camomila e 1 rodela fina de gengibre. Abafe por 5 minutos, coe e beba morno, à noite. Se os episódios de intestino solto forem frequentes, converse com um médico.'
+    r: 'Em 1 xícara de água quente, coloque 1 colher (sopa) de camomila e 1 rodela fina de gengibre. Abafe por 5 minutos, coe e beba morno, à noite.'
   },
   menopausa: {
-    t: 'Seu perfil: Impacto Hormonal',
-    d: 'Na menopausa, a mudança hormonal mexe com a retenção de líquido e com o intestino ao mesmo tempo. O foco do seu plano é reduzir a retenção e manter o intestino ativo, com receitas leves e hidratação.',
+    label: 'Mudanças da menopausa',
+    d: 'Muitas mulheres percebem mudanças no intestino e na sensação de inchaço nessa fase. A sugestão para este padrão começa por hidratação, refeições leves e horários regulares.',
+    ponto: 'as mudanças que você percebeu desde a menopausa',
+    sec: 'as mudanças hormonais desta fase da vida',
     rn: 'Água aromatizada com pepino e hortelã',
-    r: 'Em 1 litro de água, coloque 5 rodelas de pepino e algumas folhas de hortelã. Deixe na geladeira e beba ao longo do dia. Reduza o sal da comida nos 7 dias. Vale acompanhar os sintomas com seu ginecologista.'
+    r: 'Em 1 litro de água, coloque 5 rodelas de pepino e algumas folhas de hortelã. Deixe na geladeira e beba ao longo do dia. Nos 7 dias, tente reduzir o sal da comida.'
   }
 };
 
-var ROTINA = {
-  sempre:   ['⏰ Sua barriga incha o dia todo', 'Quando o inchaço começa cedo e não passa, o ponto de partida é a manhã: 1 copo de água morna antes do café e nada de pular refeições. Ficar muitas horas sem comer e depois comer muito de uma vez piora o estufamento.'],
-  tarde:    ['⏰ Sua barriga piora ao longo do dia', 'Espalhe a água pelo dia em vez de beber tudo à noite, levante e caminhe um pouco depois do almoço e faça um jantar mais leve e mais cedo. Isso costuma diminuir a barriga estufada do fim do dia.'],
-  comer:    ['⏰ Sua barriga incha logo depois de comer', 'Coma devagar, mastigue bem e evite refrigerante e muito líquido junto das refeições. Engolir ar comendo rápido é uma das causas mais comuns desse tipo de inchaço.'],
-  eventual: ['⏰ Sua barriga incha em alguns dias', 'Por 7 dias, anote o que comeu nos dias de inchaço. Muitas vezes o padrão aparece sozinho: leite, feijão, fritura, pão ou refrigerante. Saber o seu gatilho vale mais do que qualquer chá.']
+var RELATO = {
+  quando: {
+    sempre: 'a barriga fica inchada quase o dia todo',
+    tarde: 'o inchaço piora ao longo do dia',
+    comer: 'a barriga incha logo depois das refeições',
+    eventual: 'o inchaço aparece em alguns dias, sem um padrão claro'
+  },
+  perfilIntestinal: {
+    preso: 'fica 2 dias ou mais sem ir ao banheiro',
+    irregular: 'vai ao banheiro com esforço ou com sensação de incompleto',
+    alternado: 'o intestino alterna entre preso e solto',
+    gases: 'o intestino funciona, mas com muitos gases',
+    menopausa: 'o intestino mudou desde a menopausa'
+  },
+  incomoda: {
+    fotos: 'tem evitado fotos e usado roupas largas',
+    roupa: 'tem roupas que não fecham mais',
+    desconforto: 'o desconforto físico é o que mais pesa no dia a dia',
+    autoestima: 'tem se sentido menos bem com você mesma'
+  }
 };
-var DOR = {
-  fotos: 'Você contou que evita fotos e usa roupas largas',
-  roupa: 'Você contou que tem roupas que não fecham mais',
-  desconforto: 'Você contou que o desconforto do dia a dia é o que mais pesa',
-  autoestima: 'Você contou que tem se sentido menos bem com você mesma'
+var PONTO_QUANDO = {
+  sempre: ', que acompanha você quase o dia todo',
+  tarde: ', que aumenta com o passar do dia',
+  comer: ', principalmente depois das refeições',
+  eventual: ', que aparece em alguns dias'
+};
+var IMPACTO_TXT = {
+  leve: 'Pelo que você contou, isso incomoda, mas ainda não domina a sua rotina. É um bom momento para criar hábitos simples.',
+  moderado: 'Pelo que você contou, isso já está pesando na sua rotina. Pequenas mudanças diárias tendem a fazer diferença.',
+  alto: 'Pelo que você contou, isso tem pesado bastante no seu dia a dia. Vale começar pela sugestão abaixo ainda hoje.'
+};
+var ALERTA = 'Se o inchaço vier com dor forte, febre, sangue nas fezes, vômitos ou perda de peso sem explicação, procure um médico antes de qualquer mudança.';
+var ROTINA = {
+  sempre:   ['⏰ Quando a barriga incha quase o dia todo', 'O ponto de partida é a manhã: 1 copo de água morna antes do café e nada de pular refeições. Ficar muitas horas sem comer e depois comer muito de uma vez costuma piorar o estufamento.'],
+  tarde:    ['⏰ Quando a barriga piora ao longo do dia', 'Espalhe a água pelo dia em vez de beber tudo à noite, caminhe um pouco depois do almoço e faça um jantar mais leve e mais cedo.'],
+  comer:    ['⏰ Quando a barriga incha depois de comer', 'Coma devagar, mastigue bem e evite refrigerante e muito líquido junto das refeições. Comer rápido faz engolir mais ar.'],
+  eventual: ['⏰ Quando a barriga incha só em alguns dias', 'Por 7 dias, anote o que comeu nos dias de inchaço. Muitas vezes o padrão aparece sozinho: leite, feijão, fritura, pão ou refrigerante.']
 };
 var OBJ = {
-  barriga: ['Desinchar a barriga', 'Quer o plano completo para desinchar a barriga em 7 dias?'],
-  leveza:  ['Corpo mais leve', 'Quer o plano completo para sentir o corpo mais leve?'],
-  roupa:   ['Voltar às roupas que ama', 'Quer o plano completo para voltar a usar as roupas que você ama?'],
-  conf:    ['Sentir-se bem de novo', 'Quer o plano completo para voltar a se sentir bem com você?']
+  barriga: ['Desinchar a barriga', 'Quer seguir um plano de 7 dias para desinchar a barriga?'],
+  leveza:  ['Corpo mais leve', 'Quer seguir um plano de 7 dias para sentir o corpo mais leve?'],
+  roupa:   ['Voltar às roupas que ama', 'Quer seguir um plano de 7 dias pensando em voltar às roupas que você ama?'],
+  conf:    ['Sentir-se bem de novo', 'Quer seguir um plano de 7 dias para voltar a se sentir bem com você?']
 };
 var IDADE = {
   '30a40': ['30 a 40 anos', ''],
-  '41a50': ['41 a 50 anos', '💡 Depois dos 40 é comum o intestino ficar mais lento e o corpo reter mais líquido. No seu caso, beber água ao longo do dia faz ainda mais diferença.'],
-  '51a60': ['51 a 60 anos', '💡 Nessa fase, as mudanças hormonais mexem com o intestino e com a retenção de líquido. Hidratação e refeições em horários regulares ajudam bastante.'],
+  '41a50': ['41 a 50 anos', '💡 Depois dos 40, muitas mulheres percebem o intestino mais lento. Beber água ao longo do dia faz ainda mais diferença.'],
+  '51a60': ['51 a 60 anos', '💡 Nessa fase, as mudanças hormonais podem mexer com o intestino. Hidratação e refeições em horários regulares ajudam.'],
   '60mais':['Acima de 60', '💡 Acima dos 60, converse com seu médico antes de mudar a rotina, principalmente se você usa remédios para pressão, diabetes ou intestino.']
 };
-var QUANDO = {sempre:'Incha o dia todo', tarde:'Piora ao longo do dia', comer:'Incha depois de comer', eventual:'Incha em alguns dias'};
+var QUANDO = {sempre:'Incha quase o dia todo', tarde:'Piora ao longo do dia', comer:'Incha depois de comer', eventual:'Incha em alguns dias'};
+var IMPACTO_CHIP = {leve:'Impacto percebido: leve', moderado:'Impacto percebido: moderado', alto:'Impacto percebido: alto'};
 
+// =====================================================================
+// LÓGICA (funções puras, sem DOM)
+// =====================================================================
+
+function addPoints(scores, table, answer) {
+  var pts = table[answer];
+  if (!pts) return;
+  for (var k in pts) scores[k] = (scores[k] || 0) + pts[k];
+}
+
+function calculateProfile(a) {
+  a = a || {};
+  var R = SCORE_RULES, scores = {};
+  PERFIL_ORDEM.forEach(function(p){ scores[p] = 0; });
+  addPoints(scores, R.padrao.q3, a.perfilIntestinal);
+  addPoints(scores, R.padrao.q2, a.quando);
+  addPoints(scores, R.padrao.q1, a.idade);
+
+  var ranked = PERFIL_ORDEM.slice().sort(function(x, y){
+    return scores[y] - scores[x] || PERFIL_ORDEM.indexOf(x) - PERFIL_ORDEM.indexOf(y);
+  });
+  var temQ3 = !!R.padrao.q3[a.perfilIntestinal];
+  var primary = temQ3 ? ranked[0] : R.fallback;
+  var secondary = null;
+  if (temQ3) {
+    for (var i = 0; i < ranked.length; i++) {
+      if (ranked[i] !== primary && scores[ranked[i]] >= R.secundarioMin) { secondary = ranked[i]; break; }
+    }
+  }
+
+  var imp = 0;
+  if (R.impacto.q4[a.incomoda] !== undefined) imp += R.impacto.q4[a.incomoda];
+  if (R.impacto.q2[a.quando] !== undefined) imp += R.impacto.q2[a.quando];
+  var nivel = null;
+  if (a.incomoda) {
+    for (var j = 0; j < R.impacto.niveis.length; j++) {
+      if (imp >= R.impacto.niveis[j].min) { nivel = R.impacto.niveis[j].id; break; }
+    }
+  }
+
+  return {
+    scores: scores, primary: primary, secondary: secondary,
+    confianca: temQ3 ? 'normal' : 'baixa',
+    impactoScore: imp, impacto: nivel
+  };
+}
+
+function calculateLeadScore(lead) {
+  var score = 0;
+  for (var k in LEAD_SCORE_RULES) if (lead[k]) score += LEAD_SCORE_RULES[k];
+  var tier = 'baixo';
+  for (var i = 0; i < LEAD_SCORE_TIERS.length; i++) {
+    if (score >= LEAD_SCORE_TIERS[i].min) { tier = LEAD_SCORE_TIERS[i].id; break; }
+  }
+  return {score: score, tier: tier};
+}
+
+function juntar(partes) {
+  partes = partes.filter(Boolean);
+  if (partes.length < 2) return partes[0] || '';
+  return partes.slice(0, -1).join(', ') + ' e ' + partes[partes.length - 1];
+}
+
+function buildPersonalizedResult(lead, prof) {
+  var p = PERFIS[prof.primary];
+  var nome = lead.firstName ? lead.firstName + ', ' : '';
+  var out = {};
+
+  out.titulo = prof.confianca === 'normal'
+    ? (nome ? nome + 'pelas' : 'Pelas') + ' suas respostas, seu padrão predominante é: ' + p.label
+    : (lead.firstName ? lead.firstName + ', aqui' : 'Aqui') + ' está uma sugestão simples para começar';
+
+  out.chips = [
+    IDADE[lead.idade] && IDADE[lead.idade][0],
+    QUANDO[lead.quando],
+    prof.impacto && IMPACTO_CHIP[prof.impacto],
+    OBJ[lead.objetivo] && 'Objetivo: ' + OBJ[lead.objetivo][0]
+  ].filter(Boolean);
+
+  var rel = [];
+  if (RELATO.quando[lead.quando]) rel.push('que ' + RELATO.quando[lead.quando]);
+  if (RELATO.perfilIntestinal[lead.perfilIntestinal]) rel.push('que ' + RELATO.perfilIntestinal[lead.perfilIntestinal]);
+  if (RELATO.incomoda[lead.incomoda]) rel.push('que ' + RELATO.incomoda[lead.incomoda]);
+  out.relato = rel.length ? 'Você relatou ' + juntar(rel) + '.' : '';
+
+  if (prof.confianca === 'normal') {
+    var ponto = p.ponto;
+    if (prof.primary === 'gases' && PONTO_QUANDO[lead.quando]) ponto += PONTO_QUANDO[lead.quando];
+    out.ponto = 'Seu principal ponto de atenção: ' + ponto + '.' +
+      (prof.impacto ? ' ' + IMPACTO_TXT[prof.impacto] : '');
+  } else {
+    out.ponto = prof.impacto ? IMPACTO_TXT[prof.impacto] : '';
+  }
+
+  out.descricao = prof.confianca === 'normal' ? p.d : '';
+  out.secundario = prof.secondary
+    ? 'Suas respostas também indicam um ponto a observar: ' + PERFIS[prof.secondary].sec + '.'
+    : '';
+  out.alerta = (prof.impacto === 'alto' || lead.idade === '60mais' || prof.primary === 'alternado') ? ALERTA : '';
+
+  out.receitaNome = p.rn;
+  out.receita = p.r;
+  var rot = ROTINA[lead.quando];
+  out.rotinaTitulo = rot ? rot[0] : '';
+  out.rotina = rot ? rot[1] : '';
+  out.idadeNota = IDADE[lead.idade] ? IDADE[lead.idade][1] : '';
+  out.ofertaTitulo = (OBJ[lead.objetivo] || OBJ.barriga)[1];
+  return out;
+}
+
+// =====================================================================
+// ESTADO DO LEAD (só em memória; nada vai para URL ou localStorage)
+// =====================================================================
+var LEAD = {
+  firstName: '', email: '',
+  idade: '', quando: '', perfilIntestinal: '', incomoda: '', objetivo: '',
+  impacto: '', perfilFinal: '', perfilSecundario: '',
+  leadScore: 0, leadTier: 'baixo',
+  quizStarted: false, quizCompleted: false, emailCaptured: false,
+  resultViewed: false, offerClicked: false, checkoutClicked: false,
+  checkoutStarted: false, purchased: false,
+  purchaseStatus: 'desconhecido'   // só o webhook da Hotmart pode mudar isso
+};
+
+function markLead(flag) {
+  if (LEAD[flag]) return;
+  LEAD[flag] = true;
+  var s = calculateLeadScore(LEAD);
+  LEAD.leadScore = s.score; LEAD.leadTier = s.tier;
+  try { if (typeof gtag !== 'undefined') gtag('event', 'lead_score_update', {etapa: flag, lead_score: s.score, lead_tier: s.tier}); } catch(e) {}
+}
+
+function updateProfile() {
+  var prof = calculateProfile(LEAD);
+  LEAD.impacto = prof.impacto || '';
+  LEAD.perfilFinal = prof.confianca === 'normal' ? prof.primary : '';
+  LEAD.perfilSecundario = prof.secondary || '';
+  return prof;
+}
+
+// =====================================================================
+// TRACKING
+// =====================================================================
+
+// Respostas do quiz são dados de saúde: vão só para o GA4.
+// A Meta recebe apenas o nome do evento.
+var META_OK = {step_number: 1};
 function ev(name, params) {
-  try { if (typeof fbq !== 'undefined') fbq('trackCustom', name, params || {}); } catch(e) {}
-  try { if (typeof gtag !== 'undefined') gtag('event', name, params || {}); } catch(e) {}
+  params = params || {};
+  var meta = {};
+  for (var k in params) if (META_OK[k]) meta[k] = params[k];
+  try { if (typeof fbq !== 'undefined') fbq('trackCustom', name, meta); } catch(e) {}
+  try { if (typeof gtag !== 'undefined') gtag('event', name, params); } catch(e) {}
 }
+var PRECO = {oferta_principal: 29.90, cta_final: 29.90, upsell: 47.90, downsell: 27.90};
 function ck(origem) {
-  try { if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', {content_name: origem}); } catch(e) {}
-  try { if (typeof gtag !== 'undefined') gtag('event', 'checkout_clicked', {origem: origem, perfil: RES.q3 || ''}); } catch(e) {}
+  var val = PRECO[origem] || 0;
+  if (origem === 'oferta_principal' || origem === 'cta_final') {
+    markLead('offerClicked');
+    LEAD.checkoutClicked = true;
+  }
+  try { if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', {content_name: origem, value: val, currency: 'BRL'}); } catch(e) {}
+  try { if (typeof gtag !== 'undefined') gtag('event', 'checkout_clicked', {origem: origem, perfil: LEAD.perfilFinal, value: val, currency: 'BRL'}); } catch(e) {}
 }
+
+// Origem do tráfego (utm_* / src) -> parâmetro sck da Hotmart. Sem dados pessoais.
+var ORIGEM = (function(){
+  var keys = ['utm_source','utm_medium','utm_campaign','utm_content','src'], o = {};
+  try { o = JSON.parse(sessionStorage.getItem('qz_origem') || '{}'); } catch(e) {}
+  var q = new URLSearchParams(window.location.search), novo = false;
+  keys.forEach(function(k){
+    var v = (q.get(k) || '').toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 40);
+    if (v) { o[k] = v; novo = true; }
+  });
+  if (novo) { try { sessionStorage.setItem('qz_origem', JSON.stringify(o)); } catch(e) {} }
+  return o;
+})();
+function tagCheckout() {
+  var sck = [ORIGEM.utm_source, ORIGEM.utm_campaign, ORIGEM.utm_content].filter(Boolean).join('_').slice(0, 100);
+  var links = document.querySelectorAll('a[href*="pay.hotmart.com"]');
+  for (var i = 0; i < links.length; i++) {
+    try {
+      var u = new URL(links[i].href);
+      if (sck && !u.searchParams.has('sck')) u.searchParams.set('sck', sck);
+      if (ORIGEM.src && !u.searchParams.has('src')) u.searchParams.set('src', ORIGEM.src);
+      links[i].href = u.toString();
+    } catch(e) {}
+  }
+}
+
+// =====================================================================
+// FLUXO / DOM
+// =====================================================================
 
 function show(id) {
   var all = document.querySelectorAll('.step');
@@ -439,10 +727,11 @@ function setProg(q) {
 function startQuiz() {
   var raw = document.getElementById('nameInput').value.trim();
   if (!raw) { document.getElementById('nameInput').focus(); return; }
-  userName = raw.split(' ')[0];
-  userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
-  document.getElementById('t1').textContent = 'Prazer, ' + userName + '! Vamos começar.';
+  var n = raw.split(' ')[0];
+  LEAD.firstName = n.charAt(0).toUpperCase() + n.slice(1).toLowerCase();
+  document.getElementById('t1').textContent = 'Prazer, ' + LEAD.firstName + '! Vamos começar.';
   show(1); setProg(1);
+  markLead('quizStarted');
   ev('QuizInicio');
 }
 
@@ -450,15 +739,16 @@ function pick(el, q, v) {
   var sib = el.parentNode.querySelectorAll('.opt');
   for (var i = 0; i < sib.length; i++) sib[i].classList.remove('sel');
   el.classList.add('sel');
-  RES['q' + q] = v;
+  LEAD[Q_FIELD[q]] = v;
   document.getElementById('b' + q).disabled = false;
 }
 
 function next(q, n) {
   ev('question_completed', {step_number: q});
   if (q === 1) {
-    var mostrar = RES.q1 && RES.q1 !== '30a40';
+    var mostrar = LEAD.idade && LEAD.idade !== '30a40';
     document.getElementById('optMen').style.display = mostrar ? 'flex' : 'none';
+    if (!mostrar && LEAD.perfilIntestinal === 'menopausa') LEAD.perfilIntestinal = '';
   }
   if (n === 6) { carregar(); return; }
   show(n); setProg(n);
@@ -467,13 +757,14 @@ function next(q, n) {
 function carregar() {
   setProg(-1);
   show(6);
-  ev('QuizCompleto', {perfil: RES.q3});
-  var ids = ['l1','l2','l3','l4'];
-  ids.forEach(function(id, i) {
+  updateProfile();
+  markLead('quizCompleted');
+  ev('QuizCompleto', {perfil: LEAD.perfilFinal, impacto: LEAD.impacto});
+  ['l1','l2','l3','l4'].forEach(function(id, i) {
     setTimeout(function(){ document.getElementById(id).classList.add('on'); }, 700 * (i + 1));
   });
   setTimeout(function(){
-    document.getElementById('emailTitle').textContent = userName + ', para onde enviamos seu plano?';
+    document.getElementById('emailTitle').textContent = (LEAD.firstName ? LEAD.firstName + ', p' : 'P') + 'ara onde enviamos seu plano?';
     show(7);
   }, 3400);
 }
@@ -484,59 +775,73 @@ function checkEmail() {
 }
 
 function submitEmail() {
-  var email = document.getElementById('emailInput').value.trim();
   var btn = document.getElementById('emailBtn');
+  if (LEAD.emailCaptured) return;
+  LEAD.email = document.getElementById('emailInput').value.trim();
   btn.disabled = true; btn.textContent = 'Enviando...';
+  updateProfile();
+  markLead('emailCaptured');
   fetch('https://snowy-wildflower-ce6a.marianozuy37.workers.dev', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      email: email,
-      firstName: userName,
-      perfil: RES.q3 || '',
-      idade: RES.q1 || '',
-      objetivo: RES.q5 || '',
-      quando: RES.q2 || '',
-      incomoda: RES.q4 || '',
+      email: LEAD.email,
+      firstName: LEAD.firstName,
+      perfil: LEAD.perfilFinal,
+      idade: LEAD.idade,
+      objetivo: LEAD.objetivo,
+      quando: LEAD.quando,
+      incomoda: LEAD.incomoda,
       origem: 'quiz'
-    })
-  }).catch(function(e){ console.log('Proxy:', e); });
-  try { if (typeof fbq !== 'undefined') fbq('track', 'Lead', {content_name: RES.q3 || ''}); } catch(e) {}
-  try { gtag('event', 'generate_lead', {perfil: RES.q3 || ''}); } catch(e) {}
+    }),
+    keepalive: true
+  }).then(function(r){
+    if (!r.ok) ev('lead_sync_failed', {status: r.status});
+  }).catch(function(e){
+    console.log('Proxy:', e);
+    ev('lead_sync_failed', {status: 0});
+  });
+  try { if (typeof fbq !== 'undefined') fbq('track', 'Lead'); } catch(e) {}
+  try { gtag('event', 'generate_lead', {perfil: LEAD.perfilFinal}); } catch(e) {}
   resultado();
 }
 
 function skipEmail() { ev('EmailPulado'); resultado(); }
 
+function setText(id, txt) {
+  var el = document.getElementById(id);
+  el.textContent = txt || '';
+  el.style.display = txt ? '' : 'none';
+}
+
 function resultado() {
-  var p = PERFIS[RES.q3] || PERFIS.gases;
-  var rot = ROTINA[RES.q2] || ROTINA.eventual;
-  var obj = OBJ[RES.q5] || OBJ.barriga;
-  var ida = IDADE[RES.q1] || IDADE['30a40'];
+  var prof = updateProfile();
+  var r = buildPersonalizedResult(LEAD, prof);
 
-  document.getElementById('rTitle').textContent = userName + ', ' + p.t.charAt(0).toLowerCase() + p.t.slice(1);
-
-  var chips = [ida[0], QUANDO[RES.q2], p.t.replace('Seu perfil: ', ''), 'Objetivo: ' + obj[0]];
-  document.getElementById('rChips').innerHTML = chips.filter(Boolean).map(function(c){
+  setText('rTitle', r.titulo);
+  document.getElementById('rChips').innerHTML = r.chips.map(function(c){
     return '<span class="chip">' + c + '</span>';
   }).join('');
-
-  var abertura = DOR[RES.q4] ? DOR[RES.q4] + '. Isso tem explicação. ' : '';
-  document.getElementById('rText').textContent = abertura + p.d;
-
-  document.getElementById('rRecName').textContent = p.rn;
-  document.getElementById('rRec').textContent = p.r;
-  document.getElementById('rRotT').textContent = rot[0];
-  document.getElementById('rRot').textContent = rot[1];
-
-  var box = document.getElementById('rIdadeBox');
-  if (ida[1]) { document.getElementById('rIdade').textContent = ida[1]; box.style.display = 'block'; }
-  else { box.style.display = 'none'; }
-
-  document.getElementById('rOferta').textContent = obj[1];
+  setText('rRelato', r.relato);
+  setText('rPonto', r.ponto);
+  setText('rText', r.descricao);
+  setText('rSec', r.secundario);
+  setText('rAlerta', r.alerta);
+  setText('rRecName', r.receitaNome);
+  setText('rRec', r.receita);
+  setText('rRotT', r.rotinaTitulo);
+  setText('rRot', r.rotina);
+  document.getElementById('rRotBox').style.display = r.rotina ? '' : 'none';
+  setText('rIdade', r.idadeNota);
+  document.getElementById('rIdadeBox').style.display = r.idadeNota ? 'block' : 'none';
+  setText('rOferta', r.ofertaTitulo);
 
   show(8);
-  ev('ResultadoVisto', {perfil: RES.q3, quando: RES.q2, idade: RES.q1, objetivo: RES.q5});
+  markLead('resultViewed');
+  ev('ResultadoVisto', {
+    perfil: LEAD.perfilFinal, perfil_secundario: LEAD.perfilSecundario,
+    impacto: LEAD.impacto, quando: LEAD.quando, idade: LEAD.idade, objetivo: LEAD.objetivo
+  });
 }
 
 function irStep(n) {
@@ -547,8 +852,19 @@ function irStep(n) {
 }
 
 (function(){
-  var ni = document.getElementById('nameInput');
-  ni.addEventListener('keypress', function(e){ if (e.key === 'Enter') startQuiz(); });
+  document.getElementById('nameInput').addEventListener('keypress', function(e){ if (e.key === 'Enter') startQuiz(); });
+  document.getElementById('emailInput').addEventListener('keypress', function(e){
+    if (e.key === 'Enter' && !document.getElementById('emailBtn').disabled) submitEmail();
+  });
+  var opts = document.querySelectorAll('.opt');
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].setAttribute('role', 'button');
+    opts[i].setAttribute('tabindex', '0');
+    opts[i].addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+    });
+  }
+  tagCheckout();
   var step = new URLSearchParams(window.location.search).get('step');
   var map = {obrigado:12, upsell:13, downsell:14, fim:15};
   if (map[step]) irStep(map[step]);
