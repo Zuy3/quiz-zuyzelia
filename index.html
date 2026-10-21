@@ -1,924 +1,505 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Por que sua barriga incha? — Barriga Chapada em 7 Dias</title>
-<meta name="description" content="Responda 5 perguntas e receba o plano de chás e receitas para o seu tipo de inchaço.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Por que sua barriga incha? Teste gratuito de 1 minuto">
-<meta property="og:description" content="Responda 5 perguntas e receba a receita para o seu tipo de inchaço.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8D%B5%3C/text%3E%3C/svg%3E">
+<title>Diagnóstico Gratuito — Barriga Chapada em 7 Dias</title>
+<meta name="description" content="Descubra a causa exata do seu inchaço abdominal com o método desenvolvido por Biomédico especialista em Análises Clínicas.">
+
+<!-- PIXELS DE TRACKING (META & GOOGLE) -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1242713591247490');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1242713591247490&ev=PageView&noscript=1"/></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2TZQJLE7L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z2TZQJLE7L');</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--v:#1a7a54;--vc:#e8f5ee;--vm:#9fcdb8;--ve:#0f4f35;--cr:#faf8f4;--td:#1c1c1a;--tm:#4a4a46;--ts:#66665f;--bd:#e2ddd6;--gold:#c9860a;--pink:#b8456b;--r:14px}
+:root{
+  --v:#1a7a54;--vc:#e8f5ee;--vm:#9fcdb8;--ve:#0f4f35;
+  --lo:#d4572a;--lc:#fdf0ea;
+  --cr:#faf8f4;--cd:#f0ede6;
+  --td:#1c1c1a;--tm:#4a4a46;--ts:#7a7a74;--bd:#e2ddd6;
+  --gold:#c9860a;--goldbg:#fff8e6;
+  --r:16px;--rs:10px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cr);color:var(--td);-webkit-font-smoothing:antialiased;line-height:1.5}
-.wrap{max-width:520px;margin:0 auto;padding:20px 20px 60px}
-.step{display:none}.step.active{display:block}
-.prog{height:6px;background:var(--bd);border-radius:6px;margin-bottom:22px;overflow:hidden;display:none}
-.prog div{height:100%;width:0;background:var(--v);transition:width .3s}
-.badge{display:inline-block;background:var(--vc);color:var(--ve);font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;margin-bottom:14px}
-h1{font-family:'Lora',serif;font-size:27px;line-height:1.25;margin-bottom:12px}
-h2{font-family:'Lora',serif;font-size:21px;line-height:1.3;margin-bottom:10px}
-.sub{font-size:15px;color:var(--tm);margin-bottom:20px}
-.trans{font-size:13px;color:var(--v);font-weight:600;margin-bottom:6px}
-.qt{font-family:'Lora',serif;font-size:21px;line-height:1.3;margin-bottom:8px}
-.qs{font-size:14px;color:var(--ts);margin-bottom:16px}
-.opt{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:14px;margin-bottom:10px;cursor:pointer;transition:all .15s}
-.opt.sel{border-color:var(--v);background:var(--vc)}
-.oi{font-size:22px;flex-shrink:0}
-.om{font-size:15px;font-weight:600}
-.oh{font-size:13px;color:var(--ts)}
-.btn{display:block;width:100%;padding:17px;background:var(--v);color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;margin-top:8px}
-.btn[disabled]{opacity:.45;pointer-events:none}
-.btn.gold{background:var(--gold)}.btn.pink{background:var(--pink)}
-.link{display:block;text-align:center;font-size:14px;color:var(--ts);text-decoration:underline;margin-top:14px;cursor:pointer;background:none;border:none;width:100%}
-input{width:100%;padding:15px 16px;border:1.5px solid var(--bd);border-radius:12px;font-size:16px;font-family:inherit;margin-bottom:10px;background:#fff}
-input:focus{outline:none;border-color:var(--v)}
-.opt:focus-visible,.btn:focus-visible,.link:focus-visible{outline:3px solid var(--vm);outline-offset:2px}
-.card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-bottom:16px}
-.card.green{background:var(--vc);border-color:var(--vm)}
-.li{display:flex;gap:8px;font-size:14px;color:var(--tm);margin-bottom:8px}
-.li b{color:var(--v)}
-.price{font-family:'Lora',serif;font-size:42px;font-weight:600;color:var(--v);text-align:center;line-height:1.1}
-.pnote{font-size:13px;color:var(--ts);text-align:center;margin-bottom:10px}
-.loader{margin:30px 0}
-.lstep{font-size:14px;color:var(--ts);padding:8px 0;opacity:.35;transition:opacity .3s}
-.lstep.on{opacity:1;color:var(--td)}
-.small{font-size:12px;color:var(--ts);text-align:center}
-.footer{font-size:11px;color:var(--ts);text-align:center;margin-top:30px;line-height:1.6}
-.trust{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ts);margin-top:12px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
-@media(max-width:340px){.grid2{grid-template-columns:1fr}}
-.dcard{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px;font-size:13px;color:var(--ts);line-height:1.4}
-.dcard b{display:block;color:var(--td);font-size:14px}.dcard .de{font-size:20px;margin-bottom:4px}
-.note{background:var(--vc);border-left:4px solid var(--v);border-radius:0 12px 12px 0;padding:14px 16px;font-size:15px;color:var(--ve);margin-bottom:16px}
-.pcard{border:2px solid var(--vm)}.pcard.pink{border-color:#e7b3c5}
-.ptag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--ts);margin-bottom:8px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.rt{font-size:23px}
-.chip{font-size:12px;background:#fff;border:1px solid var(--bd);border-radius:20px;padding:4px 10px;color:var(--tm)}
-.sp{margin:4px 0 16px}
-.sp-t{font-size:15px;font-weight:700;color:var(--td);margin-bottom:10px}
-.sp-c{background:#fff;border:1px solid var(--bd);border-left:4px solid var(--vm);border-radius:0 12px 12px 0;padding:12px 14px;margin-bottom:10px}
-.sp-q{font-size:14px;color:var(--tm);line-height:1.5;font-style:italic}
-.sp-a{font-size:12px;color:var(--ts);margin-top:6px;font-weight:600}
-.sp-a span{font-weight:400}
-.sp-n{font-size:11px;color:var(--ts);line-height:1.4}
-.privacy-note{font-size:12px;color:var(--ts);line-height:1.5;margin:10px 0}.privacy-note a,.footer a{color:var(--ve);text-decoration:underline}
-.consent-banner{position:fixed;z-index:9999;left:12px;right:12px;bottom:12px;max-width:560px;margin:auto;background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;box-shadow:0 8px 35px #0002}.consent-banner p{font-size:13px;color:var(--tm);margin-bottom:12px}.consent-actions{display:flex;gap:8px}.consent-actions button{flex:1;margin:0;padding:12px 8px;font-size:13px}.btn.secondary{background:#fff;color:var(--ve);border:1px solid var(--vm)}.back-link{margin:8px 0 12px}.status-message{font-size:13px;margin:8px 0;color:var(--tm)}.checkline{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:var(--tm);line-height:1.45;margin:8px 0}.checkline input{width:auto;margin:2px 0 0;flex-shrink:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-height:100vh;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:520px;margin:0 auto;padding:20px 18px 80px;}
+
+/* HEADER FIXO */
+.qheader{background:#0f4f35;padding:12px 20px;text-align:center;position:sticky;top:0;z-index:10;display:none;align-items:center;justify-content:center;gap:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+.qheader.visible{display:flex;}
+.qheader-label{font-size:13px;font-weight:700;color:#fff;letter-spacing:0.04em;text-transform:uppercase;}
+
+#progresswrap{position:relative;width:100%;height:5px;background:rgba(15,79,53,0.2);display:none;}
+#progressbar{height:100%;background:#f0a020;width:0%;transition:width 0.4s ease;}
+
+.topo{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:20px;font-family:'Lora',serif;font-size:13px;color:var(--v);letter-spacing:0.03em;font-weight:600;}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--v);opacity:0.7;}
+
+.step{display:none}
+.step.active{display:block;animation:fu 0.35s ease}
+@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.hdr{text-align:center;margin-bottom:20px}
+.hdr h1,.hdr h2{font-family:'Lora',serif;font-weight:600;color:var(--td);line-height:1.35;margin-bottom:10px;}
+.hdr h1{font-size:26px}.hdr h2{font-size:21px}
+.hdr em{color:var(--v);font-style:italic;}
+
+.qtransition{font-size:13px;color:var(--ts);font-style:italic;margin-bottom:4px;font-weight:500;}
+.qtext{font-family:'Lora',serif;font-size:21px;font-weight:600;line-height:1.35;color:var(--td);margin-bottom:8px;}
+.qsub{font-size:13px;color:var(--ts);margin-bottom:18px;line-height:1.55;}
+
+.opts{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.opt{display:flex;align-items:center;gap:14px;background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:14px 16px;cursor:pointer;transition:all 0.2s;-webkit-tap-highlight-color:transparent;}
+.opt:hover{border-color:var(--vm);background:var(--vc)}
+.opt.sel{border-color:var(--v);background:var(--vc);box-shadow:0 0 0 1px var(--v);}
+.oicon{width:40px;height:40px;border-radius:12px;flex-shrink:0;background:var(--cd);display:flex;align-items:center;justify-content:center;font-size:20px;}
+.opt.sel .oicon{background:rgba(26,122,84,0.15)}
+.obody{flex:1}
+.omain{font-size:15px;color:var(--td);line-height:1.4;font-weight:600}
+.ohint{font-size:12px;color:var(--ts);margin-top:2px;line-height:1.3}
+
+.qstat{font-size:12px;color:var(--v);font-style:italic;text-align:center;margin-bottom:18px;padding:0 8px;line-height:1.5;font-weight:500;}
+
+.nextbtn{width:100%;padding:17px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;opacity:0.4;pointer-events:none;transition:all 0.2s;}
+.nextbtn.ok{opacity:1;pointer-events:auto;box-shadow:0 4px 15px rgba(26,122,84,0.25);}
+.nextbtn.ok:hover{background:var(--ve);transform:translateY(-1px)}
+
+.startbtn{width:100%;padding:18px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.2s;margin-bottom:10px;position:relative;overflow:hidden;}
+.startbtn:hover{background:var(--ve);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,122,84,0.35);}
+.startbtn.pulse{animation:ctaPulse 2s infinite}
+@keyframes ctaPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,122,84,0.4)}50%{box-shadow:0 0 0 12px rgba(26,122,84,0)}}
+
+.name-inp{width:100%;padding:15px 16px;border:1.5px solid var(--bd);border-radius:var(--r);font-size:16px;font-family:'DM Sans',sans-serif;color:var(--td);background:#fff;transition:border-color 0.2s;outline:none;}
+.name-inp:focus{border-color:var(--v)}
+
+.azwrap{text-align:center;padding:36px 0 24px}
+.azwrap h3{font-family:'Lora',serif;font-size:22px;color:var(--td);margin-bottom:8px;}
+.azwrap p{font-size:14px;color:var(--ts);margin-bottom:24px;line-height:1.6}
+.azrow{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.azrow span{font-size:13px;color:var(--tm);width:175px;flex-shrink:0;text-align:left;font-weight:500;}
+.aztrack{flex:1;height:8px;background:var(--cd);border-radius:6px;overflow:hidden}
+.azfill{height:100%;background:var(--v);width:0;border-radius:6px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+.ctabtn{display:block;width:100%;padding:18px 16px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:none;text-align:center;transition:all 0.2s;margin-bottom:8px;letter-spacing:0.01em;line-height:1.3;box-shadow:0 4px 18px rgba(26,122,84,0.25);}
+.ctabtn:hover{background:var(--ve);transform:translateY(-1px)}
+.ctabtn.gold{background:var(--gold);box-shadow:0 4px 18px rgba(201,134,10,0.25);}.ctabtn.gold:hover{background:#a06d08}
+
+.card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:20px;box-shadow:0 2px 20px rgba(26,122,84,0.06);}
+.ppill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px;}
+.pint{background:#e6f0fb;color:#185fa5}
+.pinf{background:#faece7;color:#993c1d}
+.pmix{background:#f0e8f5;color:#6a3a9a}
+
+.rsec{margin-bottom:20px}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#0f4f35;padding:12px 20px;display:none;align-items:center;justify-content:space-between;gap:12px;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,0.2);}
+.sticky-cta.visible{display:flex}
+.sticky-cta-text{color:#fff;font-size:13px;line-height:1.3}
+.sticky-cta-text strong{display:block;font-size:15px;color:#fff;}
+.sticky-cta-btn{background:#f0a020;color:#fff;border:none;border-radius:10px;padding:12px 18px;font-size:14px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;text-decoration:none;flex-shrink:0;}
+
+.sp-toast{position:fixed;bottom:80px;left:12px;right:12px;max-width:340px;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--td);box-shadow:0 4px 20px rgba(0,0,0,0.12);z-index:99;transform:translateY(20px);opacity:0;transition:all 0.4s ease;pointer-events:none;}
+.sp-toast.show{transform:translateY(0);opacity:1}
 </style>
 </head>
 <body>
+
+<div class="qheader" id="topbar">
+  <span style="font-size:16px">🌿</span>
+  <span class="qheader-label">BARRIGA CHAPADA EM 7 DIAS</span>
+</div>
+<div id="progresswrap"><div id="progressbar"></div></div>
+
 <div class="wrap">
-<div class="prog" id="prog"><div id="progbar"></div></div>
+<div class="topo"><div class="dot"></div>Método Científico — Biomédico Zuy<div class="dot"></div></div>
 
-<!-- S0 INTRO -->
+<!-- ====== INTRO ====== -->
 <div class="step active" id="s0">
-  <div class="badge">Teste gratuito · 1 minuto</div>
-  <h1>Por que sua barriga incha mesmo quando você come pouco?</h1>
-  <p class="sub">Responda 5 perguntas e receba o plano de chás e receitas para o seu tipo de inchaço.</p>
-  <input id="nameInput" type="text" aria-label="Seu primeiro nome" placeholder="Seu primeiro nome" autocomplete="given-name">
-  <button class="btn" onclick="startQuiz()">Começar o teste →</button>
-  <p class="small" style="margin-top:12px">Feito para mulheres acima dos 30 que sentem que o corpo mudou.</p>
+  <div style="text-align:center;margin-bottom:16px;">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:var(--vc);border:1px solid var(--vm);border-radius:30px;padding:6px 14px;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;display:inline-block;"></span>
+      <span style="font-size:12px;font-weight:700;color:var(--ve);">Diagnóstico Clínico Gratuito</span>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-bottom:18px;">
+    <h1 style="font-family:'Lora',serif;font-size:27px;font-weight:600;line-height:1.3;color:var(--td);margin-bottom:10px;">
+      Descubra a causa exata do seu inchaço abdominal — <br>
+      <em style="color:var(--v);font-style:italic;">mesmo fazendo tudo certo</em>
+    </h1>
+    <p style="font-size:14px;color:var(--tm);line-height:1.6;max-width:420px;margin:0 auto;">Análise individualizada em 2 minutos. Receba o seu protocolo de desinflamação intestinal sem dietas malucas.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px;">
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 6px;text-align:center;">
+      <div style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:var(--v);">12.400+</div>
+      <div style="font-size:11px;color:var(--ts);margin-top:2px;">avaliações</div>
+    </div>
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 6px;text-align:center;">
+      <div style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:var(--v);">4.9 ★</div>
+      <div style="font-size:11px;color:var(--ts);margin-top:2px;">satisfação</div>
+    </div>
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 6px;text-align:center;">
+      <div style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:var(--v);">7 dias</div>
+      <div style="font-size:11px;color:var(--ts);margin-top:2px;">para resultado</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px;">
+    <label style="font-size:14px;font-weight:600;color:var(--td);margin-bottom:8px;display:block;">👋 Como podemos te chamar?</label>
+    <input class="name-inp" id="nameInput" type="text" placeholder="Digite seu primeiro nome aqui..." maxlength="30" autocomplete="given-name">
+  </div>
+
+  <button class="startbtn pulse" id="startBtn" onclick="startQuiz()">
+    🔬 INICIAR DIAGNÓSTICO GRATUITO →
+  </button>
+
+  <div style="text-align:center;font-size:11px;color:var(--ts);margin-top:12px;">🔒 Análise 100% segura e baseada em dados fisiológicos.</div>
 </div>
 
-<!-- Q1 IDADE -->
+<!-- ====== Q1: FAIXA ETARIA ====== -->
 <div class="step" id="s1">
-  <div class="trans" id="t1"></div>
-  <div class="qt">Qual é a sua faixa de idade?</div>
-  <div class="qs">A fase hormonal influencia o tipo de inchaço.</div>
-  <div class="opt" onclick="pick(this,1,'30a40')"><div class="oi">🌿</div><div><div class="om">30 a 40 anos</div></div></div>
-  <div class="opt" onclick="pick(this,1,'41a50')"><div class="oi">🔥</div><div><div class="om">41 a 50 anos</div></div></div>
-  <div class="opt" onclick="pick(this,1,'51a60')"><div class="oi">🌸</div><div><div class="om">51 a 60 anos</div></div></div>
-  <div class="opt" onclick="pick(this,1,'60mais')"><div class="oi">🍂</div><div><div class="om">Acima de 60 anos</div></div></div>
-  <button class="btn" id="b1" disabled onclick="next(1,2)">Continuar →</button>
+  <div class="qtransition" id="qtrans1">Antes de tudo, me conta uma coisa...</div>
+  <div class="qtext">Qual é a sua faixa etária?</div>
+  <div class="qsub">O perfil hormonal muda com a idade e altera a resposta do intestino.</div>
+  <div class="opts">
+    <div class="opt" onclick="pick(this,1,'30a40')"><div class="oicon">🌿</div><div class="obody"><div class="omain">30 a 40 anos</div><div class="ohint">Metabolismo e retenção começam a mudar</div></div></div>
+    <div class="opt" onclick="pick(this,1,'41a50')"><div class="oicon">🔥</div><div class="obody"><div class="omain">41 a 50 anos</div><div class="ohint">Transição hormonal acelera o inchaço</div></div></div>
+    <div class="opt" onclick="pick(this,1,'51a60')"><div class="oicon">🌺</div><div class="obody"><div class="omain">51 a 60 anos</div><div class="ohint">Menopausa e retenção crônica</div></div></div>
+    <div class="opt" onclick="pick(this,1,'60mais')"><div class="oicon">✨</div><div class="obody"><div class="omain">Acima de 60 anos</div><div class="ohint">Intestino precisa de estímulos específicos</div></div></div>
+  </div>
+  <button class="nextbtn" id="b1" onclick="ir(2)">Continuar →</button>
 </div>
 
-<!-- Q2 FREQUÊNCIA -->
+<!-- ====== Q2: FREQUENCIA ====== -->
 <div class="step" id="s2">
-  <div class="trans">Entendido. Agora me conta...</div>
-  <div class="qt">Quando sua barriga costuma inchar?</div>
-  <div class="qs">Escolha a opção que mais combina com você.</div>
-  <div class="opt" onclick="pick(this,2,'sempre')"><div class="oi">😣</div><div><div class="om">Quase o dia todo</div><div class="oh">Do café da manhã até a noite</div></div></div>
-  <div class="opt" onclick="pick(this,2,'tarde')"><div class="oi">🌇</div><div><div class="om">Piora ao longo do dia</div><div class="oh">Começo bem e termino estufada</div></div></div>
-  <div class="opt" onclick="pick(this,2,'comer')"><div class="oi">🍽️</div><div><div class="om">Logo depois das refeições</div></div></div>
-  <div class="opt" onclick="pick(this,2,'eventual')"><div class="oi">📅</div><div><div class="om">Só em alguns dias, sem padrão</div></div></div>
-  <button class="link back-link" type="button" onclick="back(2,1)">← Voltar à pergunta anterior</button>
-  <button class="btn" id="b2" disabled onclick="next(2,3)">Continuar →</button>
+  <div class="qtransition">Entendido. Agora me diz...</div>
+  <div class="qtext">Com que frequência sua barriga incha ao longo do dia?</div>
+  <div class="qsub">Escolha a opção que mais descreve a sua rotina.</div>
+  <div class="opts">
+    <div class="opt" onclick="pick(this,2,'sempre')"><div class="oicon">😞</div><div class="obody"><div class="omain">Quase sempre, da manhã até à noite</div><div class="ohint">Inchaço constante que não alivia</div></div></div>
+    <div class="opt" onclick="pick(this,2,'tarde')"><div class="oicon">🌅</div><div class="obody"><div class="omain">Piora ao longo do dia (especialmente à tarde)</div><div class="ohint">Acordo bem, mas de tarde fico estufada</div></div></div>
+    <div class="opt" onclick="pick(this,2,'comer')"><div class="oicon">🍽️</div><div class="obody"><div class="omain">Logo após as refeições</div><div class="ohint">Sensação de estufamento imediato</div></div></div>
+    <div class="opt" onclick="pick(this,2,'eventual')"><div class="oicon">📅</div><div class="obody"><div class="omain">Apenas em alguns dias específicos</div><div class="ohint">Sem padrão muito claro</div></div></div>
+  </div>
+  <button class="nextbtn" id="b2" onclick="ir(3)">Continuar →</button>
 </div>
 
-<!-- Q3 INTESTINO (define o perfil) -->
+<!-- ====== Q3: CORPO DOS SONHOS ====== -->
 <div class="step" id="s3">
-  <div class="trans">Essa é a pergunta mais importante...</div>
-  <div class="qt">Como o seu intestino funciona normalmente?</div>
-  <div class="qs">Seja sincera — é isso que define o seu plano.</div>
-  <div class="opt" onclick="pick(this,3,'preso')"><div class="oi">🔴</div><div><div class="om">Fico 2 dias ou mais sem ir ao banheiro</div></div></div>
-  <div class="opt" onclick="pick(this,3,'irregular')"><div class="oi">🟡</div><div><div class="om">Vou, mas com esforço ou sensação de incompleto</div></div></div>
-  <div class="opt" onclick="pick(this,3,'alternado')"><div class="oi">🟠</div><div><div class="om">Às vezes preso, às vezes solto demais</div></div></div>
-  <div class="opt" onclick="pick(this,3,'gases')"><div class="oi">💨</div><div><div class="om">Vou normalmente, mas com muitos gases</div></div></div>
-  <div class="opt" id="optMen" style="display:none" onclick="pick(this,3,'menopausa')"><div class="oi">🌹</div><div><div class="om">Mudou muito desde a menopausa</div></div></div>
-  <button class="link back-link" type="button" onclick="back(3,2)">← Voltar à pergunta anterior</button>
-  <button class="btn" id="b3" disabled onclick="next(3,4)">Continuar →</button>
+  <div class="qtransition">Qual é o seu foco principal?</div>
+  <div class="qtext">O que mais te incomoda no espelho hoje?</div>
+  <div class="opts">
+    <div class="opt" onclick="pick(this,3,'barriga')"><div class="oicon">💥</div><div class="obody"><div class="omain">Barriga dura e estufada</div><div class="ohint">Parece que estou sempre grávida ou inchada</div></div></div>
+    <div class="opt" onclick="pick(this,3,'roupa')"><div class="oicon">👗</div><div class="obody"><div class="omain">Roupas que deixaram de fechar</div><div class="ohint">Tenho peças paradas no guarda-roupa</div></div></div>
+    <div class="opt" onclick="pick(this,3,'energia')"><div class="oicon">⚡</div><div class="obody"><div class="omain">Falta de energia e cansaço diário</div><div class="ohint">O corpo parece pesado e lento</div></div></div>
+  </div>
+  <button class="nextbtn" id="b3" onclick="ir(4)">Continuar →</button>
 </div>
 
-<!-- Q4 IMPACTO -->
+<!-- ====== Q4: TAMANHO DE ROUPA ====== -->
 <div class="step" id="s4">
-  <div class="trans">Isso mexe com mais do que o corpo, né?</div>
-  <div class="qt">O que mais te incomoda hoje?</div>
-  <div class="opt" onclick="pick(this,4,'fotos')"><div class="oi">📸</div><div><div class="om">Evito fotos e uso roupas largas</div></div></div>
-  <div class="opt" onclick="pick(this,4,'roupa')"><div class="oi">👗</div><div><div class="om">Tenho roupas que não fecham mais</div></div></div>
-  <div class="opt" onclick="pick(this,4,'desconforto')"><div class="oi">😖</div><div><div class="om">O desconforto físico no dia a dia</div></div></div>
-  <div class="opt" onclick="pick(this,4,'autoestima')"><div class="oi">💔</div><div><div class="om">Me sinto menos bem comigo mesma</div></div></div>
-  <button class="link back-link" type="button" onclick="back(4,3)">← Voltar à pergunta anterior</button>
-  <button class="btn" id="b4" disabled onclick="next(4,5)">Continuar →</button>
+  <div class="qtransition">Para ajustarmos a projeção de redução de medidas...</div>
+  <div class="qtext">Qual tamanho de roupa você usa atualmente?</div>
+  <div class="opts">
+    <div class="opt" onclick="pick(this,4,'pp')"><div class="oicon">📏</div><div class="obody"><div class="omain">P ou PP</div><div class="ohint">Quero definir e desinchar localizadamente</div></div></div>
+    <div class="opt" onclick="pick(this,4,'m')"><div class="oicon">📏</div><div class="obody"><div class="omain">M</div><div class="ohint">Quero perder alguns centímetros na cintura</div></div></div>
+    <div class="opt" onclick="pick(this,4,'g')"><div class="oicon">📏</div><div class="obody"><div class="omain">G ou GG</div><div class="ohint">Quero reduzir 1 a 2 tamanhos</div></div></div>
+    <div class="opt" onclick="pick(this,4,'plus')"><div class="oicon">📏</div><div class="obody"><div class="omain">Plus Size</div><div class="ohint">Quero uma transformação profunda no metabolismo</div></div></div>
+  </div>
+  <button class="nextbtn" id="b4" onclick="ir(5)">Continuar →</button>
 </div>
 
-<!-- Q5 OBJETIVO -->
+<!-- ====== Q5: INTESTINO ====== -->
 <div class="step" id="s5">
-  <div class="trans">Última pergunta!</div>
-  <div class="qt">Se pudesse mudar uma coisa agora, qual seria?</div>
-  <div class="opt" onclick="pick(this,5,'barriga')"><div class="oi">✨</div><div><div class="om">Desinchar a barriga</div></div></div>
-  <div class="opt" onclick="pick(this,5,'leveza')"><div class="oi">🍃</div><div><div class="om">Sentir o corpo mais leve</div></div></div>
-  <div class="opt" onclick="pick(this,5,'roupa')"><div class="oi">👖</div><div><div class="om">Voltar a usar as roupas que amo</div></div></div>
-  <div class="opt" onclick="pick(this,5,'conf')"><div class="oi">🪞</div><div><div class="om">Me sentir bem comigo mesma de novo</div></div></div>
-  <button class="link back-link" type="button" onclick="back(5,4)">← Voltar à pergunta anterior</button>
-  <button class="btn" id="b5" disabled onclick="next(5,6)">Ver meu resultado →</button>
+  <div class="qtransition">Pergunta clínica fundamental...</div>
+  <div class="qtext">Como é o funcionamento do seu intestino?</div>
+  <div class="opts">
+    <div class="opt" onclick="pick(this,5,'preso')"><div class="oicon">🔴</div><div class="obody"><div class="omain">Preso (fico 2 dias ou mais sem ir ao banheiro)</div><div class="ohint">Sensação constante de toxinas acumuladas</div></div></div>
+    <div class="opt" onclick="pick(this,5,'irregular')"><div class="oicon">🟡</div><div class="obody"><div class="omain">Irregular / Com esforço</div><div class="ohint">Sensação de esvaziamento incompleto</div></div></div>
+    <div class="opt" onclick="pick(this,5,'gases')"><div class="oicon">💨</div><div class="obody"><div class="omain">Regular, mas com muitos gases e estufamento</div><div class="ohint">Sinal claro de fermentação bacteriana</div></div></div>
+  </div>
+  <button class="nextbtn" id="b5" onclick="ir(6)">Continuar →</button>
 </div>
 
-<!-- S6 CARREGANDO -->
+<!-- ====== Q6: PESO SLIDER ====== -->
 <div class="step" id="s6">
-  <h2>Montando seu plano personalizado...</h2>
-  <div class="loader">
-    <div class="lstep" id="l1">✓ Analisando suas respostas</div>
-    <div class="lstep" id="l2">✓ Organizando seu perfil de respostas</div>
-    <div class="lstep" id="l3">✓ Separando uma sugestão para começar</div>
-    <div class="lstep" id="l4">✓ Preparando sua receita de hoje</div>
+  <div class="qtransition">Última informação para calibrar o protocolo...</div>
+  <div class="qtext">Qual é o seu peso aproximado atualmente?</div>
+  <div class="qsub">Isso nos ajuda a calcular o seu Índice de Inflamação Intestinal.</div>
+
+  <div style="background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:24px 20px;margin-bottom:16px;text-align:center;">
+    <div id="weightDisplay" style="font-family:'Lora',serif;font-size:52px;font-weight:600;color:var(--td);line-height:1;margin-bottom:6px;">70<span style="font-size:22px;color:var(--ts);font-family:'DM Sans',sans-serif"> kg</span></div>
+    <input type="range" id="weightSlider" min="45" max="130" value="70" step="1" style="width:100%;height:8px;accent-color:var(--v);margin-bottom:12px;" oninput="updateWeight(this.value)">
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--ts);"><span>45kg</span><span>130kg</span></div>
+  </div>
+
+  <button class="nextbtn ok" onclick="analisar()">🔬 PROCESSAR MEU DIAGNÓSTICO →</button>
+</div>
+
+<!-- ====== LOADING / ANALISANDO ====== -->
+<div class="step" id="s9">
+  <div class="azwrap">
+    <div style="font-size:40px;margin-bottom:12px">🔬</div>
+    <h3>Analisando seu perfil biométrico...</h3>
+    <p>Cruzando suas respostas com o banco de dados fisiológico para gerar seu protocolo individual.</p>
+    <div>
+      <div class="azrow"><span>Retenção de líquidos</span><div class="aztrack"><div class="azfill" id="ba1"></div></div></div>
+      <div class="azrow"><span>Inflamação intestinal</span><div class="aztrack"><div class="azfill" id="ba2"></div></div></div>
+      <div class="azrow"><span>Equilíbrio microbiótico</span><div class="aztrack"><div class="azfill" id="ba3"></div></div></div>
+      <div class="azrow"><span>Calibragem de protocolo</span><div class="aztrack"><div class="azfill" id="ba4"></div></div></div>
+    </div>
   </div>
 </div>
 
-<!-- S7 CAPTURA EMAIL -->
-<div class="step" id="s7">
-  <div class="badge">Seu resultado está pronto</div>
-  <h2 id="emailTitle">Para onde enviamos seu plano?</h2>
-  <p class="sub">Você vê o resultado agora na tela e recebe uma cópia no email, com a receita do seu tipo de inchaço.</p>
-  <input id="emailInput" type="email" aria-label="Seu email" inputmode="email" placeholder="seu@email.com" autocomplete="email" oninput="checkEmail()">
-  <label class="checkline"><input id="marketingConsent" type="checkbox"><span>Quero receber também dicas e ofertas por email. Posso cancelar a qualquer momento. (Opcional)</span></label>
-  <p class="privacy-note">Ao enviar, você solicita que o resultado seja enviado para este email e concorda com o tratamento dos dados necessário para essa finalidade. O envio do email é opcional: você pode ver o resultado sem informar o endereço. <a href="privacidade.html" target="_blank" rel="noopener">Leia a Política de Privacidade</a>.</p>
-  <button class="btn" id="emailBtn" disabled onclick="submitEmail()">Enviar e ver meu resultado →</button>
-  <p class="status-message" id="emailStatus" role="status" aria-live="polite"></p>
-  <button class="link" onclick="skipEmail()">Prefiro ver só na tela</button>
-</div>
-
-<!-- S8 RESULTADO + OFERTA -->
-<div class="step" id="s8">
-  <div class="badge">Resultado personalizado</div>
-  <h1 id="rTitle" class="rt"></h1>
-  <p class="status-message" id="resultEmailStatus" role="status" aria-live="polite"></p>
-  <button class="link" id="retryEmailBtn" type="button" style="display:none" onclick="retryEmail()">Tentar enviar a cópia novamente</button>
-  <div class="chips" id="rChips"></div>
-  <p class="sub" id="rRelato"></p>
-  <div class="note" id="rPonto"></div>
-  <p class="sub" id="rText"></p>
-  <p class="sub" id="rSec" style="display:none"></p>
-
-  <div class="card green">
-    <div style="font-size:13px;font-weight:700;color:var(--ve);margin-bottom:6px">🍵 Uma sugestão simples para começar</div>
-    <div style="font-size:15px;font-weight:600;margin-bottom:6px" id="rRecName"></div>
-    <div style="font-size:14px;color:var(--tm)" id="rRec"></div>
+<!-- ====== RESULTADO ====== -->
+<div class="step" id="s11">
+  <div class="hdr" style="margin-bottom:16px">
+    <div style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:var(--vc);color:var(--ve);margin-bottom:8px;">Relatório Clínico Concluído</div>
+    <h2 id="res-h2">Identificamos a causa do seu inchaço, <em id="uNameDisplay"></em></h2>
   </div>
 
-  <div class="card" id="rRotBox">
-    <div style="font-size:13px;font-weight:700;color:var(--ve);margin-bottom:6px" id="rRotT"></div>
-    <div style="font-size:14px;color:var(--tm)" id="rRot"></div>
+  <!-- SCORE BOX -->
+  <div class="card rsec">
+    <div class="ppill pint" id="rpill">Perfil Inflamatório Detectado</div>
+    <div style="font-family:'Lora',serif;font-size:20px;font-weight:600;margin-bottom:6px;" id="rtitle">Intoxicação e Retenção Intestinal</div>
+    <div style="font-size:13px;color:var(--ts);line-height:1.5;margin-bottom:14px;" id="rdiag">Sua análise mostrou um acúmulo de toxinas no trato digestivo, desacelerando a queima natural de gordura abdominal.</div>
+
+    <div style="background:var(--cr);border:1px solid var(--bd);border-radius:var(--rs);padding:14px;margin-bottom:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <span style="font-size:13px;font-weight:600;">Score de Saúde Intestinal:</span>
+        <span style="font-family:'Lora',serif;font-size:22px;font-weight:700;color:#d85a30;" id="scoreNum">28/100</span>
+      </div>
+      <div style="height:10px;background:var(--cd);border-radius:10px;overflow:hidden;">
+        <div id="scoreFill" style="height:100%;background:#d85a30;width:28%;transition:width 1s ease;"></div>
+      </div>
+    </div>
   </div>
 
-  <div class="card" id="rIdadeBox" style="display:none">
-    <div style="font-size:14px;color:var(--tm)" id="rIdade"></div>
+  <!-- IMC BOX -->
+  <div class="card rsec" id="imcSection">
+    <div style="font-size:12px;font-weight:700;color:var(--ts);text-transform:uppercase;margin-bottom:6px;">Índice Metabólico Estimado</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+      <span style="font-family:'Lora',serif;font-size:28px;font-weight:700;" id="imcValue">25.7</span>
+      <span id="imcZonaBadge" style="padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fff3e0;color:#e65100;">Sobrepeso Detectado</span>
+    </div>
+    <p style="font-size:13px;color:var(--tm);line-height:1.5;" id="imcDesc">Seu inchaço atual não é apenas gordura: é inflamação e toxinas presas no intestino.</p>
   </div>
 
-  <p class="small" id="rAlerta" style="display:none;text-align:left;margin-bottom:16px"></p>
-
-  <div class="card">
-    <h2 style="font-size:19px" id="rOferta">Quer o plano completo dos 7 dias?</h2>
-    <p style="font-size:14px;color:var(--tm);margin-bottom:12px">Se quiser seguir uma sequência organizada por 7 dias, o eBook <b>Barriga Chapada em 7 Dias</b> traz o passo a passo de cada dia:</p>
-    <!-- TODO: confirmar com o conteúdo REAL do eBook antes de publicar -->
-    <div class="li"><b>✓</b><span>Plano de 7 dias, dia por dia, do café da manhã ao jantar</span></div>
-    <div class="li"><b>✓</b><span>Receitas de chás e sucos com ingredientes de mercado</span></div>
-    <div class="li"><b>✓</b><span>O que evitar nos dias em que a barriga incha mais</span></div>
-    <div class="li"><b>✓</b><span>Acesso imediato pelo celular</span></div>
-    <!-- BÔNUS: só reativar se existirem de verdade no produto entregue
-    <div class="li"><b>✓</b><span>Bônus: Guia Anti-Inchaço</span></div>
-    -->
-    <div class="price" style="margin-top:14px">R$ 29,90</div>
-    <div class="pnote">pagamento único · acesso imediato</div>
-    <a class="btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&utm_source=quiz&utm_medium=oferta_principal&utm_campaign=barriga7dias" target="_blank" rel="noopener" onclick="ck('oferta_principal')">Quero o plano completo →</a>
-    <div class="trust"><span>🔒 Compra segura</span><span>🏢 Hotmart</span><span>🛡️ Garantia 7 dias</span></div>
-  </div>
-
-  <div class="card">
-    <div style="font-size:15px;font-weight:700;margin-bottom:4px">🛡️ Garantia de 7 dias</div>
-    <div style="font-size:14px;color:var(--tm)">Se não gostar, pede o reembolso direto pela Hotmart em até 7 dias após a compra. Sem precisar explicar.</div>
-  </div>
-
-  <!-- PROVA SOCIAL: comentários públicos REAIS dos perfis, sobre as receitas GRATUITAS.
-       Nome reduzido ao primeiro nome, sem @ e sem foto (LGPD).
-       Nunca apresentar como depoimento de quem comprou o eBook.
-       Não usar: fotos de antes/depois da internet, quilos perdidos, nem relatos
-       de quem contrariou orientação médica. -->
-  <div class="sp">
-    <div class="sp-t">O que dizem as seguidoras que testaram as receitas do perfil</div>
-
-    <div class="sp-c">
-      <div class="sp-q">"Voltei aqui para falar que tomei esse suco durante 15 dias e funcionou de verdade. A barriga diminui, a gente sente a diferença nas roupas. Também faço atividade física para ajudar no processo, porque não existe milagre."</div>
-      <div class="sp-a">Josilene · comentário no Instagram · <span>❤ 1.165 curtidas</span></div>
+  <!-- OFERTA PERSONALIZADA -->
+  <div class="rsec">
+    <div style="background:#fff3e0;border:1.5px solid rgba(240,160,32,0.4);border-radius:var(--r);padding:14px;margin-bottom:14px;text-align:center;">
+      <div style="font-size:11px;font-weight:700;color:#7a4800;text-transform:uppercase;margin-bottom:2px;">⚠️ Seu Desconto Exclusivo Expira em:</div>
+      <div style="font-family:'Lora',serif;font-size:32px;font-weight:700;color:#d4572a;" id="offerTimer">09:59</div>
     </div>
 
-    <div class="sp-c">
-      <div class="sp-q">"Estou tomando há duas semanas. Já estou bem desinchando, ao ponto de algumas pessoas falarem que estou emagrecendo. Muito feliz em sentir minha barriga bem menor."</div>
-      <div class="sp-a">Érica · comentário no YouTube</div>
+    <!-- PACOTE MAIS POPULAR -->
+    <div style="border:2px solid var(--v);border-radius:var(--r);background:#fff;padding:20px;margin-bottom:12px;position:relative;">
+      <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--v);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:20px;white-space:nowrap;">⭐ RECOMENDADO PARA O SEU PERFIL</div>
+      
+      <div style="text-align:center;margin-top:6px;margin-bottom:12px;">
+        <div style="font-size:18px;font-weight:700;color:var(--td);">Plano Essencial Barriga Chapada</div>
+        <div style="font-size:12px;color:var(--ts);">Protocolo completo de 7 dias</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;font-size:13px;color:var(--tm);">
+        <div>✓ eBook completo com protocolo diário passo a passo</div>
+        <div>✓ 30 Receitas Detox específicas para o seu perfil</div>
+        <div>✓ 🎁 BÔNUS: Guia Anti-Inchaço Rápido</div>
+        <div>✓ Acesso imediato pelo celular</div>
+      </div>
+
+      <div style="text-align:center;margin-bottom:14px;">
+        <div style="font-size:13px;color:var(--ts);text-decoration:line-through;">R$ 97,00</div>
+        <div style="font-family:'Lora',serif;font-size:42px;font-weight:700;color:var(--v);line-height:1;">R$ 29,90</div>
+        <div style="font-size:12px;color:var(--ts);margin-top:4px;">ou 3x de R$ 9,97 sem juros</div>
+      </div>
+
+      <!-- LINK DO CHECKOUT HOTMART INTEGRADO -->
+      <a class="ctabtn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10" target="_blank" onclick="ev('InitiateCheckout')">
+        🛒 QUERO O PROTOCOLO POR R$ 29,90 →
+      </a>
     </div>
 
-    <div class="sp-c">
-      <div class="sp-q">"Eu bebi durante 2 semanas e realmente funciona."</div>
-      <div class="sp-a">Kelly · comentário no Instagram</div>
+    <!-- PACOTE COMPLETO -->
+    <div style="border:2px solid var(--gold);border-radius:var(--r);background:#fffdf5;padding:20px;position:relative;">
+      <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:20px;white-space:nowrap;">🏆 TRANSFORMAÇÃO COMPLETA</div>
+      
+      <div style="text-align:center;margin-top:6px;margin-bottom:12px;">
+        <div style="font-size:18px;font-weight:700;color:var(--td);">Pacote VITALIDADE TOTAL</div>
+        <div style="font-size:12px;color:var(--ts);">Protocolo + Guias Extras de Saúde</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;font-size:13px;color:var(--tm);">
+        <div>✓ Tudo do Pacote Essencial</div>
+        <div>✓ 🎁 BÔNUS: Cardápio Anti-Inflamatório Semanal</div>
+        <div>✓ 🎁 BÔNUS: Guia Saúde Natural Descomplicada</div>
+        <div>✓ Suporte para dúvidas</div>
+      </div>
+
+      <div style="text-align:center;margin-bottom:14px;">
+        <div style="font-size:13px;color:var(--ts);text-decoration:line-through;">R$ 147,00</div>
+        <div style="font-family:'Lora',serif;font-size:42px;font-weight:700;color:var(--gold);line-height:1;">R$ 37,90</div>
+        <div style="font-size:12px;color:var(--ts);margin-top:4px;">ou 4x de R$ 9,97 sem juros</div>
+      </div>
+
+      <!-- LINK DO CHECKOUT HOTMART INTEGRADO -->
+      <a class="ctabtn gold" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10" target="_blank" onclick="ev('InitiateCheckoutTotal')">
+        ⭐ QUERO A TRANSFORMAÇÃO POR R$ 37,90 →
+      </a>
     </div>
-
-    <div class="sp-n">Comentários públicos sobre receitas gratuitas dos nossos perfis, com nomes reduzidos para preservar a privacidade. Resultados variam de pessoa para pessoa e dependem da rotina como um todo.</div>
   </div>
 
-  <a class="btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10&utm_source=quiz&utm_medium=cta_final&utm_campaign=barriga7dias" target="_blank" rel="noopener" onclick="ck('cta_final')">Começar meu plano por R$ 29,90 →</a>
-
-  <div class="footer">
-    Barriga Chapada em 7 Dias · Produto digital processado pela Hotmart<br>
-    Conteúdo informativo. Não substitui orientação médica ou nutricional.<br>
-    Se o inchaço for frequente, forte ou vier com dor, procure um médico.<br>
-    Resultados variam de pessoa para pessoa.<br><a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> · <a href="index.html?privacy-settings=1">Alterar preferências de medição</a>.
+  <div style="text-align:center;font-size:11px;color:var(--ts);margin-top:20px;">
+    🔒 Compra 100% Segura e Processada pela Hotmart.<br>
+    Garantia incondicional de 7 dias ou seu dinheiro de volta.
   </div>
 </div>
 
-<!-- S12 OBRIGADO (redirect pós-compra: ?step=obrigado) -->
-<div class="step" id="s12">
-  <div class="badge">Informações após a compra</div>
-  <h1>Se a Hotmart confirmou a sua compra, o acesso chega por email.</h1>
-  <p class="sub">Procure a mensagem da Hotmart com o link de acesso. Se não aparecer, confira o spam ou a aba Promoções. Em pagamentos por Pix ou boleto, aguarde a confirmação do pagamento. Esta página estática não verifica o estado da transação; confira o email ou a sua conta Hotmart.</p>
-  <div class="card green">
-    <div style="font-size:15px;font-weight:700;margin-bottom:6px">Antes de ir: o que fazer depois dos 7 dias</div>
-    <p style="font-size:14px;color:var(--tm);margin-bottom:10px">Quem termina o plano costuma perguntar: "e agora, como eu continuo?"</p>
-    <button class="btn" onclick="irStep(13)">Ver a continuação →</button>
-  </div>
-  <button class="link" onclick="irStep(15)">Não, obrigada. Ir para o meu eBook</button>
 </div>
 
-<!-- S13 UPSELL — Saúde Natural Descomplicada (?step=upsell) -->
-<!-- ATENÇÃO: o título do produto na Hotmart contém "Previna 90% das Doenças".
-     Não repetir essa frase aqui: é alegação de saúde sem comprovação. -->
-<div class="step" id="s13">
-  <div class="badge">Oferta para quem acabou de comprar</div>
-  <h1>Desinchar é só o começo. E depois dos 7 dias?</h1>
-  <p class="sub">O plano de 7 dias dá o primeiro passo. O que faz a diferença é o que você come nas semanas seguintes.</p>
-
-  <div class="grid2">
-    <div class="dcard"><div class="de">🔁</div><b>Voltar aos velhos hábitos</b><span>e a barriga inchar de novo</span></div>
-    <div class="dcard"><div class="de">🤷‍♀️</div><b>Não saber o que preparar</b><span>no dia a dia, sem repetir tudo</span></div>
-    <div class="dcard"><div class="de">🍽️</div><b>Digestão pesada</b><span>depois das refeições</span></div>
-    <div class="dcard"><div class="de">💸</div><b>Gastar com produtos</b><span>que prometem muito e entregam pouco</span></div>
+<!-- STICKY CTA BAR NO RESULTADO -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-text">
+    <strong>R$ 29,90 — Desconto Liberado</strong>
+    <span>Seu protocolo personalizado está pronto</span>
   </div>
-
-  <div class="note">O <b>Saúde Natural Descomplicada</b> continua de onde o plano termina: receitas caseiras simples para manter a alimentação leve no dia a dia.</div>
-
-  <div class="card pcard">
-    <div class="ptag">📗 eBook digital · acesso imediato</div>
-    <h2 style="font-size:20px">Saúde Natural Descomplicada</h2>
-    <p style="font-size:13px;color:var(--ts);margin-bottom:12px">receitas caseiras para o dia a dia</p>
-    <!-- TODO: confirmar cada item (e quantidades de receitas) com o conteúdo REAL do eBook -->
-    <div class="li"><b>✓</b><span>Receitas caseiras com ingredientes de mercado</span></div>
-    <div class="li"><b>✓</b><span>Chás e preparos para uma digestão mais tranquila</span></div>
-    <div class="li"><b>✓</b><span>Ideias de refeições leves para a semana</span></div>
-    <div class="li"><b>✓</b><span>Temperos naturais para reduzir o sal da comida</span></div>
-    <div class="li"><b>✓</b><span>Combina com o que você aprendeu no Barriga Chapada</span></div>
-    <div class="price" style="margin-top:14px">R$ 47,90</div>
-    <div class="pnote">pagamento único · Pix, cartão ou boleto</div>
-    <a class="btn" href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5&utm_source=quiz&utm_medium=upsell&utm_campaign=saudenatural" onclick="ck('upsell')">Sim, quero continuar →</a>
-    <div class="trust"><span>🔒 Compra segura</span><span>🏢 Hotmart</span><span>🛡️ Garantia 7 dias</span></div>
-  </div>
-
-  <div class="card">
-    <div style="font-size:15px;font-weight:700;margin-bottom:4px">🛡️ Garantia de 7 dias</div>
-    <div style="font-size:14px;color:var(--tm)">Se não gostar, pede o reembolso direto pela Hotmart em até 7 dias. Sem precisar explicar.</div>
-  </div>
-
-  <!-- PROVA SOCIAL: só prints REAIS de compradoras deste eBook, com autorização. -->
-
-  <button class="link" onclick="irStep(14)">Não, obrigada</button>
-  <div class="footer">Conteúdo informativo. Não substitui orientação médica ou nutricional.<br>Não interrompa nenhum tratamento sem falar com seu médico.</div>
+  <a class="sticky-cta-btn" href="https://pay.hotmart.com/T93171913Y?checkoutMode=10" target="_blank" onclick="ev('StickyCTA')">QUERO →</a>
 </div>
 
-<!-- S14 DOWNSELL — Pele Jovem (?step=downsell) -->
-<div class="step" id="s14">
-  <div class="badge">Uma última sugestão</div>
-  <h1>E a sua pele? Um cuidado que cabe no bolso.</h1>
-  <p class="sub">Cremes e suplementos custam caro todo mês. Muito do cuidado com a pele começa na cozinha e na rotina.</p>
-
-  <div class="grid2">
-    <div class="dcard"><div class="de">🥣</div><b>Máscaras caseiras</b><span>com ingredientes que você já tem</span></div>
-    <div class="dcard"><div class="de">🍊</div><b>Alimentos com vitamina C</b><span>que o corpo usa para formar colágeno</span></div>
-    <div class="dcard"><div class="de">💧</div><b>Rotina de hidratação</b><span>simples, de manhã e à noite</span></div>
-    <div class="dcard"><div class="de">💇‍♀️</div><b>Cuidados com cabelo</b><span>receitas caseiras para os fios</span></div>
-  </div>
-
-  <div class="card pcard pink">
-    <div class="ptag">📗 eBook digital · acesso imediato</div>
-    <h2 style="font-size:20px">O Segredo para uma Pele Jovem Sem Gastar Uma Fortuna</h2>
-    <p style="font-size:13px;color:var(--ts);margin-bottom:12px">receitas caseiras para pele e cabelo</p>
-    <!-- TODO: confirmar cada item com o conteúdo REAL do eBook -->
-    <div class="li"><b>✓</b><span>Máscaras e preparos caseiros para o rosto</span></div>
-    <div class="li"><b>✓</b><span>Alimentos que ajudam a cuidar da pele por dentro</span></div>
-    <div class="li"><b>✓</b><span>Receitas para cabelo e unhas</span></div>
-    <div class="li"><b>✓</b><span>Pele mais hidratada com uso regular</span></div>
-    <div class="price" style="margin-top:14px;color:var(--pink)">R$ 27,90</div>
-    <div class="pnote">pagamento único · Pix, cartão ou boleto</div>
-    <a class="btn pink" href="https://pay.hotmart.com/B93427134G?offerId=b0bfwvb3&utm_source=quiz&utm_medium=downsell&utm_campaign=pelejovem" onclick="ck('downsell')">Sim, quero cuidar da pele →</a>
-    <div class="trust"><span>🔒 Compra segura</span><span>🏢 Hotmart</span><span>🛡️ Garantia 7 dias</span></div>
-  </div>
-
-  <div class="card">
-    <div style="font-size:15px;font-weight:700;margin-bottom:4px">🛡️ Garantia de 7 dias</div>
-    <div style="font-size:14px;color:var(--tm)">Se não gostar, pede o reembolso direto pela Hotmart em até 7 dias.</div>
-  </div>
-
-  <!-- PROVA SOCIAL: só prints REAIS, com autorização, sem antes/depois. -->
-
-  <button class="link" onclick="irStep(15)">Não, obrigada</button>
-  <div class="footer">Resultados variam de pessoa para pessoa. Faça um teste em pequena área da pele antes de usar qualquer preparo caseiro no rosto.</div>
-</div>
-
-<!-- S15 FIM (?step=fim) -->
-<div class="step" id="s15">
-  <h1>Tudo certo! 💚</h1>
-  <p class="sub">Seu acesso chega pelo email da Hotmart. Enquanto isso, entre no nosso canal para receber receitas novas toda semana.</p>
-  <a class="btn" href="https://wa.me/message/OEAA7CU7GKANM1" target="_blank" rel="noopener" onclick="ev('CanalWhatsApp')">Entrar no canal do WhatsApp →</a>
-  <div class="footer">© 2026 Barriga Chapada em 7 Dias · Todos os direitos reservados · Compra Segura</div>
-</div>
-</div>
-
-<div class="consent-banner" id="consentBanner" role="dialog" aria-label="Preferências de privacidade" aria-live="polite" hidden>
-  <p><strong>Privacidade e medição.</strong> Usamos ferramentas de análise e publicidade apenas se você aceitar. Elas ajudam a medir visitas e cliques, mas não recebem as respostas do quiz nem categorias de saúde. <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
-  <div class="consent-actions"><button class="btn" type="button" onclick="setTrackingConsent(true)">Aceitar medição</button><button class="btn secondary" type="button" onclick="setTrackingConsent(false)">Continuar sem rastreamento</button></div>
+<!-- PROVA SOCIAL TOAST -->
+<div class="sp-toast" id="spToast">
+  <div style="font-size:20px">🏆</div>
+  <div><strong id="spName">Ana</strong> <span id="spMsg">acabou de desbloquear o protocolo</span></div>
 </div>
 
 <script>
-// =====================================================================
-// CONFIGURAÇÃO — tudo que é peso, limite ou texto editável fica aqui.
-// =====================================================================
-
-var ORDER = [1,2,3,4,5];
-var Q_FIELD = {1:'idade', 2:'quando', 3:'perfilIntestinal', 4:'incomoda', 5:'objetivo'};
-
-// Pesos do perfil. Não são evidência médica: são regras editoriais para
-// escolher qual conteúdo mostrar. A Q3 é a única pergunta que descreve o
-// intestino, por isso tem peso 10 e a soma dos outros eixos nunca chega a 10:
-// nenhuma resposta indireta pode contradizer o que a pessoa disse na Q3.
-var SCORE_RULES = {
-  padrao: {
-    q3: {
-      preso:     {preso: 10},
-      irregular: {irregular: 10},
-      alternado: {alternado: 10},
-      gases:     {gases: 10},
-      menopausa: {menopausa: 10}
-    },
-    q2: {
-      sempre:   {preso: 2},
-      tarde:    {preso: 1, gases: 1},
-      comer:    {gases: 3},
-      eventual: {alternado: 2, irregular: 1}
-    },
-    q1: {
-      '30a40':  {},
-      '41a50':  {menopausa: 1},
-      '51a60':  {menopausa: 3},
-      '60mais': {menopausa: 3}
-    }
-  },
-  secundarioMin: 3,          // pontos mínimos para citar um padrão secundário
-  fallback: 'gases',         // receita usada quando a Q3 não foi respondida
-  impacto: {
-    q4: {desconforto: 3, roupa: 2, fotos: 2, autoestima: 2},
-    q2: {sempre: 2, tarde: 1, comer: 1, eventual: 0},
-    niveis: [{min: 5, id: 'alto'}, {min: 3, id: 'moderado'}, {min: 0, id: 'leve'}]
-  }
-};
-var PERFIL_ORDEM = ['preso','irregular','alternado','gases','menopausa']; // desempate
-
-// Score comercial: só comportamento observado. checkoutStarted e purchased
-// não são visíveis no navegador; ficam reservados para o webhook da Hotmart.
-var LEAD_SCORE_RULES = {
-  quizStarted: 5, quizCompleted: 20, emailCaptured: 20, resultViewed: 10,
-  offerClicked: 25, checkoutStarted: 20, purchased: 100
-};
-var LEAD_SCORE_TIERS = [
-  {min: 80, id: 'muito_alto'}, {min: 60, id: 'alto'}, {min: 30, id: 'medio'}, {min: 0, id: 'baixo'}
-];
-
-// ---------------------------------------------------------------------
-// Textos
-// ---------------------------------------------------------------------
-var PERFIS = {
-  preso: {
-    label: 'Intestino travado',
-    d: 'Quando o intestino passa dias sem funcionar, é comum a barriga ficar estufada, mesmo comendo pouco. Por isso a sugestão para este padrão começa pelo ritmo: água, fibras e horários.',
-    ponto: 'o tempo que o intestino passa sem funcionar',
-    sec: 'o intestino que passa dias sem funcionar',
-    rn: 'Ameixa + linhaça da noite para a manhã',
-    r: 'À noite, deixe 3 ameixas secas de molho em 1 copo de água. De manhã, coma as ameixas, beba a água e acrescente 1 colher (chá) de linhaça ao café da manhã. Beba bastante água ao longo do dia: fibra sem água pode piorar o intestino preso.'
-  },
-  irregular: {
-    label: 'Ritmo intestinal irregular',
-    d: 'Ir ao banheiro com esforço ou com sensação de incompleto costuma deixar a barriga pesada. A sugestão para este padrão começa pela regularidade: horários, hidratação e fibras suaves.',
-    ponto: 'o esforço e a sensação de que o intestino não esvaziou',
-    sec: 'um ritmo intestinal irregular',
-    rn: 'Aveia com mamão no café da manhã',
-    r: 'Misture 2 colheres (sopa) de aveia em flocos com meia fatia de mamão picado e um fio de mel. Coma no café da manhã, de preferência sempre no mesmo horário, com um copo de água morna antes.'
-  },
-  gases: {
-    label: 'Gases e estufamento',
-    d: 'O intestino funciona, mas os gases deixam a barriga estufada. A sugestão para este padrão começa por chás digestivos e ajustes simples na forma de comer.',
-    ponto: 'os gases e o estufamento',
-    sec: 'gases e estufamento depois de comer',
-    rn: 'Chá de erva-doce depois do almoço',
-    r: 'Ferva 1 xícara de água, desligue o fogo e coloque 1 colher (chá) de sementes de erva-doce. Tampe por 10 minutos, coe e beba morno depois do almoço. Coma devagar e evite refrigerante nesses dias.'
-  },
-  alternado: {
-    label: 'Intestino alternado',
-    d: 'Dias de intestino preso alternando com dias soltos mostram um ritmo sem estabilidade. A sugestão para este padrão começa pela constância: refeições regulares e chás calmantes.',
-    ponto: 'a alternância entre dias de intestino preso e solto',
-    sec: 'alternância entre intestino preso e solto',
-    rn: 'Chá de camomila com gengibre',
-    r: 'Em 1 xícara de água quente, coloque 1 colher (sopa) de camomila e 1 rodela fina de gengibre. Abafe por 5 minutos, coe e beba morno, à noite.'
-  },
-  menopausa: {
-    label: 'Mudanças da menopausa',
-    d: 'Muitas mulheres percebem mudanças no intestino e na sensação de inchaço nessa fase. A sugestão para este padrão começa por hidratação, refeições leves e horários regulares.',
-    ponto: 'as mudanças que você percebeu desde a menopausa',
-    sec: 'as mudanças hormonais desta fase da vida',
-    rn: 'Água aromatizada com pepino e hortelã',
-    r: 'Em 1 litro de água, coloque 5 rodelas de pepino e algumas folhas de hortelã. Deixe na geladeira e beba ao longo do dia. Nos 7 dias, tente reduzir o sal da comida.'
-  }
-};
-
-var RELATO = {
-  quando: {
-    sempre: 'a barriga fica inchada quase o dia todo',
-    tarde: 'o inchaço piora ao longo do dia',
-    comer: 'a barriga incha logo depois das refeições',
-    eventual: 'o inchaço aparece em alguns dias, sem um padrão claro'
-  },
-  perfilIntestinal: {
-    preso: 'fica 2 dias ou mais sem ir ao banheiro',
-    irregular: 'vai ao banheiro com esforço ou com sensação de incompleto',
-    alternado: 'o intestino alterna entre preso e solto',
-    gases: 'o intestino funciona, mas com muitos gases',
-    menopausa: 'o intestino mudou desde a menopausa'
-  },
-  incomoda: {
-    fotos: 'tem evitado fotos e usado roupas largas',
-    roupa: 'tem roupas que não fecham mais',
-    desconforto: 'o desconforto físico é o que mais pesa no dia a dia',
-    autoestima: 'tem se sentido menos bem com você mesma'
-  }
-};
-var PONTO_QUANDO = {
-  sempre: ', que acompanha você quase o dia todo',
-  tarde: ', que aumenta com o passar do dia',
-  comer: ', principalmente depois das refeições',
-  eventual: ', que aparece em alguns dias'
-};
-var IMPACTO_TXT = {
-  leve: 'Pelo que você contou, isso incomoda, mas ainda não domina a sua rotina. É um bom momento para criar hábitos simples.',
-  moderado: 'Pelo que você contou, isso já está pesando na sua rotina. Pequenas mudanças diárias tendem a fazer diferença.',
-  alto: 'Pelo que você contou, isso tem pesado bastante no seu dia a dia. Vale começar pela sugestão abaixo ainda hoje.'
-};
-var ALERTA = 'Se o inchaço vier com dor forte, febre, sangue nas fezes, vômitos ou perda de peso sem explicação, procure um médico antes de qualquer mudança.';
-var ROTINA = {
-  sempre:   ['⏰ Quando a barriga incha quase o dia todo', 'O ponto de partida é a manhã: 1 copo de água morna antes do café e nada de pular refeições. Ficar muitas horas sem comer e depois comer muito de uma vez costuma piorar o estufamento.'],
-  tarde:    ['⏰ Quando a barriga piora ao longo do dia', 'Espalhe a água pelo dia em vez de beber tudo à noite, caminhe um pouco depois do almoço e faça um jantar mais leve e mais cedo.'],
-  comer:    ['⏰ Quando a barriga incha depois de comer', 'Coma devagar, mastigue bem e evite refrigerante e muito líquido junto das refeições. Comer rápido faz engolir mais ar.'],
-  eventual: ['⏰ Quando a barriga incha só em alguns dias', 'Por 7 dias, anote o que comeu nos dias de inchaço. Muitas vezes o padrão aparece sozinho: leite, feijão, fritura, pão ou refrigerante.']
-};
-var OBJ = {
-  barriga: ['Desinchar a barriga', 'Quer seguir um plano de 7 dias para desinchar a barriga?'],
-  leveza:  ['Corpo mais leve', 'Quer seguir um plano de 7 dias para sentir o corpo mais leve?'],
-  roupa:   ['Voltar às roupas que ama', 'Quer seguir um plano de 7 dias pensando em voltar às roupas que você ama?'],
-  conf:    ['Sentir-se bem de novo', 'Quer seguir um plano de 7 dias para voltar a se sentir bem com você?']
-};
-var IDADE = {
-  '30a40': ['30 a 40 anos', ''],
-  '41a50': ['41 a 50 anos', '💡 Depois dos 40, muitas mulheres percebem o intestino mais lento. Beber água ao longo do dia faz ainda mais diferença.'],
-  '51a60': ['51 a 60 anos', '💡 Nessa fase, as mudanças hormonais podem mexer com o intestino. Hidratação e refeições em horários regulares ajudam.'],
-  '60mais':['Acima de 60', '💡 Acima dos 60, converse com seu médico antes de mudar a rotina, principalmente se você usa remédios para pressão, diabetes ou intestino.']
-};
-var QUANDO = {sempre:'Incha quase o dia todo', tarde:'Piora ao longo do dia', comer:'Incha depois de comer', eventual:'Incha em alguns dias'};
-var IMPACTO_CHIP = {leve:'Impacto percebido: leve', moderado:'Impacto percebido: moderado', alto:'Impacto percebido: alto'};
-
-// =====================================================================
-// LÓGICA (funções puras, sem DOM)
-// =====================================================================
-
-function addPoints(scores, table, answer) {
-  var pts = table[answer];
-  if (!pts) return;
-  for (var k in pts) scores[k] = (scores[k] || 0) + pts[k];
-}
-
-function calculateProfile(a) {
-  a = a || {};
-  var R = SCORE_RULES, scores = {};
-  PERFIL_ORDEM.forEach(function(p){ scores[p] = 0; });
-  addPoints(scores, R.padrao.q3, a.perfilIntestinal);
-  addPoints(scores, R.padrao.q2, a.quando);
-  addPoints(scores, R.padrao.q1, a.idade);
-
-  // O perfil principal vem da resposta direta à pergunta intestinal.
-  // Idade e horário do inchaço contextualizam a orientação, mas não mudam
-  // a categoria nem criam um segundo perfil sem evidência direta.
-  var temQ3 = !!R.padrao.q3[a.perfilIntestinal];
-  var primary = temQ3 ? a.perfilIntestinal : R.fallback;
-  var secondary = null;
-
-  var imp = 0;
-  if (R.impacto.q4[a.incomoda] !== undefined) imp += R.impacto.q4[a.incomoda];
-  if (R.impacto.q2[a.quando] !== undefined) imp += R.impacto.q2[a.quando];
-  var nivel = null;
-  if (a.incomoda) {
-    for (var j = 0; j < R.impacto.niveis.length; j++) {
-      if (imp >= R.impacto.niveis[j].min) { nivel = R.impacto.niveis[j].id; break; }
-    }
-  }
-
-  return {
-    scores: scores, primary: primary, secondary: secondary,
-    confianca: temQ3 ? 'normal' : 'baixa',
-    impactoScore: imp, impacto: nivel
-  };
-}
-
-function calculateLeadScore(lead) {
-  var score = 0;
-  for (var k in LEAD_SCORE_RULES) if (lead[k]) score += LEAD_SCORE_RULES[k];
-  var tier = 'baixo';
-  for (var i = 0; i < LEAD_SCORE_TIERS.length; i++) {
-    if (score >= LEAD_SCORE_TIERS[i].min) { tier = LEAD_SCORE_TIERS[i].id; break; }
-  }
-  return {score: score, tier: tier};
-}
-
-function juntar(partes) {
-  partes = partes.filter(Boolean);
-  if (partes.length < 2) return partes[0] || '';
-  return partes.slice(0, -1).join(', ') + ' e ' + partes[partes.length - 1];
-}
-
-function buildPersonalizedResult(lead, prof) {
-  var p = PERFIS[prof.primary];
-  var nome = lead.firstName ? lead.firstName + ', ' : '';
-  var out = {};
-
-  out.titulo = prof.confianca === 'normal'
-    ? (nome ? nome + 'pelas' : 'Pelas') + ' suas respostas, seu padrão predominante é: ' + p.label
-    : (lead.firstName ? lead.firstName + ', aqui' : 'Aqui') + ' está uma sugestão simples para começar';
-
-  out.chips = [
-    IDADE[lead.idade] && IDADE[lead.idade][0],
-    QUANDO[lead.quando],
-    prof.impacto && IMPACTO_CHIP[prof.impacto],
-    OBJ[lead.objetivo] && 'Objetivo: ' + OBJ[lead.objetivo][0]
-  ].filter(Boolean);
-
-  var rel = [];
-  if (RELATO.quando[lead.quando]) rel.push('que ' + RELATO.quando[lead.quando]);
-  if (RELATO.perfilIntestinal[lead.perfilIntestinal]) rel.push('que ' + RELATO.perfilIntestinal[lead.perfilIntestinal]);
-  if (RELATO.incomoda[lead.incomoda]) rel.push('que ' + RELATO.incomoda[lead.incomoda]);
-  out.relato = rel.length ? 'Você relatou ' + juntar(rel) + '.' : '';
-
-  if (prof.confianca === 'normal') {
-    var ponto = p.ponto;
-    if (prof.primary === 'gases' && PONTO_QUANDO[lead.quando]) ponto += PONTO_QUANDO[lead.quando];
-    out.ponto = 'Seu principal ponto de atenção: ' + ponto + '.' +
-      (prof.impacto ? ' ' + IMPACTO_TXT[prof.impacto] : '');
-  } else {
-    out.ponto = prof.impacto ? IMPACTO_TXT[prof.impacto] : '';
-  }
-
-  out.descricao = prof.confianca === 'normal' ? p.d : '';
-  out.secundario = prof.secondary
-    ? 'Suas respostas também indicam um ponto a observar: ' + PERFIS[prof.secondary].sec + '.'
-    : '';
-  out.alerta = (prof.impacto === 'alto' || lead.idade === '60mais' || prof.primary === 'alternado') ? ALERTA : '';
-
-  out.receitaNome = p.rn;
-  out.receita = p.r;
-  var rot = ROTINA[lead.quando];
-  out.rotinaTitulo = rot ? rot[0] : '';
-  out.rotina = rot ? rot[1] : '';
-  out.idadeNota = IDADE[lead.idade] ? IDADE[lead.idade][1] : '';
-  out.ofertaTitulo = (OBJ[lead.objetivo] || OBJ.barriga)[1];
-  return out;
-}
-
-// =====================================================================
-// ESTADO DO LEAD (só em memória; nada vai para URL ou localStorage)
-// =====================================================================
-var LEAD = {
-  firstName: '', email: '',
-  idade: '', quando: '', perfilIntestinal: '', incomoda: '', objetivo: '',
-  impacto: '', perfilFinal: '', perfilSecundario: '',
-  leadScore: 0, leadTier: 'baixo',
-  quizStarted: false, quizCompleted: false, emailCaptured: false,
-  resultViewed: false, offerClicked: false, checkoutClicked: false,
-  checkoutStarted: false, purchased: false,
-  purchaseStatus: 'desconhecido',   // só o webhook da Hotmart pode mudar isso
-  emailSyncStatus: ''
-};
-
-function markLead(flag) {
-  if (LEAD[flag]) return;
-  LEAD[flag] = true;
-  var s = calculateLeadScore(LEAD);
-  LEAD.leadScore = s.score; LEAD.leadTier = s.tier;
-  ev('funnel_progress', {stage: flag});
-}
-
-function updateProfile() {
-  var prof = calculateProfile(LEAD);
-  LEAD.impacto = prof.impacto || '';
-  LEAD.perfilFinal = prof.confianca === 'normal' ? prof.primary : '';
-  LEAD.perfilSecundario = prof.secondary || '';
-  return prof;
-}
-
-// =====================================================================
-// TRACKING PRIVACY-SAFE (só após consentimento; nunca enviar respostas,
-// idade, sintomas, perfil inferido, nome ou email às plataformas de anúncios)
-// =====================================================================
-var TRACKING_CONSENT_KEY = 'qz_tracking_consent_v1';
-var trackingLoaded = false;
-function loadTracking() {
-  if (trackingLoaded) return;
-  trackingLoaded = true;
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
-  gtag('js', new Date());
-  gtag('config', 'G-Z2TZQJLE7L', {send_page_view:false});
-  var ga = document.createElement('script'); ga.async = true; ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z2TZQJLE7L'; document.head.appendChild(ga);
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init','1242713591247490'); fbq('track','PageView');
-  gtag('event','page_view');
-}
-function setTrackingConsent(allowed) {
-  try { localStorage.setItem(TRACKING_CONSENT_KEY, allowed ? 'yes' : 'no'); } catch(e) {}
-  var banner = document.getElementById('consentBanner'); if (banner) banner.hidden = true;
-  if (allowed) loadTracking();
-}
-function initConsent() {
-  var choice = ''; try { choice = localStorage.getItem(TRACKING_CONSENT_KEY) || ''; } catch(e) {}
-  var force = new URLSearchParams(window.location.search).get('privacy-settings') === '1';
-  if (force) { var banner = document.getElementById('consentBanner'); if (banner) banner.hidden = false; return; }
-  if (choice === 'yes') loadTracking();
-  else if (choice !== 'no') { var banner = document.getElementById('consentBanner'); if (banner) banner.hidden = false; }
-}
-var SAFE_EVENT_PARAMS = {step_number:true, stage:true, offer:true, value:true, currency:true};
-function ev(name, params) {
-  params = params || {}; var safe = {};
-  Object.keys(params).forEach(function(k){ if (SAFE_EVENT_PARAMS[k]) safe[k] = params[k]; });
-  if (!trackingLoaded) return;
-  try { if (typeof fbq !== 'undefined') fbq('trackCustom', name, safe); } catch(e) {}
-  try { if (typeof gtag !== 'undefined') gtag('event', name, safe); } catch(e) {}
-}
-var PRECO = {oferta_principal: 29.90, cta_final: 29.90, upsell: 47.90, downsell: 27.90};
-function ck(origem) {
-  var val = PRECO[origem] || 0;
-  if (origem === 'oferta_principal' || origem === 'cta_final') {
-    markLead('offerClicked'); LEAD.checkoutClicked = true;
-  }
-  ev('checkout_clicked', {offer: origem, value: val, currency: 'BRL'});
-}
-
-// Origem do tráfego (utm_* / src) -> parâmetro sck da Hotmart. Sem dados pessoais.
-var ORIGEM = (function(){
-  var keys = ['utm_source','utm_medium','utm_campaign','utm_content','src'], o = {};
-  try { o = JSON.parse(sessionStorage.getItem('qz_origem') || '{}'); } catch(e) {}
-  var q = new URLSearchParams(window.location.search), novo = false;
-  keys.forEach(function(k){
-    var v = (q.get(k) || '').toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 40);
-    if (v) { o[k] = v; novo = true; }
-  });
-  if (novo) { try { sessionStorage.setItem('qz_origem', JSON.stringify(o)); } catch(e) {} }
-  return o;
-})();
-function tagCheckout() {
-  var sck = [ORIGEM.utm_source, ORIGEM.utm_campaign, ORIGEM.utm_content].filter(Boolean).join('_').slice(0, 100);
-  var links = document.querySelectorAll('a[href*="pay.hotmart.com"]');
-  for (var i = 0; i < links.length; i++) {
-    try {
-      var u = new URL(links[i].href);
-      if (sck && !u.searchParams.has('sck')) u.searchParams.set('sck', sck);
-      if (ORIGEM.src && !u.searchParams.has('src')) u.searchParams.set('src', ORIGEM.src);
-      var funnelStep = u.searchParams.get('utm_medium');
-      if (funnelStep && !u.searchParams.has('funnel_step')) u.searchParams.set('funnel_step', funnelStep);
-      ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){
-        if (ORIGEM[k]) u.searchParams.set(k, ORIGEM[k]);
-      });
-      links[i].href = u.toString();
-    } catch(e) {}
-  }
-}
-
-// =====================================================================
-// FLUXO / DOM
-// =====================================================================
-
-function show(id) {
-  var all = document.querySelectorAll('.step');
-  for (var i = 0; i < all.length; i++) all[i].classList.remove('active');
-  var el = document.getElementById('s' + id);
-  if (el) el.classList.add('active');
-  window.scrollTo(0, 0);
-}
-
-function setProg(q) {
-  var p = document.getElementById('prog');
-  var pos = ORDER.indexOf(q);
-  if (pos === -1) { p.style.display = 'none'; return; }
-  p.style.display = 'block';
-  document.getElementById('progbar').style.width = Math.round((pos + 1) / ORDER.length * 100) + '%';
-}
+var RES = {};
+var userName = '';
+var userWeight = 70;
 
 function startQuiz() {
-  var raw = document.getElementById('nameInput').value.trim();
-  if (!raw) { document.getElementById('nameInput').focus(); return; }
-  var n = raw.split(' ')[0];
-  LEAD.firstName = n.charAt(0).toUpperCase() + n.slice(1).toLowerCase();
-  document.getElementById('t1').textContent = 'Prazer, ' + LEAD.firstName + '! Vamos começar.';
-  show(1); setProg(1);
-  markLead('quizStarted');
+  var inp = document.getElementById('nameInput');
+  var rawName = inp ? inp.value.trim() : '';
+  userName = rawName ? rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase() : 'você';
+  
+  document.getElementById('topbar').classList.add('visible');
+  document.getElementById('progresswrap').style.display = 'block';
+  
+  var t1 = document.getElementById('qtrans1');
+  if(t1) t1.textContent = 'Antes de tudo, ' + userName + ', me conta uma coisa...';
+  
+  ir(1);
   ev('QuizInicio');
 }
 
+function ir(n) {
+  var all = document.querySelectorAll('.step');
+  for (var i = 0; i < all.length; i++) {
+    all[i].classList.remove('active');
+    all[i].style.display = 'none';
+  }
+  var target = document.getElementById('s' + n);
+  if (target) { target.style.display = 'block'; target.classList.add('active'); }
+  window.scrollTo(0, 0);
+  if (n >= 1 && n <= 6) {
+    document.getElementById('progressbar').style.width = Math.round((n / 6) * 100) + '%';
+  }
+}
+
 function pick(el, q, v) {
-  var sib = el.parentNode.querySelectorAll('.opt');
-  for (var i = 0; i < sib.length; i++) sib[i].classList.remove('sel');
+  var siblings = el.parentNode.querySelectorAll('.opt');
+  for (var i = 0; i < siblings.length; i++) { siblings[i].classList.remove('sel'); }
   el.classList.add('sel');
-  LEAD[Q_FIELD[q]] = v;
-  document.getElementById('b' + q).disabled = false;
+  RES['q' + q] = v;
+  var btn = document.getElementById('b' + q);
+  if (btn) btn.classList.add('ok');
 }
 
-function back(q, previous) { show(previous); setProg(previous); }
+function updateWeight(val) {
+  userWeight = parseInt(val);
+  document.getElementById('weightDisplay').innerHTML = val + '<span style="font-size:22px;color:#7a7a74;font-family:\'DM Sans\',sans-serif"> kg</span>';
+}
 
-function next(q, n) {
-  ev('question_completed', {step_number: q});
-  if (q === 1) {
-    var mostrar = LEAD.idade && LEAD.idade !== '30a40';
-    document.getElementById('optMen').style.display = mostrar ? 'flex' : 'none';
-    if (!mostrar && LEAD.perfilIntestinal === 'menopausa') LEAD.perfilIntestinal = '';
+function analisar() {
+  ir(9);
+  ev('QuizCompleto');
+  setTimeout(function() { document.getElementById('ba1').style.width = '80%'; }, 200);
+  setTimeout(function() { document.getElementById('ba2').style.width = '88%'; }, 600);
+  setTimeout(function() { document.getElementById('ba3').style.width = '65%'; }, 1000);
+  setTimeout(function() { document.getElementById('ba4').style.width = '100%'; }, 1400);
+  setTimeout(function() { mostrarResultado(); }, 2800);
+}
+
+function calcIMC(peso) {
+  var h = 1.63; // altura média feminina
+  return (peso / (h * h)).toFixed(1);
+}
+
+function mostrarResultado() {
+  document.getElementById('uNameDisplay').textContent = userName;
+  
+  var imc = parseFloat(calcIMC(userWeight));
+  document.getElementById('imcValue').textContent = imc;
+  
+  var badge = document.getElementById('imcZonaBadge');
+  var desc = document.getElementById('imcDesc');
+  if (imc < 25) {
+    badge.textContent = 'Peso Normal'; badge.style.background = '#e8f5ee'; badge.style.color = '#0f4f35';
+    desc.textContent = 'Mesmo com peso normal, o inchaço pode ser causado por inflamação e acúmulo de toxinas intestinais.';
+  } else if (imc < 30) {
+    badge.textContent = 'Zona de Atendimento — Sobrepeso'; badge.style.background = '#fff3e0'; badge.style.color = '#e65100';
+    desc.textContent = 'Seu metabolismo está retendo toxinas e líquidos, tornando mais difícil perder a gordura da barriga.';
+  } else {
+    badge.textContent = 'Atenção — Retenção Elevada'; badge.style.background = '#ffebee'; badge.style.color = '#c62828';
+    desc.textContent = 'Perfil com alto potencial de resposta rápida ao protocolo de desinflamação natural de 7 dias.';
   }
-  if (n === 6) { carregar(); return; }
-  show(n); setProg(n);
+
+  ir(11);
+  document.getElementById('stickyCta').classList.add('visible');
+  startOfferTimer();
+  startSpToasts();
+  ev('ResultadoExibido');
 }
 
-function carregar() {
-  setProg(-1);
-  show(6);
-  updateProfile();
-  markLead('quizCompleted');
-  ev('quiz_completed');
-  ['l1','l2','l3','l4'].forEach(function(id, i) {
-    setTimeout(function(){ document.getElementById(id).classList.add('on'); }, 300 * (i + 1));
-  });
-  setTimeout(function(){
-    document.getElementById('emailTitle').textContent = (LEAD.firstName ? LEAD.firstName + ', p' : 'P') + 'ara onde enviamos seu plano?';
-    show(7);
-  }, 1400);
+function startOfferTimer() {
+  var t = 9 * 60 + 59;
+  setInterval(function() {
+    if (t <= 0) return;
+    t--;
+    var m = Math.floor(t / 60), s = t % 60;
+    var el = document.getElementById('offerTimer');
+    if (el) el.textContent = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+  }, 1000);
 }
 
-function checkEmail() {
-  var v = document.getElementById('emailInput').value.trim();
-  document.getElementById('emailBtn').disabled = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+var spNames = ['Ana', 'Fernanda', 'Cláudia', 'Patrícia', 'Márda', 'Juliana', 'Renata', 'Beatriz'];
+function showSpToast() {
+  var toast = document.getElementById('spToast');
+  if (!toast) return;
+  var n = spNames[Math.floor(Math.random() * spNames.length)];
+  document.getElementById('spName').textContent = n;
+  toast.classList.add('show');
+  setTimeout(function() { toast.classList.remove('show'); }, 4000);
 }
 
-async function submitEmail() {
-  var btn = document.getElementById('emailBtn');
-  var status = document.getElementById('emailStatus');
-  if (LEAD.emailCaptured) return;
-  LEAD.email = document.getElementById('emailInput').value.trim();
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(LEAD.email)) { checkEmail(); return; }
-  btn.disabled = true; btn.textContent = 'Enviando…'; status.textContent = '';
-  updateProfile();
-  var controller = window.AbortController ? new AbortController() : null;
-  var timeout = controller ? setTimeout(function(){ controller.abort(); }, 7000) : null;
-  try {
-    var response = await fetch('https://snowy-wildflower-ce6a.marianozuy37.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        email: LEAD.email, firstName: LEAD.firstName,
-        perfil: LEAD.perfilFinal, idade: LEAD.idade, objetivo: LEAD.objetivo,
-        quando: LEAD.quando, incomoda: LEAD.incomoda, origem: 'quiz',
-        marketingConsent: !!document.getElementById('marketingConsent').checked,
-        marketingConsentAt: document.getElementById('marketingConsent').checked ? new Date().toISOString() : null
-      }),
-      signal: controller ? controller.signal : undefined
-    });
-    if (!response.ok) throw new Error('Lead endpoint returned ' + response.status);
-    markLead('emailCaptured');
-    ev('generate_lead');
-    LEAD.emailSyncStatus = 'O pedido de envio da cópia foi aceite. Se não receber a mensagem, confira o spam ou tente novamente mais tarde.';
-    status.textContent = LEAD.emailSyncStatus;
-  } catch (e) {
-    console.warn('Não foi possível confirmar o registo do email:', e);
-    LEAD.emailSyncStatus = 'Não foi possível confirmar o envio do email agora. O resultado está disponível na tela; tente novamente mais tarde se quiser receber a cópia.';
-    status.textContent = LEAD.emailSyncStatus;
-  } finally {
-    if (timeout) clearTimeout(timeout);
-    resultado();
-  }
+function startSpToasts() {
+  setTimeout(showSpToast, 6000);
+  setInterval(showSpToast, 20000);
 }
 
-function skipEmail() { ev('email_skipped'); resultado(); }
-
-function retryEmail() {
-  show(7);
-  var input = document.getElementById('emailInput');
-  input.value = LEAD.email || '';
-  document.getElementById('emailStatus').textContent = '';
-  var btn = document.getElementById('emailBtn'); btn.textContent = 'Enviar e ver meu resultado →';
-  checkEmail();
+function ev(name) {
+  try { if (typeof fbq !== 'undefined') fbq('track', name); } catch(e) {}
+  try { if (typeof gtag !== 'undefined') gtag('event', name); } catch(e) {}
 }
-
-function setText(id, txt) {
-  var el = document.getElementById(id);
-  el.textContent = txt || '';
-  el.style.display = txt ? '' : 'none';
-}
-
-function resultado() {
-  var prof = updateProfile();
-  var r = buildPersonalizedResult(LEAD, prof);
-
-  setText('rTitle', r.titulo);
-  setText('resultEmailStatus', LEAD.emailSyncStatus || '');
-  document.getElementById('retryEmailBtn').style.display = LEAD.emailSyncStatus.indexOf('Não foi possível confirmar') === 0 ? 'block' : 'none';
-  document.getElementById('rChips').innerHTML = r.chips.map(function(c){
-    return '<span class="chip">' + c + '</span>';
-  }).join('');
-  setText('rRelato', r.relato);
-  setText('rPonto', r.ponto);
-  setText('rText', r.descricao);
-  setText('rSec', r.secundario);
-  setText('rAlerta', r.alerta);
-  setText('rRecName', r.receitaNome);
-  setText('rRec', r.receita);
-  setText('rRotT', r.rotinaTitulo);
-  setText('rRot', r.rotina);
-  document.getElementById('rRotBox').style.display = r.rotina ? '' : 'none';
-  setText('rIdade', r.idadeNota);
-  document.getElementById('rIdadeBox').style.display = r.idadeNota ? 'block' : 'none';
-  setText('rOferta', r.ofertaTitulo);
-
-  show(8);
-  markLead('resultViewed');
-  ev('result_viewed');
-}
-
-function irStep(n) {
-  show(n);
-  var map = {12:'obrigado', 13:'upsell', 14:'downsell', 15:'fim'};
-  if (map[n] && window.history.replaceState) window.history.replaceState(null, '', '?step=' + map[n]);
-  if (map[n]) ev('pagina_' + map[n]);
-}
-
-(function(){
-  document.getElementById('nameInput').addEventListener('keypress', function(e){ if (e.key === 'Enter') startQuiz(); });
-  document.getElementById('emailInput').addEventListener('keypress', function(e){
-    if (e.key === 'Enter' && !document.getElementById('emailBtn').disabled) submitEmail();
-  });
-  var opts = document.querySelectorAll('.opt');
-  for (var i = 0; i < opts.length; i++) {
-    opts[i].setAttribute('role', 'button');
-    opts[i].setAttribute('tabindex', '0');
-    opts[i].addEventListener('keydown', function(e){
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
-    });
-  }
-  tagCheckout();
-  initConsent();
-  var step = new URLSearchParams(window.location.search).get('step');
-  var map = {obrigado:12, upsell:13, downsell:14, fim:15};
-  if (map[step]) irStep(map[step]);
-})();
 </script>
 </body>
 </html>
