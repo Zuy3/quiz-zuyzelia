@@ -10,9 +10,6 @@
 <meta property="og:title" content="Por que sua barriga incha? Teste gratuito de 1 minuto">
 <meta property="og:description" content="Responda 5 perguntas e receba a receita para o seu tipo de inchaço.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8D%B5%3C/text%3E%3C/svg%3E">
-<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1242713591247490');fbq('track','PageView');</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2TZQJLE7L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z2TZQJLE7L');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -72,10 +69,11 @@ input:focus{outline:none;border-color:var(--v)}
 .sp-a{font-size:12px;color:var(--ts);margin-top:6px;font-weight:600}
 .sp-a span{font-weight:400}
 .sp-n{font-size:11px;color:var(--ts);line-height:1.4}
+.privacy-note{font-size:12px;color:var(--ts);line-height:1.5;margin:10px 0}.privacy-note a,.footer a{color:var(--ve);text-decoration:underline}
+.consent-banner{position:fixed;z-index:9999;left:12px;right:12px;bottom:12px;max-width:560px;margin:auto;background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;box-shadow:0 8px 35px #0002}.consent-banner p{font-size:13px;color:var(--tm);margin-bottom:12px}.consent-actions{display:flex;gap:8px}.consent-actions button{flex:1;margin:0;padding:12px 8px;font-size:13px}.btn.secondary{background:#fff;color:var(--ve);border:1px solid var(--vm)}.back-link{margin:8px 0 12px}.status-message{font-size:13px;margin:8px 0;color:var(--tm)}.checkline{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:var(--tm);line-height:1.45;margin:8px 0}.checkline input{width:auto;margin:2px 0 0;flex-shrink:0}
 </style>
 </head>
 <body>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1242713591247490&ev=PageView&noscript=1"/></noscript>
 <div class="wrap">
 <div class="prog" id="prog"><div id="progbar"></div></div>
 
@@ -110,6 +108,7 @@ input:focus{outline:none;border-color:var(--v)}
   <div class="opt" onclick="pick(this,2,'tarde')"><div class="oi">🌇</div><div><div class="om">Piora ao longo do dia</div><div class="oh">Começo bem e termino estufada</div></div></div>
   <div class="opt" onclick="pick(this,2,'comer')"><div class="oi">🍽️</div><div><div class="om">Logo depois das refeições</div></div></div>
   <div class="opt" onclick="pick(this,2,'eventual')"><div class="oi">📅</div><div><div class="om">Só em alguns dias, sem padrão</div></div></div>
+  <button class="link back-link" type="button" onclick="back(2,1)">← Voltar à pergunta anterior</button>
   <button class="btn" id="b2" disabled onclick="next(2,3)">Continuar →</button>
 </div>
 
@@ -123,6 +122,7 @@ input:focus{outline:none;border-color:var(--v)}
   <div class="opt" onclick="pick(this,3,'alternado')"><div class="oi">🟠</div><div><div class="om">Às vezes preso, às vezes solto demais</div></div></div>
   <div class="opt" onclick="pick(this,3,'gases')"><div class="oi">💨</div><div><div class="om">Vou normalmente, mas com muitos gases</div></div></div>
   <div class="opt" id="optMen" style="display:none" onclick="pick(this,3,'menopausa')"><div class="oi">🌹</div><div><div class="om">Mudou muito desde a menopausa</div></div></div>
+  <button class="link back-link" type="button" onclick="back(3,2)">← Voltar à pergunta anterior</button>
   <button class="btn" id="b3" disabled onclick="next(3,4)">Continuar →</button>
 </div>
 
@@ -134,6 +134,7 @@ input:focus{outline:none;border-color:var(--v)}
   <div class="opt" onclick="pick(this,4,'roupa')"><div class="oi">👗</div><div><div class="om">Tenho roupas que não fecham mais</div></div></div>
   <div class="opt" onclick="pick(this,4,'desconforto')"><div class="oi">😖</div><div><div class="om">O desconforto físico no dia a dia</div></div></div>
   <div class="opt" onclick="pick(this,4,'autoestima')"><div class="oi">💔</div><div><div class="om">Me sinto menos bem comigo mesma</div></div></div>
+  <button class="link back-link" type="button" onclick="back(4,3)">← Voltar à pergunta anterior</button>
   <button class="btn" id="b4" disabled onclick="next(4,5)">Continuar →</button>
 </div>
 
@@ -145,6 +146,7 @@ input:focus{outline:none;border-color:var(--v)}
   <div class="opt" onclick="pick(this,5,'leveza')"><div class="oi">🍃</div><div><div class="om">Sentir o corpo mais leve</div></div></div>
   <div class="opt" onclick="pick(this,5,'roupa')"><div class="oi">👖</div><div><div class="om">Voltar a usar as roupas que amo</div></div></div>
   <div class="opt" onclick="pick(this,5,'conf')"><div class="oi">🪞</div><div><div class="om">Me sentir bem comigo mesma de novo</div></div></div>
+  <button class="link back-link" type="button" onclick="back(5,4)">← Voltar à pergunta anterior</button>
   <button class="btn" id="b5" disabled onclick="next(5,6)">Ver meu resultado →</button>
 </div>
 
@@ -165,8 +167,10 @@ input:focus{outline:none;border-color:var(--v)}
   <h2 id="emailTitle">Para onde enviamos seu plano?</h2>
   <p class="sub">Você vê o resultado agora na tela e recebe uma cópia no email, com a receita do seu tipo de inchaço.</p>
   <input id="emailInput" type="email" aria-label="Seu email" inputmode="email" placeholder="seu@email.com" autocomplete="email" oninput="checkEmail()">
-  <button class="btn" id="emailBtn" disabled onclick="submitEmail()">Ver meu resultado →</button>
-  <p class="small" style="margin-top:10px">🔒 Sem spam. Você pode sair da lista quando quiser.</p>
+  <label class="checkline"><input id="marketingConsent" type="checkbox"><span>Quero receber também dicas e ofertas por email. Posso cancelar a qualquer momento. (Opcional)</span></label>
+  <p class="privacy-note">Ao enviar, você solicita que o resultado seja enviado para este email e concorda com o tratamento dos dados necessário para essa finalidade. O envio do email é opcional: você pode ver o resultado sem informar o endereço. <a href="privacidade.html" target="_blank" rel="noopener">Leia a Política de Privacidade</a>.</p>
+  <button class="btn" id="emailBtn" disabled onclick="submitEmail()">Enviar e ver meu resultado →</button>
+  <p class="status-message" id="emailStatus" role="status" aria-live="polite"></p>
   <button class="link" onclick="skipEmail()">Prefiro ver só na tela</button>
 </div>
 
@@ -174,6 +178,8 @@ input:focus{outline:none;border-color:var(--v)}
 <div class="step" id="s8">
   <div class="badge">Resultado personalizado</div>
   <h1 id="rTitle" class="rt"></h1>
+  <p class="status-message" id="resultEmailStatus" role="status" aria-live="polite"></p>
+  <button class="link" id="retryEmailBtn" type="button" style="display:none" onclick="retryEmail()">Tentar enviar a cópia novamente</button>
   <div class="chips" id="rChips"></div>
   <p class="sub" id="rRelato"></p>
   <div class="note" id="rPonto"></div>
@@ -251,15 +257,15 @@ input:focus{outline:none;border-color:var(--v)}
     Barriga Chapada em 7 Dias · Produto digital processado pela Hotmart<br>
     Conteúdo informativo. Não substitui orientação médica ou nutricional.<br>
     Se o inchaço for frequente, forte ou vier com dor, procure um médico.<br>
-    Resultados variam de pessoa para pessoa.
+    Resultados variam de pessoa para pessoa.<br><a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> · <a href="index.html?privacy-settings=1">Alterar preferências de medição</a>.
   </div>
 </div>
 
 <!-- S12 OBRIGADO (redirect pós-compra: ?step=obrigado) -->
 <div class="step" id="s12">
-  <div class="badge">Pedido recebido 🎉</div>
-  <h1>Pronto! Seu acesso chega por email.</h1>
-  <p class="sub">Procure a mensagem da Hotmart com o link de acesso. Se não aparecer em alguns minutos, olhe o spam ou a aba Promoções. Pagou com Pix ou boleto? O acesso é liberado assim que o pagamento for confirmado.</p>
+  <div class="badge">Informações após a compra</div>
+  <h1>Se a Hotmart confirmou a sua compra, o acesso chega por email.</h1>
+  <p class="sub">Procure a mensagem da Hotmart com o link de acesso. Se não aparecer, confira o spam ou a aba Promoções. Em pagamentos por Pix ou boleto, aguarde a confirmação do pagamento. Esta página estática não verifica o estado da transação; confira o email ou a sua conta Hotmart.</p>
   <div class="card green">
     <div style="font-size:15px;font-weight:700;margin-bottom:6px">Antes de ir: o que fazer depois dos 7 dias</div>
     <p style="font-size:14px;color:var(--tm);margin-bottom:10px">Quem termina o plano costuma perguntar: "e agora, como eu continuo?"</p>
@@ -358,6 +364,11 @@ input:focus{outline:none;border-color:var(--v)}
   <a class="btn" href="https://wa.me/message/OEAA7CU7GKANM1" target="_blank" rel="noopener" onclick="ev('CanalWhatsApp')">Entrar no canal do WhatsApp →</a>
   <div class="footer">© 2026 Barriga Chapada em 7 Dias · Todos os direitos reservados · Compra Segura</div>
 </div>
+</div>
+
+<div class="consent-banner" id="consentBanner" role="dialog" aria-label="Preferências de privacidade" aria-live="polite" hidden>
+  <p><strong>Privacidade e medição.</strong> Usamos ferramentas de análise e publicidade apenas se você aceitar. Elas ajudam a medir visitas e cliques, mas não recebem as respostas do quiz nem categorias de saúde. <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
+  <div class="consent-actions"><button class="btn" type="button" onclick="setTrackingConsent(true)">Aceitar medição</button><button class="btn secondary" type="button" onclick="setTrackingConsent(false)">Continuar sem rastreamento</button></div>
 </div>
 
 <script>
@@ -532,17 +543,12 @@ function calculateProfile(a) {
   addPoints(scores, R.padrao.q2, a.quando);
   addPoints(scores, R.padrao.q1, a.idade);
 
-  var ranked = PERFIL_ORDEM.slice().sort(function(x, y){
-    return scores[y] - scores[x] || PERFIL_ORDEM.indexOf(x) - PERFIL_ORDEM.indexOf(y);
-  });
+  // O perfil principal vem da resposta direta à pergunta intestinal.
+  // Idade e horário do inchaço contextualizam a orientação, mas não mudam
+  // a categoria nem criam um segundo perfil sem evidência direta.
   var temQ3 = !!R.padrao.q3[a.perfilIntestinal];
-  var primary = temQ3 ? ranked[0] : R.fallback;
+  var primary = temQ3 ? a.perfilIntestinal : R.fallback;
   var secondary = null;
-  if (temQ3) {
-    for (var i = 0; i < ranked.length; i++) {
-      if (ranked[i] !== primary && scores[ranked[i]] >= R.secundarioMin) { secondary = ranked[i]; break; }
-    }
-  }
 
   var imp = 0;
   if (R.impacto.q4[a.incomoda] !== undefined) imp += R.impacto.q4[a.incomoda];
@@ -635,7 +641,8 @@ var LEAD = {
   quizStarted: false, quizCompleted: false, emailCaptured: false,
   resultViewed: false, offerClicked: false, checkoutClicked: false,
   checkoutStarted: false, purchased: false,
-  purchaseStatus: 'desconhecido'   // só o webhook da Hotmart pode mudar isso
+  purchaseStatus: 'desconhecido',   // só o webhook da Hotmart pode mudar isso
+  emailSyncStatus: ''
 };
 
 function markLead(flag) {
@@ -643,7 +650,7 @@ function markLead(flag) {
   LEAD[flag] = true;
   var s = calculateLeadScore(LEAD);
   LEAD.leadScore = s.score; LEAD.leadTier = s.tier;
-  try { if (typeof gtag !== 'undefined') gtag('event', 'lead_score_update', {etapa: flag, lead_score: s.score, lead_tier: s.tier}); } catch(e) {}
+  ev('funnel_progress', {stage: flag});
 }
 
 function updateProfile() {
@@ -655,28 +662,50 @@ function updateProfile() {
 }
 
 // =====================================================================
-// TRACKING
+// TRACKING PRIVACY-SAFE (só após consentimento; nunca enviar respostas,
+// idade, sintomas, perfil inferido, nome ou email às plataformas de anúncios)
 // =====================================================================
-
-// Respostas do quiz são dados de saúde: vão só para o GA4.
-// A Meta recebe apenas o nome do evento.
-var META_OK = {step_number: 1};
+var TRACKING_CONSENT_KEY = 'qz_tracking_consent_v1';
+var trackingLoaded = false;
+function loadTracking() {
+  if (trackingLoaded) return;
+  trackingLoaded = true;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+  gtag('js', new Date());
+  gtag('config', 'G-Z2TZQJLE7L', {send_page_view:false});
+  var ga = document.createElement('script'); ga.async = true; ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z2TZQJLE7L'; document.head.appendChild(ga);
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','1242713591247490'); fbq('track','PageView');
+  gtag('event','page_view');
+}
+function setTrackingConsent(allowed) {
+  try { localStorage.setItem(TRACKING_CONSENT_KEY, allowed ? 'yes' : 'no'); } catch(e) {}
+  var banner = document.getElementById('consentBanner'); if (banner) banner.hidden = true;
+  if (allowed) loadTracking();
+}
+function initConsent() {
+  var choice = ''; try { choice = localStorage.getItem(TRACKING_CONSENT_KEY) || ''; } catch(e) {}
+  var force = new URLSearchParams(window.location.search).get('privacy-settings') === '1';
+  if (force) { var banner = document.getElementById('consentBanner'); if (banner) banner.hidden = false; return; }
+  if (choice === 'yes') loadTracking();
+  else if (choice !== 'no') { var banner = document.getElementById('consentBanner'); if (banner) banner.hidden = false; }
+}
+var SAFE_EVENT_PARAMS = {step_number:true, stage:true, offer:true, value:true, currency:true};
 function ev(name, params) {
-  params = params || {};
-  var meta = {};
-  for (var k in params) if (META_OK[k]) meta[k] = params[k];
-  try { if (typeof fbq !== 'undefined') fbq('trackCustom', name, meta); } catch(e) {}
-  try { if (typeof gtag !== 'undefined') gtag('event', name, params); } catch(e) {}
+  params = params || {}; var safe = {};
+  Object.keys(params).forEach(function(k){ if (SAFE_EVENT_PARAMS[k]) safe[k] = params[k]; });
+  if (!trackingLoaded) return;
+  try { if (typeof fbq !== 'undefined') fbq('trackCustom', name, safe); } catch(e) {}
+  try { if (typeof gtag !== 'undefined') gtag('event', name, safe); } catch(e) {}
 }
 var PRECO = {oferta_principal: 29.90, cta_final: 29.90, upsell: 47.90, downsell: 27.90};
 function ck(origem) {
   var val = PRECO[origem] || 0;
   if (origem === 'oferta_principal' || origem === 'cta_final') {
-    markLead('offerClicked');
-    LEAD.checkoutClicked = true;
+    markLead('offerClicked'); LEAD.checkoutClicked = true;
   }
-  try { if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', {content_name: origem, value: val, currency: 'BRL'}); } catch(e) {}
-  try { if (typeof gtag !== 'undefined') gtag('event', 'checkout_clicked', {origem: origem, perfil: LEAD.perfilFinal, value: val, currency: 'BRL'}); } catch(e) {}
+  ev('checkout_clicked', {offer: origem, value: val, currency: 'BRL'});
 }
 
 // Origem do tráfego (utm_* / src) -> parâmetro sck da Hotmart. Sem dados pessoais.
@@ -699,6 +728,11 @@ function tagCheckout() {
       var u = new URL(links[i].href);
       if (sck && !u.searchParams.has('sck')) u.searchParams.set('sck', sck);
       if (ORIGEM.src && !u.searchParams.has('src')) u.searchParams.set('src', ORIGEM.src);
+      var funnelStep = u.searchParams.get('utm_medium');
+      if (funnelStep && !u.searchParams.has('funnel_step')) u.searchParams.set('funnel_step', funnelStep);
+      ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){
+        if (ORIGEM[k]) u.searchParams.set(k, ORIGEM[k]);
+      });
       links[i].href = u.toString();
     } catch(e) {}
   }
@@ -743,6 +777,8 @@ function pick(el, q, v) {
   document.getElementById('b' + q).disabled = false;
 }
 
+function back(q, previous) { show(previous); setProg(previous); }
+
 function next(q, n) {
   ev('question_completed', {step_number: q});
   if (q === 1) {
@@ -759,14 +795,14 @@ function carregar() {
   show(6);
   updateProfile();
   markLead('quizCompleted');
-  ev('QuizCompleto', {perfil: LEAD.perfilFinal, impacto: LEAD.impacto});
+  ev('quiz_completed');
   ['l1','l2','l3','l4'].forEach(function(id, i) {
-    setTimeout(function(){ document.getElementById(id).classList.add('on'); }, 700 * (i + 1));
+    setTimeout(function(){ document.getElementById(id).classList.add('on'); }, 300 * (i + 1));
   });
   setTimeout(function(){
     document.getElementById('emailTitle').textContent = (LEAD.firstName ? LEAD.firstName + ', p' : 'P') + 'ara onde enviamos seu plano?';
     show(7);
-  }, 3400);
+  }, 1400);
 }
 
 function checkEmail() {
@@ -774,39 +810,53 @@ function checkEmail() {
   document.getElementById('emailBtn').disabled = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 }
 
-function submitEmail() {
+async function submitEmail() {
   var btn = document.getElementById('emailBtn');
+  var status = document.getElementById('emailStatus');
   if (LEAD.emailCaptured) return;
   LEAD.email = document.getElementById('emailInput').value.trim();
-  btn.disabled = true; btn.textContent = 'Enviando...';
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(LEAD.email)) { checkEmail(); return; }
+  btn.disabled = true; btn.textContent = 'Enviando…'; status.textContent = '';
   updateProfile();
-  markLead('emailCaptured');
-  fetch('https://snowy-wildflower-ce6a.marianozuy37.workers.dev', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({
-      email: LEAD.email,
-      firstName: LEAD.firstName,
-      perfil: LEAD.perfilFinal,
-      idade: LEAD.idade,
-      objetivo: LEAD.objetivo,
-      quando: LEAD.quando,
-      incomoda: LEAD.incomoda,
-      origem: 'quiz'
-    }),
-    keepalive: true
-  }).then(function(r){
-    if (!r.ok) ev('lead_sync_failed', {status: r.status});
-  }).catch(function(e){
-    console.log('Proxy:', e);
-    ev('lead_sync_failed', {status: 0});
-  });
-  try { if (typeof fbq !== 'undefined') fbq('track', 'Lead'); } catch(e) {}
-  try { gtag('event', 'generate_lead', {perfil: LEAD.perfilFinal}); } catch(e) {}
-  resultado();
+  var controller = window.AbortController ? new AbortController() : null;
+  var timeout = controller ? setTimeout(function(){ controller.abort(); }, 7000) : null;
+  try {
+    var response = await fetch('https://snowy-wildflower-ce6a.marianozuy37.workers.dev', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        email: LEAD.email, firstName: LEAD.firstName,
+        perfil: LEAD.perfilFinal, idade: LEAD.idade, objetivo: LEAD.objetivo,
+        quando: LEAD.quando, incomoda: LEAD.incomoda, origem: 'quiz',
+        marketingConsent: !!document.getElementById('marketingConsent').checked,
+        marketingConsentAt: document.getElementById('marketingConsent').checked ? new Date().toISOString() : null
+      }),
+      signal: controller ? controller.signal : undefined
+    });
+    if (!response.ok) throw new Error('Lead endpoint returned ' + response.status);
+    markLead('emailCaptured');
+    ev('generate_lead');
+    LEAD.emailSyncStatus = 'O pedido de envio da cópia foi aceite. Se não receber a mensagem, confira o spam ou tente novamente mais tarde.';
+    status.textContent = LEAD.emailSyncStatus;
+  } catch (e) {
+    console.warn('Não foi possível confirmar o registo do email:', e);
+    LEAD.emailSyncStatus = 'Não foi possível confirmar o envio do email agora. O resultado está disponível na tela; tente novamente mais tarde se quiser receber a cópia.';
+    status.textContent = LEAD.emailSyncStatus;
+  } finally {
+    if (timeout) clearTimeout(timeout);
+    resultado();
+  }
 }
 
-function skipEmail() { ev('EmailPulado'); resultado(); }
+function skipEmail() { ev('email_skipped'); resultado(); }
+
+function retryEmail() {
+  show(7);
+  var input = document.getElementById('emailInput');
+  input.value = LEAD.email || '';
+  document.getElementById('emailStatus').textContent = '';
+  var btn = document.getElementById('emailBtn'); btn.textContent = 'Enviar e ver meu resultado →';
+  checkEmail();
+}
 
 function setText(id, txt) {
   var el = document.getElementById(id);
@@ -819,6 +869,8 @@ function resultado() {
   var r = buildPersonalizedResult(LEAD, prof);
 
   setText('rTitle', r.titulo);
+  setText('resultEmailStatus', LEAD.emailSyncStatus || '');
+  document.getElementById('retryEmailBtn').style.display = LEAD.emailSyncStatus.indexOf('Não foi possível confirmar') === 0 ? 'block' : 'none';
   document.getElementById('rChips').innerHTML = r.chips.map(function(c){
     return '<span class="chip">' + c + '</span>';
   }).join('');
@@ -838,10 +890,7 @@ function resultado() {
 
   show(8);
   markLead('resultViewed');
-  ev('ResultadoVisto', {
-    perfil: LEAD.perfilFinal, perfil_secundario: LEAD.perfilSecundario,
-    impacto: LEAD.impacto, quando: LEAD.quando, idade: LEAD.idade, objetivo: LEAD.objetivo
-  });
+  ev('result_viewed');
 }
 
 function irStep(n) {
@@ -865,6 +914,7 @@ function irStep(n) {
     });
   }
   tagCheckout();
+  initConsent();
   var step = new URLSearchParams(window.location.search).get('step');
   var map = {obrigado:12, upsell:13, downsell:14, fim:15};
   if (map[step]) irStep(map[step]);
