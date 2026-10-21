@@ -67,8 +67,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .omain{font-size:15px;color:var(--td);line-height:1.4;font-weight:600}
 .ohint{font-size:12px;color:var(--ts);margin-top:2px;line-height:1.3}
 
-.qstat{font-size:12px;color:var(--v);font-style:italic;text-align:center;margin-bottom:18px;padding:0 8px;line-height:1.5;font-weight:500;}
-
 .nextbtn{width:100%;padding:17px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;opacity:0.4;pointer-events:none;transition:all 0.2s;}
 .nextbtn.ok{opacity:1;pointer-events:auto;box-shadow:0 4px 15px rgba(26,122,84,0.25);}
 .nextbtn.ok:hover{background:var(--ve);transform:translateY(-1px)}
@@ -76,10 +74,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .startbtn{width:100%;padding:18px;background:var(--v);color:#fff;border:none;border-radius:var(--r);font-size:17px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.2s;margin-bottom:10px;position:relative;overflow:hidden;}
 .startbtn:hover{background:var(--ve);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,122,84,0.35);}
 .startbtn.pulse{animation:ctaPulse 2s infinite}
-@keyframes ctaPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,122,84,0.4)}50%{box-shadow:0 0 0 12px rgba(26,122,84,0)}}
+@keyframes ctaPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,122,84,0.4)}50%{box-shadow:0 0 0 12px rgba(26,122,84,0.3)}}
 
-.name-inp{width:100%;padding:15px 16px;border:1.5px solid var(--bd);border-radius:var(--r);font-size:16px;font-family:'DM Sans',sans-serif;color:var(--td);background:#fff;transition:border-color 0.2s;outline:none;}
-.name-inp:focus{border-color:var(--v)}
+.input-group{margin-bottom:14px;text-align:left;}
+.input-label{font-size:13px;font-weight:600;color:var(--td);margin-bottom:6px;display:block;}
+.form-inp{width:100%;padding:14px 16px;border:1.5px solid var(--bd);border-radius:var(--r);font-size:15px;font-family:'DM Sans',sans-serif;color:var(--td);background:#fff;transition:border-color 0.2s;outline:none;}
+.form-inp:focus{border-color:var(--v)}
 
 .azwrap{text-align:center;padding:36px 0 24px}
 .azwrap h3{font-family:'Lora',serif;font-size:22px;color:var(--td);margin-bottom:8px;}
@@ -96,8 +96,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 .card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:20px;box-shadow:0 2px 20px rgba(26,122,84,0.06);}
 .ppill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px;}
 .pint{background:#e6f0fb;color:#185fa5}
-.pinf{background:#faece7;color:#993c1d}
-.pmix{background:#f0e8f5;color:#6a3a9a}
 
 .rsec{margin-bottom:20px}
 .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#0f4f35;padding:12px 20px;display:none;align-items:center;justify-content:space-between;gap:12px;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,0.2);}
@@ -153,11 +151,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     </div>
   </div>
 
-  <div style="margin-bottom:16px;">
-    <label style="font-size:14px;font-weight:600;color:var(--td);margin-bottom:8px;display:block;">👋 Como podemos te chamar?</label>
-    <input class="name-inp" id="nameInput" type="text" placeholder="Digite seu primeiro nome aqui..." maxlength="30" autocomplete="given-name">
-  </div>
-
   <button class="startbtn pulse" id="startBtn" onclick="startQuiz()">
     🔬 INICIAR DIAGNÓSTICO GRATUITO →
   </button>
@@ -167,7 +160,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 
 <!-- ====== Q1: FAIXA ETARIA ====== -->
 <div class="step" id="s1">
-  <div class="qtransition" id="qtrans1">Antes de tudo, me conta uma coisa...</div>
+  <div class="qtransition">Antes de tudo, me conta uma coisa...</div>
   <div class="qtext">Qual é a sua faixa etária?</div>
   <div class="qsub">O perfil hormonal muda com a idade e altera a resposta do intestino.</div>
   <div class="opts">
@@ -232,7 +225,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 
 <!-- ====== Q6: PESO SLIDER ====== -->
 <div class="step" id="s6">
-  <div class="qtransition">Última informação para calibrar o protocolo...</div>
+  <div class="qtransition">Última informação física...</div>
   <div class="qtext">Qual é o seu peso aproximado atualmente?</div>
   <div class="qsub">Isso nos ajuda a calcular o seu Índice de Inflamação Intestinal.</div>
 
@@ -242,7 +235,35 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
     <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--ts);"><span>45kg</span><span>130kg</span></div>
   </div>
 
-  <button class="nextbtn ok" onclick="analisar()">🔬 PROCESSAR MEU DIAGNÓSTICO →</button>
+  <button class="nextbtn ok" onclick="ir(7)">Avançar →</button>
+</div>
+
+<!-- ====== Q7: FORMULÁRIO DE CAPTURA (NOME E E-MAIL) ====== -->
+<div class="step" id="s7">
+  <div class="qtransition">Seu diagnóstico está pronto!</div>
+  <div class="qtext">Onde devemos enviar seu relatório detalhado?</div>
+  <div class="qsub">Preencha seu nome e e-mail para liberar o acesso imediato ao seu relatório e resultado.</div>
+
+  <div style="background:#fff;border:1.5px solid var(--bd);border-radius:var(--r);padding:20px;margin-bottom:16px;">
+    <div class="input-group">
+      <label class="input-label" for="userNameInp">👤 Seu Primeiro Nome:</label>
+      <input class="form-inp" id="userNameInp" type="text" placeholder="Ex: Maria" autocomplete="given-name">
+    </div>
+
+    <div class="input-group" style="margin-bottom:0;">
+      <label class="input-label" for="userEmailInp">✉️ Seu Melhor E-mail:</label>
+      <input class="form-inp" id="userEmailInp" type="email" placeholder="Ex: maria@gmail.com" autocomplete="email">
+    </div>
+  </div>
+
+  <div id="formError" style="color:#d4572a;font-size:12px;font-weight:600;margin-bottom:10px;display:none;text-align:center;">
+    ⚠️ Por favor, informe o seu nome e um e-mail válido para continuar.
+  </div>
+
+  <button class="startbtn" onclick="validarEProcessar()">
+    🔬 GERAR MEU DIAGNÓSTICO AGORA →
+  </button>
+  <div style="text-align:center;font-size:11px;color:var(--ts);margin-top:6px;">🔒 Seus dados estão 100% seguros. Não enviamos spam.</div>
 </div>
 
 <!-- ====== LOADING / ANALISANDO ====== -->
@@ -384,19 +405,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--td);min-h
 <script>
 var RES = {};
 var userName = '';
+var userEmail = '';
 var userWeight = 70;
 
 function startQuiz() {
-  var inp = document.getElementById('nameInput');
-  var rawName = inp ? inp.value.trim() : '';
-  userName = rawName ? rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase() : 'você';
-  
   document.getElementById('topbar').classList.add('visible');
   document.getElementById('progresswrap').style.display = 'block';
-  
-  var t1 = document.getElementById('qtrans1');
-  if(t1) t1.textContent = 'Antes de tudo, ' + userName + ', me conta uma coisa...';
-  
   ir(1);
   ev('QuizInicio');
 }
@@ -410,8 +424,8 @@ function ir(n) {
   var target = document.getElementById('s' + n);
   if (target) { target.style.display = 'block'; target.classList.add('active'); }
   window.scrollTo(0, 0);
-  if (n >= 1 && n <= 6) {
-    document.getElementById('progressbar').style.width = Math.round((n / 6) * 100) + '%';
+  if (n >= 1 && n <= 7) {
+    document.getElementById('progressbar').style.width = Math.round((n / 7) * 100) + '%';
   }
 }
 
@@ -427,6 +441,29 @@ function pick(el, q, v) {
 function updateWeight(val) {
   userWeight = parseInt(val);
   document.getElementById('weightDisplay').innerHTML = val + '<span style="font-size:22px;color:#7a7a74;font-family:\'DM Sans\',sans-serif"> kg</span>';
+}
+
+function validarEProcessar() {
+  var nameInp = document.getElementById('userNameInp').value.trim();
+  var emailInp = document.getElementById('userEmailInp').value.trim();
+  var errEl = document.getElementById('formError');
+
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!nameInp || !emailRegex.test(emailInp)) {
+    errEl.style.display = 'block';
+    return;
+  }
+
+  errEl.style.display = 'none';
+  userName = nameInp.charAt(0).toUpperCase() + nameInp.slice(1).toLowerCase();
+  userEmail = emailInp;
+
+  RES.nome = userName;
+  RES.email = userEmail;
+
+  ev('LeadCapturado');
+  analisar();
 }
 
 function analisar() {
@@ -481,7 +518,7 @@ function startOfferTimer() {
   }, 1000);
 }
 
-var spNames = ['Ana', 'Fernanda', 'Cláudia', 'Patrícia', 'Márda', 'Juliana', 'Renata', 'Beatriz'];
+var spNames = ['Ana', 'Fernanda', 'Cláudia', 'Patrícia', 'Márcia', 'Juliana', 'Renata', 'Beatriz'];
 function showSpToast() {
   var toast = document.getElementById('spToast');
   if (!toast) return;
